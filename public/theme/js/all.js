@@ -391,16 +391,13 @@
 
         var sections = $(".home-section:not(.scroll-nav-invisible), .page-section:not(.scroll-nav-invisible)");
         var menu_links = $(".scroll-nav li a");
-
         $(window).scroll(function(){
-
             sections.filter(":in-viewport:first").each(function(){
                 var active_section = $(this);
                 var active_link = $('.scroll-nav li a[href="#' + active_section.attr("id") + '"]');
                 menu_links.removeClass("active");
                 active_link.addClass("active");
             });
-
         });
 
     }
@@ -989,12 +986,12 @@ function init_page_sliders(){
         // Fullwidth slider fade
         $(".fullwidth-slider-fade").addClass("autoplay");
         $(".fullwidth-slider-fade").owlCarousel({
-            autoPlay: 7000,
+            autoPlay: 19000,
             transitionStyle: "fade",
             slideSpeed: 350,
             singleItem: true,
             autoHeight: true,
-            navigation: true,
+            navigation: false,
             lazyLoad: true,
             addClassActive : true,
             navigationText: ['<span class="visually-hidden">Previous Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.005,28.500 L27.000,54.494 L24.000,56.994 L0.005,28.500 L24.000,0.006 L27.000,2.506 L5.005,28.500 Z"/></svg>', '<span class="visually-hidden">Next Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.995,28.500 L-0.000,54.494 L3.000,56.994 L26.995,28.500 L3.000,0.006 L-0.000,2.506 L21.995,28.500 Z"/></svg>'],

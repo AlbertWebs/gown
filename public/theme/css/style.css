@@ -1076,13 +1076,13 @@ hr.thick{
     margin-top: 0;
     font-size: 20px;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.06em;
 }
 .hs-title-12{
     margin-top: 0;
-    font-size: 86px;
-    font-weight: 500;
+    font-size: 56px;
+    font-weight: 600;
     line-height: 1.085;
     letter-spacing: -0.035em;
 }
@@ -1407,8 +1407,8 @@ a.btn-mod:focus{
 }
 
 .btn-mod.btn-border-w{
-    color: #fff;
-    border: 1px solid #fff;
+    color: #ca346b;
+    border: 5px solid #ca346b;
     background: transparent;
 }
 .btn-mod.btn-border-w:hover,
@@ -2365,7 +2365,7 @@ textarea:-webkit-autofill:focus{
     display: block;
     position: relative;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -3525,6 +3525,7 @@ a.logo:hover{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
+    position:relative !important;
     width: 100%;
     height: var(--menu-bar-height) !important;
     position: relative;
@@ -4038,12 +4039,14 @@ a.logo:hover{
     backdrop-filter: blur(10px);
 }
 .main-nav.dark .inner-nav ul > li > a{
-    color: #fff;
+    color: #000000;
+    /* color: #fff; */
     opacity: .78;
+    text-transform: capitalize;
 }
 .main-nav.dark .inner-nav ul > li > a:hover,
 .main-nav.dark .inner-nav ul > li > a.active{
-    color: #fff;
+    color: #ca346b;
     opacity: 1;
 }
 .main-nav.dark .inner-nav ul li .mn-sub li a{
@@ -12499,6 +12502,10 @@ html:not(.mobile) .owl-animate-fadeInDown{
     object-fit: cover;
 }
 
+.content-eves{
+   display:absolute !important;
+    top: 90%;
+}
 
 @media only screen and (max-width: 540px) {
     .sdg-images{

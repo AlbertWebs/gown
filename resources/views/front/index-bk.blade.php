@@ -25,13 +25,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <link rel="stylesheet" href="{{asset('theme/css/YTPlayer.css')}}">
         <link rel="stylesheet" href="{{asset('theme/css/demo-corporate/demo-corporate.css')}}">
         <link rel="stylesheet" href="{{asset('theme/css/demo-brutalist/demo-brutalist.css')}}">
-        <!--Floating WhatsApp css-->
-        <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
-
 
     </head>
     <body class="appear-animate">
-        <div style="z-index:100000;" id="WAButton"></div>
 
         <!-- Page Loader -->
         <div class="page-loader color">
@@ -57,7 +53,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
                 image size for support of retina screens. See details in the template documentation. *) -->
                 <div class="nav-logo-wrap local-scroll">
-                    <a href="{{url('/')}}" class="logo font-alt">
+                    <a href="index.html" class="logo font-alt">
                         <img src="{{asset('theme/images/logs_g.webp')}}" alt="Your Company Logo" width="205" height="34">
                     </a>
                 </div>
@@ -99,31 +95,50 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
             <main id="main">
 
-               <!-- Fullwidth Slider -->
-            <div class="home-section fullwidth-slider-fade bg-dark light-content" id="home">
-
-                <!-- Slide Item -->
-                <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/graduation-gown.jpg')}}')">
+                <!-- Home Section -->
+                <section class="home-section light-content" id="home">
                     <div class="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120">
+
+                        <!-- Background Video -->
+                        <!-- Please replace the video file in folder "video" with your own file -->
+                        <div class="bg-video-wrapper">
+                            <video class="bg-video" preload="auto" autoplay loop muted playsinline>
+                                <source src="{{asset('theme/videos/video-9.mp4')}}" type="video/mp4">
+                            </video>
+                            <div class="bg-video-overlay bg-dark-alpha-60"></div>
+                        </div>
+                        <a href="#" role="button" class="bg-video-button-muted"><i class="mi-volume-off"></i> <span class="visually-hidden">Volume On</span></a>
+                        <a href="#" role="button" class="bg-video-button-pause"><i class="mi-pause"></i> <span class="visually-hidden">Pause</span></a>
+                        <!-- End Background Video -->
+
+                        <!-- Top Dark Gradient Overlay -->
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-dark-1 opacity-05"></div>
+                        <!-- End Top Dark Gradient Overlay -->
+
 
                         <!-- Home Section Content -->
                         <div class="home-content">
                             <div class="row">
 
                                 <!-- Home Section Text -->
-                                <div class="col-md-10 offset-md-1 mb-20 mb-sm-0">
+                                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
 
-                                    <h2 class="hs-title-11  mb-xs-10 owl-animate-fadeInUp">
-                                        University-standard Graduation Gown for Hire
-                                    </h2>
-
-                                    <h1 class="hs-title-12 mb-sm-30">
-                                        <span class="owl-animate-chars" data-splitting="chars">Graduation Attire.</span>
+                                    <h1 class="hs-title-9 mb-40 mb-sm-20 wow fadeInUp">
+                                        Step into elegance with our exclusive collection
                                     </h1>
 
-                                    <div class="local-scroll owl-animate-fadeInUp owl-delay-700 wch-unset">
-                                        <a href="main-pages-about-1.html" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle" data-btn-animate="y">Purachase Now</a>
-                                        <a href="main-pages-contact-1.html" class="btn btn-mod btn-w btn-large btn-round ms-1 me-1 mt-2 align-middle" data-btn-animate="y">Hire Now</a>
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1">
+                                            <p class="hs-descr mb-50 mb-sm-40 wow fadeInUp" data-wow-delay="0.2s">
+                                                Perfect for any occasion – rent, hire, or own the gown of your dreams.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="local-scroll wow fadeInUp wch-unset" data-wow-delay="0.4s">
+                                        <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
+                                            <span>Get a Consultation</span>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -133,20 +148,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         </div>
                         <!-- End Home Section Content -->
 
-                          <!-- Scroll Down -->
-                          <div class="local-scroll scroll-down-wrap wow fadeInUp" data-wow-offset="0">
+                        <!-- Scroll Down -->
+                        <div class="local-scroll scroll-down-wrap wow fadeInUp" data-wow-offset="0">
                             <a href="#about" class="scroll-down"><i class="mi-chevron-down"></i><span class="visually-hidden">Scroll to the next section</span></a>
                         </div>
                         <!-- End Scroll Down -->
 
                     </div>
                 </section>
-                <!-- End Slide Item -->
-
-
-            </div>
-            <!-- End Fullwidth Slider -->
-
+                <!-- End Home Section -->
 
 
                 <!-- About Section -->
@@ -808,24 +818,6 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <script src="{{asset('theme/js/plugins.js')}}"></script>
         <script src="{{asset('theme/js/all.js')}}"></script>
         <!-- End JS -->
-        <!--Floating WhatsApp javascript-->
-	  <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
-
-	  <script type="text/javascript">
-		  $(function () {
-			  $('#WAButton').floatingWhatsApp({
-				  phone: '+254728311537', //WhatsApp Business phone number
-				  headerTitle: 'Chat with us on WhatsApp!', //Popup Title
-				  popupMessage: 'Hello, how can we help you?', //Popup Message
-				  showPopup: true, //Enables popup display
-				  buttonImage: '<img  src="{{url('/')}}/uploads/icon/whatsapp.svg" />', //Button Image
-				  //headerColor: 'crimson', //Custom header color
-				  //backgroundColor: 'crimson', //Custom background button color
-				  position: "right" //Position: left | right
-
-			  });
-		  });
-	  </script>
 
     </body>
 </html>
