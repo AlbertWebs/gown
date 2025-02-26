@@ -22,6 +22,6 @@ Route::get('/buy-gown-wear/checkout', [App\Http\Controllers\HomeController::clas
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
 Route::get('/blog/{slung}', [App\Http\Controllers\HomeController::class, 'blog_single'])->name('blog-single');
 
-Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Auth::routes();
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
