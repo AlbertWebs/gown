@@ -27,13 +27,13 @@
     --font-global: 'Satoshi', sans-serif;
     --font-alt: 'Satoshi', sans-serif;
     --section-padding-y: 140px;
-    --color-primary-1: #ca346b;
-    --color-primary-1-a: #88B437;
+    --color-primary-1: #c32728;
+    --color-primary-1-a: ##000000;
     --color-primary-light-1: #d4f5e7;
     --color-primary-light-1-a: #c3e6d7;
     --color-primary-2: #eaa92b;
     --color-primary-light-2: #d4f5e7;
-    --color-primary-3: #ca346b;
+    --color-primary-3: #c32728;
     --color-primary-light-3: #ffdfeb;
     --color-primary-4: #19c4c4;
     --color-primary-light-4: #d1ffff;
@@ -433,7 +433,7 @@ a.link-hover-anim:hover{
     color: #E50418;
 }
 .light-content .features-list-icon{
-    color: #88B437;
+    color: #000000;
 }
 .light-content .features-list-icon.features-list-color-1,
 .light-content .features-list-icon.features-list-color-2,

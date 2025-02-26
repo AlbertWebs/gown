@@ -986,8 +986,8 @@ function init_page_sliders(){
         // Fullwidth slider fade
         $(".fullwidth-slider-fade").addClass("autoplay");
         $(".fullwidth-slider-fade").owlCarousel({
-            autoPlay: 19000,
-            transitionStyle: "fade",
+            autoPlay: 9000,
+            transitionStyle: "backSlide",
             slideSpeed: 350,
             singleItem: true,
             autoHeight: true,

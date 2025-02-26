@@ -133,7 +133,7 @@
 
 
      <!-- Call to Action Section -->
-     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/pexels-pavel-danilyuk-7942522.jpg')}}'); background-position: top; min-height:800px">
+     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/Evess_Shopify_Square_Banners_-_Legal_Accessories.webp')}}'); background-position: top; min-height:600px">
 
         <!-- Desktop Overlay -->
         <div class="bg-overlay bg-gradient-primary-alpha-11 d-none d-md-block"></div>
@@ -143,19 +143,19 @@
         <div class="bg-overlay bg-primary-1 opacity-09 d-md-none"></div>
         <!-- End Mobile Overlay -->
 
-        <div class="container position-relative sustainability">
+        <div class="container position-relative perfection">
 
             <div class="row">
-                <div class="col-md-7 col-lg-6 col-xl-5">
+                <div class="col-md-12 col-lg-6 col-xl-6" style="margin: 0 auto">
 
-                    <h2 class="section-title mb-40 mb-xs-30 ">Institutional Purchase</h2>
+                    <h3 class="section-title-perfection">Tailored to perfection.</h3>
 
-                    <p class="section-descr mb-50 mb-sm-40">
-                        Are you an institution looking for quality graduation attire? At Gownsea, we understand your needs and offer the best discounts on bulk orders. Contact us today for exclusive deals!
+                    <p class="descr">
+                        Expertly crafted to the highest standards, our wigs are handmade from 100% horsehair. Explore our premium collection of legal wigs.
                     </p>
 
                     <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
-                        <span>Contact Us Now</span>
+                        <span>Shop Legal Attire</span>
                     </a>
 
                 </div>

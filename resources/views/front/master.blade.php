@@ -3,16 +3,63 @@
 You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
 <html lang="en">
     <head>
-
-        <title>Gownsea - Graduation Gown For Hire</title>
-        <meta name="description" content="Gownsea - Graduation Gown For Hire">
         <meta charset="utf-8">
         <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {{--  --}}
+        <title>Gownsea LTD | Graduation Gowns for Sale & Rent in Kenya</title>
+        <meta name="description" content="Gownsea LTD offers high-quality graduation gowns for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
+        <meta name="keywords" content="graduation gowns Kenya, buy graduation gown, rent graduation gown, custom graduation gowns, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
+        <meta name="author" content="Gownsea LTD">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+        <meta property="og:title" content="Gownsea LTD | Graduation Gowns for Sale & Rent in Kenya">
+        <meta property="og:description" content="We sell and rent high-quality graduation gowns, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available!">
+        <meta property="og:image" content="https://gownsea.designekta.com/public/theme/images/logs_g.webp">
+        <meta property="og:url" content="https://gownsea.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Gownsea LTD">
+        <meta property="og:phone_number" content="+254 728 311537">
+        <meta property="og:locale" content="en_KE">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Gownsea LTD | Graduation Gowns for Sale & Rent in Kenya">
+        <meta name="twitter:description" content="We offer premium graduation gowns for sale and hire, with custom stitching options. Find the perfect gown for your special day!">
+        <meta name="twitter:image" content="https://gownsea.designekta.com/public/theme/images/logs_g.webp">
+        <meta name="twitter:site" content="@gownsea_ke">
+        <meta name="twitter:creator" content="@gownsea_ke">
+
+        <!-- Schema Markup (Google Rich Results) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Gownsea LTD",
+          "url": "https://gownsea.com/",
+          "logo": "https://gownsea.designekta.com/public/theme/images/logs_g.webp",
+          "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
+          "telephone": "+254 728 311537",
+          "image": "https://gownsea.designekta.com/public/theme/images/logs_g.webp",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Valji Building, Moktar Daddah St",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+          },
+          "openingHours": "Mo-Fr 08:00-17:00",
+          "sameAs": [
+            "https://www.facebook.com/GownseaLtd/",
+            "https://www.instagram.com/gownsea_ke/",
+            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
+          ]
+        }
+        </script>
+        {{--  --}}
 
         <!-- Favicon -->
-        <link rel="icon" href="images/favicon.png')}}" type="image/png" sizes="any">
-        <link rel="icon" href="images/favicon.svg')}}" type="image/svg+xml">
+        @include('favicon')
 
         <!-- CSS -->
         <link rel="stylesheet" href="{{asset('theme/css/bootstrap.min.css')}}">
@@ -96,17 +143,18 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         </li>
 
                         <li><a class="@if($Page_title=="legal-attire") active @endif" href="{{route('legal-attire')}}">Legal Attire</a></li>
-                        <li><a href="#">Church Wear</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a  class="@if($Page_title=="church-wear") active @endif" href="{{route('church-wear')}}">Church Wear</a></li>
+                        <li><a class="@if($Page_title=="about-us") active @endif" href="{{route('about-us')}}">About Us</a></li>
+                        <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">Blog</a></li>
+                        <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">Bulk Hire</a></li>
+                        <li><a class="@if($Page_title=="contact-us") active @endif" href="{{route('contact-us')}}">Contact Us</a></li>
                     </ul>
 
 
 
                     <ul class="items-end clearlist local-scroll">
                         <li>
-                            <a href="bold-contact.html" class="opacity-1 no-hover">
+                            <a href="{{route('contact-us')}}" class="opacity-1 no-hover">
                                 <span class="btn btn-mod btn-small btn-border-w btn-circle" data-btn-animate="y">
                                     Let’s talk
                                     <i class="icon-arrow-right1 size-16"></i>
