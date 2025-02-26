@@ -999,6 +999,22 @@ function init_page_sliders(){
             afterAction: owl_update
         });
 
+         // Fullwidth slider fade
+         $(".fullwidth-slider-fades").addClass("autoplay");
+         $(".fullwidth-slider-fades").owlCarousel({
+             autoPlay: false,
+             transitionStyle: "backSlide",
+             slideSpeed: 350,
+             singleItem: true,
+             autoHeight: true,
+             navigation: false,
+             lazyLoad: true,
+             addClassActive : true,
+             navigationText: ['<span class="visually-hidden">Previous Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.005,28.500 L27.000,54.494 L24.000,56.994 L0.005,28.500 L24.000,0.006 L27.000,2.506 L5.005,28.500 Z"/></svg>', '<span class="visually-hidden">Next Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.995,28.500 L-0.000,54.494 L3.000,56.994 L26.995,28.500 L3.000,0.006 L-0.000,2.506 L21.995,28.500 Z"/></svg>'],
+             afterInit: owl_keynav,
+             afterAction: owl_update
+         });
+
         // Text slider
         $(".text-slider").owlCarousel({
             slideSpeed: 350,

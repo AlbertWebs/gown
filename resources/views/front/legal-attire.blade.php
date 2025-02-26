@@ -4,10 +4,10 @@
 <main id="main">
 
     <!-- Fullwidth Slider -->
-     <div class="home-section fullwidth-slider-fade bg-dark light-content" id="home">
+     <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">
 
          <!-- Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-30 light-content" style="background-image: url('{{asset('uploads/tdj_new_banner_2a420872-b1f8-4213-940c-1a82e110d57f.webp')}}')">
+         <section class="home-section bg-scroll bg-dark-alpha-30 light-content" style="background-image: url('{{asset('uploads/barrister-wig.jpg')}}')">
              <div class="container  d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120 " style="min-height: 80vh">
 
                  <!-- Home Section Content -->
@@ -34,25 +34,10 @@
 
                          </div>
                          <!-- End Home Section Text -->
-                         <div class="row">
-                            <div class="col-md-8 col-lg-8" style="margin:0 auto; padding-top:30px;">
-                                <div class="bg-blur p-4 round wow fadeInUp animated" data-wow-delay="0.35s" style="visibility: visible; animation-delay: 0.35s; animation-name: fadeInUp;">
-                                    <div class="row px-1 position-relative">
+                         <div class="local-scroll pt-20">
+                            <a href="{{route('shop-graduation-attires')}}" class="btn btn-mod btn-w btn-large circle btn-border-b"><span>Shop Now</span></a>
+                         </div>
 
-                                        <div class="col-lg-8 text-lg-start mb-md-30">
-                                            <p class="mb-0 opacity-8">
-                                                A legal attire typically includes a black robe, a white collarette or bands, and a barrister’s wig, symbolizing professionalism and tradition in the legal field.
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 local-scroll text-lg-end">
-                                            <a href="{{route('shop-legal-attire')}}" class="btn btn-mod btn-w btn-large circle border-theme" data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Discover Now</span></span></a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                      </div>
                  </div>
@@ -84,48 +69,43 @@
          <div class="containers">
 
              <div class="row">
-                 <div class="col-md-6">
-                     <div class="portfolio-1-image round legal-img">
-                         <img style="" src="{{asset('uploads/placeholder-image_6f894a88-d896-4d15-bbff-8d7da52fc6e7.webp')}}" loading="lazy"  alt="Image Description">
-                         <div class="bottom-left">
-                            <h2>Legal Gowns</h2>
-                            <a href="{{route('shop-legal-attire')}}" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
+                <?php
+                   $count = 0;
+                ?>
+                @foreach ($Gowns as $gown)
+                  @if($count == "0")
+                    <div class="col-md-6">
+                        <div class="portfolio-1-image round legal-img">
+                            <img style="" src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
+                            <div class="bottom-left">
+                            <h2>{{$gown->title}}</h2>
+                            <a href="{{route('shop-legal-attire',$gown->slung)}}" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
                                 <span>Shop Now</span>
                                 <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
                                 </svg>
                             </a>
                         </div>
-                     </div>
-                 </div>
-                 <div class="col-md-3">
-                    <div class="portfolio-1-image round legal-img">
-                        <img style="" src="{{asset('uploads/placeholder-image_294ee959-8dba-49a7-8c51-2f4c0bac6d5e.webp')}}" loading="lazy"  alt="Image Description">
-                        <div class="bottom-left">
-                            <h2>Court Wigs</h2>
-                            <a href="{{route('shop-legal-attire')}}" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
-                                <span>Shop Now</span>
-                                <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="portfolio-1-image round legal-img">
-                        <img style="" src="{{asset('uploads/Evess_Shopify_Square_Banners_-_Formal_Wear.webp')}}" loading="lazy"  alt="Image Description">
-                        <div class="bottom-left">
-                            <h2>Formal Wear & Accessories </h2>
-                            <a href="{{route('shop-legal-attire')}}" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
+                  @else
+                    <div class="col-md-3">
+                        <div class="portfolio-1-image round legal-img">
+                            <img style="" src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
+                            <div class="bottom-left">
+                            <h2>{{$gown->title}}</h2>
+                            <a href="{{route('shop-legal-attire',$gown->slung)}}" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
                                 <span>Shop Now</span>
                                 <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
                                 </svg>
                             </a>
                         </div>
+                        </div>
                     </div>
-                </div>
+                  @endif
+                  <?php $count++; ?>
+                @endforeach
              </div>
          </div>
      </section>
@@ -133,20 +113,21 @@
 
 
      <!-- Call to Action Section -->
-     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/Evess_Shopify_Square_Banners_-_Legal_Accessories.webp')}}'); background-position: top; min-height:600px">
+     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/theleaflet_2024-12-02_0hkoihx5_Senior-Advocate.avif')}}'); background-position: top; min-height:700px">
 
         <!-- Desktop Overlay -->
-        <div class="bg-overlay bg-gradient-primary-alpha-11 d-none d-md-block"></div>
+        <div class="bg-overlay bg-gradient-primary-alpha-111 d-none d-md-block"></div>
         <!-- End Desktop Overlay -->
 
         <!-- Mobile Overlay -->
-        <div class="bg-overlay bg-primary-1 opacity-09 d-md-none"></div>
+        <div class="bg-overlay  opacity-09 d-md-none"></div>
         <!-- End Mobile Overlay -->
 
         <div class="container position-relative perfection">
 
             <div class="row">
                 <div class="col-md-12 col-lg-6 col-xl-6" style="margin: 0 auto">
+                    <br><br><br>
 
                     <h3 class="section-title-perfection">Tailored to perfection.</h3>
 
@@ -154,7 +135,7 @@
                         Expertly crafted to the highest standards, our wigs are handmade from 100% horsehair. Explore our premium collection of legal wigs.
                     </p>
 
-                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
+                    <a href="{{route('shop-legal-attires')}}" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim btn-border-b">
                         <span>Shop Legal Attire</span>
                     </a>
 
@@ -237,71 +218,70 @@
      <!-- End Divider -->
 
 
-        <!-- Logotypes Section -->
-     <section class="small-section pt-20 pb-20 bg-gradient-dark">
-         <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
-         <div class="container relative">
-             <div class="row wow fadeInUpShort">
-                 <div class="col-md-12">
+            <!-- Logotypes Section -->
+     <section class="small-section  pb-20 bg-gradient-darks">
+        <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
+        <div class="container relative">
+            <div class="row wow fadeInUpShort">
+                <div class="col-md-12" >
 
-                     <div class="small-item-carousel black owl-carousel mb-0">
+                    <div class="small-item-carousel black owl-carousel mb-0">
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-7.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-7.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                     </div>
+                    </div>
 
-                 </div>
-              </div>
-          </div>
-     </section>
-     <!-- End Logotypes -->
-
+                </div>
+             </div>
+         </div>
+    </section>
+    <!-- End Logotypes -->
 
 
      <!-- FAQ Section -->
@@ -373,98 +353,6 @@
          </div>
      </section>
      <!-- End FAQ Section -->
-
-
-     <!-- Services Section -->
-     <section class="page-section pb-0" id="services">
-
-         <div class="container position-relative">
-
-             <!-- Works Grid -->
-             <ul class="works-grid work-grid-4 work-grid-gut-sm hide-titles" id="work-grid">
-
-                 <!-- Work Item (Lightbox) -->
-                 <li class="work-item mix development">
-                     <a href="{{asset('theme/images/cc41b478211b0cda061cdb1f48346597.avif')}}" class="work-lightbox-link mfp-image">
-                         <div class="work-img">
-                             <div class="work-img-bg wow-p scalexIn" data-wow-offset="0"></div>
-                             <img src="{{asset('theme/images/cc41b478211b0cda061cdb1f48346597.avif')}}" alt="Work Description" class="wow-p fadeIn" data-wow-delay="1s" data-wow-offset="0">
-                         </div>
-                         <div class="work-intro">
-                             <h3 class="work-title link-hover-anim underline align-middle">
-
-                                    See More
-
-                             </h3>
-                         </div>
-                     </a>
-                 </li>
-                 <!-- End Work Item -->
-
-                 <!-- Work Item (External Page) -->
-                 <li class="work-item mix branding design">
-                     <a href="#" class="work-ext-link">
-                         <div class="work-img">
-                             <div class="work-img-bg wow-p scalexIn" data-wow-offset="0"></div>
-                             <img src="{{asset('theme/images/afe8a3eb6c89b44d5f54f4b0409e5ec0.avif')}}" alt="Work Description" class="wow-p fadeIn" data-wow-delay="1s" data-wow-offset="0">
-                         </div>
-                         <div class="work-intro">
-                             <h3 class="work-title link-hover-anim underline align-middle">
-                                 See More
-                             </h3>
-                         </div>
-                     </a>
-                 </li>
-                 <!-- End Work Item -->
-
-                 <!-- Work Item (External Page) -->
-                 <li class="work-item mix branding">
-                     <a href="#" class="work-ext-link">
-                         <div class="work-img">
-                             <div class="work-img-bg wow-p scalexIn" data-wow-offset="0"></div>
-                             <img src="{{asset('theme/images/ce4afa7797381365d9b8a8c94c29fd93.avif')}}" alt="Work Description" class="wow-p fadeIn" data-wow-delay="1s" data-wow-offset="0">
-                         </div>
-                         <div class="work-intro">
-                             <h3 class="work-title link-hover-anim underline align-middle">
-                                 See More
-                             </h3>
-                         </div>
-                     </a>
-                 </li>
-                 <!-- End Work Item -->
-
-                 <!-- Work Item (External Page) -->
-                 <li class="work-item mix design development">
-                     <a href="#" class="work-ext-link">
-                         <div class="work-img">
-                             <div class="work-img-bg wow-p scalexIn" data-wow-offset="0"></div>
-                             <img src="{{asset('theme/images/307652d25c94b2e7d897a2ccb9d96c51.avif')}}" alt="Work Description" class="wow-p fadeIn" data-wow-delay="1s" data-wow-offset="0">
-                         </div>
-                         <div class="work-intro">
-                             <h3 class="work-title link-hover-anim underline align-middle">
-                                 See More
-                             </h3>
-                         </div>
-                     </a>
-                 </li>
-                 <!-- End Work Item -->
-
-
-             </ul>
-             <!-- End Works Grid -->
-
-         </div>
-
-
-
-     </section>
-     <!-- End Services Section -->
-
-
-
-
-
-
 
  </main>
 @endsection

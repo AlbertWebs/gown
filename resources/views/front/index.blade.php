@@ -14,7 +14,7 @@
                     <div class="herotext text-center">
 
                         <h2 class="hs-title-11  mb-xs-10 owl-animate-fadeInUp text-center">
-                            University-standard Graduation Gown for Hire
+                            University-standard Graduation Attire for Hire
                         </h2>
 
                         <h1 class="hs-title-12 mb-sm-30">
@@ -97,7 +97,7 @@
              <div class="row mb-70 mb-sm-50">
                  <div class="col-md-6 mb-sm-30">
                      <div class="portfolio-1-image round">
-                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/pexels-erisvanartsfotografias-6952553.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
+                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/2143ac7d-e37d-48f5-b488-e6c735d75c29_a54b3def-4fa2-4842-a0bf-3a23080731e3.webp')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
                  </div>
                  <div class="col-md-6 col-lg-6 ">
@@ -212,7 +212,7 @@
                  </div>
                  <div class="col-md-6 mb-sm-30">
                      <div class="portfolio-1-image round">
-                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('theme/images/pexels-david-iloba-28486424-16278649.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
+                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/ce3e6d015e368db7efd118676dd2ff22.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
                  </div>
              </div>
@@ -228,7 +228,7 @@
 
                  <div class="col-md-6 mb-sm-30">
                      <div class="portfolio-1-image round">
-                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/pexels-felix-adams-2546767-9576022.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
+                         <a href="#" ><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/pexels-erisvanartsfotografias-6952553.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
                  </div>
                  <div class="col-md-6 col-lg-6">

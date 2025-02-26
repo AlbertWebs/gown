@@ -4,10 +4,10 @@
 <main id="main">
 
     <!-- Fullwidth Slider -->
-     <div class="home-section fullwidth-slider-fade bg-dark light-content" id="home">
+     <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">
 
          <!-- Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-30 light-content" style="background-image: url('{{asset('uploads/GA_Banner_1_4c630ff1-2166-472b-b3de-983ecc5f3a2c.webp')}}')">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/410184905_765230268977847_8212841400520635226_n.jpg')}}')">
              <div class="container  d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120 " style="min-height: 80vh">
 
                  <!-- Home Section Content -->
@@ -33,36 +33,18 @@
 
 
                          </div>
-                         <!-- End Home Section Text -->
-                         <div class="row">
-                            <div class="col-md-8 col-lg-8" style="margin:0 auto; padding-top:30px;">
-                                <div class="bg-blur p-4 round wow fadeInUp animated" data-wow-delay="0.35s" style="visibility: visible; animation-delay: 0.35s; animation-name: fadeInUp;">
-                                    <div class="row px-1 position-relative">
 
-                                        <div class="col-lg-8 text-lg-start mb-md-30">
-                                            <p class="mb-0 opacity-8">
-                                                A PhD gown features a black robe with velvet panels, a hood in university colors, and a velvet tam or mortarboard with a gold tassel.
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 local-scroll text-lg-end">
-                                            <a href="{{route('shop-graduation-attire', $Gown->slung)}}" class="btn btn-mod btn-w btn-large circle border-theme" data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Graduation</span><span class="btn-animate-y-2" aria-hidden="true">Discover Now</span></span></a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                         <div class="local-scroll pt-20">
+                            <a href="{{route('church-wear')}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim">
+                               <span data-btn-animate="y">Shop Graduation Attire</span>
+                           </a>
                         </div>
 
                      </div>
                  </div>
                  <!-- End Home Section Content -->
 
-                 <!-- Scroll Down -->
-                 <div class="local-scroll scroll-down-wrap wow fadeInUp" data-wow-offset="0">
-                     <a href="#about" class="scroll-down"><i class="mi-chevron-down"></i><span class="visually-hidden">Scroll to the next section</span></a>
-                 </div>
-                 <!-- End Scroll Down -->
+
 
              </div>
          </section>
@@ -236,71 +218,70 @@
      </div>
      <!-- End Divider -->
 
+    <!-- Logotypes Section -->
+    <section class="small-section  pb-20 bg-gradient-darks">
+        <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
+        <div class="container relative">
+            <div class="row wow fadeInUpShort">
+                <div class="col-md-12" >
 
-        <!-- Logotypes Section -->
-     <section class="small-section pt-20 pb-20 bg-gradient-dark">
-         <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
-         <div class="container relative">
-             <div class="row wow fadeInUpShort">
-                 <div class="col-md-12">
+                    <div class="small-item-carousel black owl-carousel mb-0">
 
-                     <div class="small-item-carousel black owl-carousel mb-0">
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-7.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-7.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                    </div>
 
-                     </div>
-
-                 </div>
-              </div>
-          </div>
-     </section>
-     <!-- End Logotypes -->
+                </div>
+             </div>
+         </div>
+    </section>
+    <!-- End Logotypes -->
 
 
 

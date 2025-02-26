@@ -97,7 +97,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 <div class="main-nav-sub full-wrapper"> --}}
 
          <!-- Navigation Panel -->
-         <nav class="main-nav dark transparent stick-fixed wow-menubar">
+         <nav class="main-nav dark transparent stick-fixed wow-menubar js-transparent small-height body-scrolled fadeInDown animated">
             <div class="main-nav-sub full-wrapper">
 
                 <!-- Logo  (* Add your text or image to the link tag. Use SVG or PNG image format.
@@ -118,14 +118,14 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 <!-- Main Menu -->
                 <div class="inner-nav desktop-nav">
                     <ul class="clearlist local-scroll">
-                        <li><a href="#" class="@if($Page_title=="home") active @endif">Home</a></li>
+                        <li><a href="{{url('/')}}" class="@if($Page_title=="home") active @endif">Home</a></li>
                         <li>
                             <a href="#" class="mn-has-sub @if($Page_title=="gown-for-hire") active @endif" role="button" aria-expanded="false" aria-haspopup="true">Graduation Attire <i class="mi-chevron-down"></i></a>
 
                             <!-- Sub -->
                             <ul class="mn-sub" style="display: none;">
                                 <?php
-                                    $Gowns = DB::table('gowns')->get();
+                                    $Gowns = DB::table('gowns')->where('category_id','1')->get();
                                 ?>
 
                                 @foreach ($Gowns as $Gown)

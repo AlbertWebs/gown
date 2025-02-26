@@ -35,23 +35,59 @@ class HomeController extends Controller
         return view('front.gown-for-hire', compact('Gown','Page_title'));
     }
 
+    public function shop_church_attires ()
+    {
+        $Gown = \App\Models\Gown::where('category_id', '3')->get();
+        $Page_title = "church-wear";
+        return view('front.products', compact('Page_title','Gown'));
+    }
+
+    public function shop_graduation_attires ()
+    {
+        $Gown = \App\Models\Gown::where('category_id', '1')->get();
+        $Page_title = "legal-attire";
+        return view('front.products', compact('Page_title','Gown'));
+    }
+
+
     public function legal_attire ()
     {
+        $Gowns = \App\Models\Gown::where('category_id', '2')->limit('3')->get();
         $Page_title = "legal-attire";
-        return view('front.legal-attire', compact('Page_title'));
+        return view('front.legal-attire', compact('Page_title','Gowns'));
     }
+
+
+    public function shop_legal_attires ()
+    {
+        $Gown = \App\Models\Gown::where('category_id', '2')->get();
+        $Page_title = "legal-attire";
+        return view('front.products', compact('Page_title','Gown'));
+    }
+
+    public function shop_legal_attire ($slung)
+    {
+        $Gown = \App\Models\Gown::where('slung', $slung)->get();
+        $Page_title = "legal-attire";
+        return view('front.product', compact('Page_title','Gown'));
+    }
+
+    public function our_products ($slung)
+    {
+        $Gown = \App\Models\Gown::where('slung', $slung)->get();
+        $Page_title = "church-wear";
+        return view('front.product', compact('Page_title','Gown'));
+    }
+
 
     public function church_wear ()
     {
+        $Gown = \App\Models\Gown::where('category_id', '3')->get();
         $Page_title = "church-wear";
-        return view('front.church-wear', compact('Page_title'));
+        return view('front.church-wear', compact('Page_title','Gown'));
     }
 
-    public function shop_legal_attire ()
-    {
-        $Page_title = "legal-attire";
-        return view('front.legal-attire', compact('Page_title'));
-    }
+
 
     public function contact_us ()
     {

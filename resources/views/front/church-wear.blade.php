@@ -4,7 +4,7 @@
 <main id="main">
 
     <!-- Fullwidth Slider -->
-     <div class="home-section fullwidth-slider-fade bg-dark light-content" id="home">
+     <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">
 
          <!-- Slide Item -->
          <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/bigstock-Priest-Wearing-Cassock-With-Cl-427132097.webp')}}')">
@@ -27,32 +27,14 @@
                                 Quality Church and Choral Attire.
                             </h2>
 
-                             {{-- <div class="local-scroll owl-animate-fadeInUp owl-delay-700 wch-unset mt-20">
-                                 <a href="{{route('shop-legal-attire', $Gown->slung)}}" class="btn btn-mod btn-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-theme" data-btn-animate="y"><i class="fa-shoppping-cart"></i> Shop Graduation</a>
-                             </div> --}}
+
 
 
                          </div>
                          <!-- End Home Section Text -->
-                         <div class="row">
-                            <div class="col-md-8 col-lg-8" style="margin:0 auto; padding-top:30px;">
-                                <div class="bg-blur p-4 round wow fadeInUp animated" data-wow-delay="0.35s" style="visibility: visible; animation-delay: 0.35s; animation-name: fadeInUp;">
-                                    <div class="row px-1 position-relative">
-
-                                        <div class="col-lg-8 text-lg-start mb-md-30">
-                                            <p class="mb-0 opacity-8">
-                                                A traditional church attire often includes modest and elegant clothing, such as dresses or suits, with refined accessories, symbolizing reverence and respect in the place of worship.
-                                            </p>
-                                        </div>
-
-                                        <div class="col-lg-4 local-scroll text-lg-end">
-                                            <a href="{{route('shop-legal-attire')}}" class="btn btn-mod btn-w btn-large circle border-theme" data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Discover Now</span></span></a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                         <div class="local-scroll pt-20">
+                            <a href="{{route('shop-church-attires')}}" class="btn btn-mod btn-w btn-large circle btn-border-m"><span>Shop Now Church Wear</span></a>
+                         </div>
 
                      </div>
                  </div>
@@ -89,7 +71,7 @@
                          <img style="" src="{{asset('uploads/placeholder-image_c3f68cf7-7ed6-4968-8fca-e310c7b33a01.webp')}}" loading="lazy"  alt="Image Description">
                          <div class="bottom-left">
                             <h2>Choir</h2>
-                            <a href="{{route('shop-legal-attire')}}" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
+                            <a href="" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
                                 <span>Shop Now</span>
                                 <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
@@ -103,7 +85,7 @@
                         <img style="" src="{{asset('uploads/placeholder-image_2171b732-3fae-4c56-ab3a-d83d6b7a04f2.webp')}}" loading="lazy"  alt="Image Description">
                         <div class="bottom-left">
                             <h2>Church Wear</h2>
-                            <a href="{{route('shop-legal-attire')}}" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
+                            <a href="" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
                                 <span>Shop Now</span>
                                 <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
@@ -117,7 +99,7 @@
                         <img style="" src="{{asset('uploads/placeholder-image_2b60e43b-8966-4325-9d26-88c18571e5f1.webp')}}" loading="lazy"  alt="Image Description">
                         <div class="bottom-left">
                             <h2>Clergy Collection </h2>
-                            <a href="{{route('shop-legal-attire')}}" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
+                            <a href="" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
                                 <span>Shop Now</span>
                                 <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
@@ -147,14 +129,14 @@
 
             <div class="row">
                 <div class="col-md-12 col-lg-6 col-xl-6" style="margin: 0 auto">
-
+                    <br><br><br>
                     <h3 class="section-title-perfection">Bespoke Choir Wear</h3>
 
                     <p class="descr">
                         Every community is different. Find your own voice and personalise your church and choir wear to suit any congregation.
                     </p>
 
-                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
+                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim btn-border-m">
                         <span>Shop Bespoke</span>
                     </a>
 
@@ -174,9 +156,12 @@
         <div class="container position-relative">
 
 
+
+
             <!-- Portfolio Grid -->
             <div class="row mt-n50 mt-sm-n40">
 
+                @foreach ($Gown as $gown)
                 <!-- Portfolio Item -->
                 <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
                     <a href="#" class="portfolio-5-link">
@@ -184,12 +169,12 @@
                         <div class="portfolio-4-image prod-img">
                             <div class="portfolio-5-image-bg wow scalexIn"></div>
                             <div class="wow fadeIn product-img" data-wow-delay="1s">
-                                <img src="{{asset('uploads/ShopifyProductImageSize_34.webp')}}" alt="Academic Hood" />
+                                <img src="{{$gown->image}}" alt="Academic Hood" />
                             </div>
                         </div>
 
                         <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="/products/men-long-sleeved-clergy-shirt">Reliant Men’s Long Sleeved Clergy Shirt</a>
+                            <a class="full-unstyled-link" href="{{route('our-products',$gown->slung)}}">{{$gown->title}}</a>
                         </h3>
                         {{--  --}}
                         <div class="price ">
@@ -200,7 +185,7 @@
                                     </dt>
                                     <dd>
                                         <span class="price-item price-item--regular">
-                                        <span class="money">kes 12,800</span>
+                                        <span class="money">kes {{$gown->price}}</span>
                                         </span>
                                     </dd>
                                 </div>
@@ -211,112 +196,7 @@
                     </a>
                 </div>
                 <!-- End Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
-                    <a href="#" class="portfolio-5-link">
-
-                        <div class="portfolio-5-image prod-img">
-                            <div class="portfolio-4-image-bg wow scalexIn"></div>
-                            <div class="wow fadeIn product-img" data-wow-delay="1s" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-                                <img style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);" src="{{asset('uploads/DSC_8845.webp')}}" alt="Image Description" />
-                            </div>
-                        </div>
-
-                        <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="/products/men-long-sleeved-clergy-shirt">Choir Robe (Matte)</a>
-                        </h3>
-                        {{--  --}}
-                        <div class="price ">
-                            <dl>
-                                <div class="price__regular">
-                                    <dt class="visually-hidden">
-                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                    </dt>
-                                    <dd>
-                                        <span class="price-item price-item--regular">
-                                        <span class="money">kes 12,800</span>
-                                        </span>
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
-                        {{--  --}}
-
-                    </a>
-                </div>
-                <!-- End Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
-                    <a href="#" class="portfolio-5-link">
-
-                        <div class="portfolio-4-image prod-img">
-                            <div class="portfolio-5-image-bg wow scalexIn"></div>
-                            <div class="wow fadeIn product-img" data-wow-delay="1s">
-                                <img  src="{{asset('uploads/ShopifyProductImageSize_44.webp')}}" alt="Image Description" />
-                            </div>
-                        </div>
-
-
-                        <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="/products/men-long-sleeved-clergy-shirt">Reliant Men’s Short Sleeved Clergy Shirt</a>
-                        </h3>
-                        {{--  --}}
-                        <div class="price ">
-                            <dl>
-                                <div class="price__regular">
-                                    <dt class="visually-hidden">
-                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                    </dt>
-                                    <dd>
-                                        <span class="price-item price-item--regular">
-                                        <span class="money">kes 12,800</span>
-                                        </span>
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
-                        {{--  --}}
-
-                    </a>
-                </div>
-                <!-- End Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
-                    <a href="#" class="portfolio-5-link">
-
-                        <div class="portfolio-5-image prod-img">
-                            <div class="portfolio-4-image-bg wow scalexIn"></div>
-                            <div class="wow fadeIn product-img" data-wow-delay="1s">
-                                <img src="{{asset('uploads/ShopifyProductImageSize_37.webp')}}" alt="Image Description" />
-                            </div>
-                        </div>
-
-                        <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="/products/men-long-sleeved-clergy-shirt">Reliant Ladies Long Sleeved Clergy Shirs</a>
-                        </h3>
-                        {{--  --}}
-                        <div class="price ">
-                            <dl>
-                                <div class="price__regular">
-                                    <dt class="visually-hidden">
-                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                    </dt>
-                                    <dd>
-                                        <span class="price-item price-item--regular">
-                                        <span class="money">kes 12,800</span>
-                                        </span>
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
-                        {{--  --}}
-
-                    </a>
-                </div>
-                <!-- End Portfolio Item -->
+                 @endforeach
 
             </div>
             <!-- End Portfolio Grid -->
@@ -332,70 +212,70 @@
      <!-- End Divider -->
 
 
-        <!-- Logotypes Section -->
-     <section class="small-section pt-20 pb-20 bg-gradient-dark">
-         <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
-         <div class="container relative">
-             <div class="row wow fadeInUpShort">
-                 <div class="col-md-12">
+           <!-- Logotypes Section -->
+     <section class="small-section  pb-20 bg-gradient-darks">
+        <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
+        <div class="container relative">
+            <div class="row wow fadeInUpShort">
+                <div class="col-md-12" >
 
-                     <div class="small-item-carousel black owl-carousel mb-0">
+                    <div class="small-item-carousel black owl-carousel mb-0">
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-7.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-7.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                         <!-- Logo Item -->
-                         <div class="logo-item">
-                             <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="180" height="110" alt="Company Name">
-                         </div>
-                         <!-- End Logo Item -->
+                        <!-- Logo Item -->
+                        <div class="logo-item bg-grays">
+                            <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="150" height="90" alt="Company Name">
+                        </div>
+                        <!-- End Logo Item -->
 
-                     </div>
+                    </div>
 
-                 </div>
-              </div>
-          </div>
-     </section>
-     <!-- End Logotypes -->
+                </div>
+             </div>
+         </div>
+    </section>
+    <!-- End Logotypes -->
 
 
 
