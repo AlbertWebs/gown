@@ -66,7 +66,7 @@
 
 
 
-         <div class="containers">
+         <div class="containers" style="padding-left: 50px; padding-right: 50px">
 
              <div class="row">
                 @foreach ($Gowns as $gown)

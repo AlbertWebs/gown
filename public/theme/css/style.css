@@ -12574,7 +12574,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
 
 .legal-img img{
     object-fit:cover;
-    height: 500px;
+    height: 600px;
     width: 100%;
     border-radius: 15px;
 }
@@ -12675,15 +12675,15 @@ html:not(.mobile) .owl-animate-fadeInDown{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 }
 .product-img{
-    max-height:700px;
+    max-height:600px;
     height:100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 }
 
 .product-img img{
+    object-fit: cover;
     height:100%;
     width:100%;
-    object-fit: cover;
 }
 
 .price {
