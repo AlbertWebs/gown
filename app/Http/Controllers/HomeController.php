@@ -44,11 +44,12 @@ class HomeController extends Controller
         return view('front.gown-for-hire-page', compact('Gowns','Page_title'));
     }
 
-    public function gown_hire_single ($slung)
+    public function gown_hire_single($slung)
     {
         $Page_title = "gown-for-hire";
-        $Gown = \App\Models\Gown::where('slung', $slung)->first();
-        return view('front.gown-for-hire', compact('Gown','Page_title'));
+        $Gown = \App\Models\Gown::where('gown_class', $slung)->first();
+        $Gowns = \App\Models\Gown::where('gown_class', $slung)->get();
+        return view('front.gown-for-hire', compact('Gown','Page_title','Gowns'));
     }
 
     public function shop_church_attires ()

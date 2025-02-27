@@ -125,7 +125,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             <!-- Sub -->
                             <ul class="mn-sub" style="display: none;">
                                 <?php
-                                    $Gowns = DB::table('gowns')->where('category_id','1')->get();
+                                    $Gowns = DB::table('gowns')->where('category_id','1')->where('home','1')->get();
                                 ?>
 
                                 @foreach ($Gowns as $Gown)

@@ -3,11 +3,14 @@
 @section('content')
 <main id="main">
 
+    <?php
+       $gownClass = DB::table('gown_classes')->where('slung', $Gown->slung)->first();
+    ?>
     <!-- Fullwidth Slider -->
      <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">
 
          <!-- Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/410184905_765230268977847_8212841400520635226_n.jpg')}}')">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{$gownClass->image}}')">
              <div class="container  d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120 " style="min-height: 80vh">
 
                  <!-- Home Section Content -->
@@ -136,7 +139,7 @@
                         Are you an institution looking for quality graduation attire? At Gownsea, we understand your needs and offer the best discounts on bulk orders. Contact us today for exclusive deals!
                     </p>
 
-                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
+                    <a href="{{route('bulk-inquiry')}}" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
                         <span>Contact Us Now</span>
                     </a>
 
