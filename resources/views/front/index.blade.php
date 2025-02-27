@@ -72,7 +72,7 @@
                        </h1>
 
                        <div class="local-scroll owl-animate-fadeInUp owl-delay-700 wch-unset">
-                           <a href="#" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-border-m" data-btn-animate="y">Purachase Now</a>
+                           <a href="{{route('church-wear')}}" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-border-m" data-btn-animate="y">Purachase Now</a>
                        </div>
 
                    </div>
