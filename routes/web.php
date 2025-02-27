@@ -12,6 +12,8 @@ Route::get('/our-products/{slung}', [App\Http\Controllers\HomeController::class,
 Route::get('/legal-attire', [App\Http\Controllers\HomeController::class, 'legal_attire'])->name('legal-attire');
 Route::get('/our-products/shop-legal-attires', [App\Http\Controllers\HomeController::class, 'shop_legal_attires'])->name('shop-legal-attires');
 Route::get('/shop-legal-attire/{slung}', [App\Http\Controllers\HomeController::class, 'shop_legal_attire'])->name('shop-legal-attire');
+Route::get('/bulk-inquiry', [App\Http\Controllers\HomeController::class, 'bulk_inquiry'])->name('bulk-inquiry');
+
 
 Route::get('/gown-for-hire/{slung}', [App\Http\Controllers\HomeController::class, 'gown_hire_single'])->name('gown-for-hire-single');
 Route::get('/shop-graduation-attire/{gown}', [App\Http\Controllers\HomeController::class, 'shop_graduation_attire'])->name('shop-graduation-attire');

@@ -28,6 +28,14 @@ class HomeController extends Controller
         // return view('front.index');
     }
 
+
+    public function gown_hire ()
+    {
+        $Page_title = "gown-for-hire";
+        $Gowns = \App\Models\Gown::where('category_id', 1)->get();
+        return view('front.gown-for-hire-page', compact('Gowns','Page_title'));
+    }
+
     public function gown_hire_single ($slung)
     {
         $Page_title = "gown-for-hire";
