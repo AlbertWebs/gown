@@ -193,7 +193,7 @@
 
              <div class="row mb-70 mb-sm-50">
                  <div class="col-md-6 col-lg-6">
-                     <br><br>
+                     <br><br><br><br>
                      <h2 class="section-title mb-40 mb-xs-30">Be the <span class="mark-decoration-church">heart</span> of your community.</h2>
 
                      <p class="section-descr mb-0">
