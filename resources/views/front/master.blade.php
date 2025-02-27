@@ -146,7 +146,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <li><a  class="@if($Page_title=="church-wear") active @endif" href="{{route('church-wear')}}">Church Wear</a></li>
                         <li><a class="@if($Page_title=="about-us") active @endif" href="{{route('about-us')}}">About Us</a></li>
                         <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">Blog</a></li>
-                        <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">Bulk Hire</a></li>
+                        <li><a class="@if($Page_title=="blog") active @endif" href="{{route('bulk-inquiry')}}" href="#">Bulk Hire</a></li>
                         <li><a class="@if($Page_title=="contact-us") active @endif" href="{{route('contact-us')}}">Contact Us</a></li>
                     </ul>
 

@@ -29,6 +29,14 @@ class HomeController extends Controller
     }
 
 
+    public function bulk_inquiry ()
+    {
+        $Page_title = "gown-for-hire";
+        $Gowns = \App\Models\Gown::where('category_id', 1)->get();
+        return view('front.bulk-inquiry', compact('Gowns','Page_title'));
+    }
+
+
     public function gown_hire ()
     {
         $Page_title = "gown-for-hire";
