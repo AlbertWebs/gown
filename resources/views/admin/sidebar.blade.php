@@ -180,10 +180,17 @@
             </li>
             <li><a href="{{url('/')}}/admin/SocialMediaSettings"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Social Media</a>
             </li>
-            <li><a href="{{url('/')}}/logout" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout </a>
+            <li><a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit(); target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout </a>
             </li>
 
 
+
+
+         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+             @csrf
+         </form>
 
         </ul>
     </div>
