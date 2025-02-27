@@ -1110,7 +1110,7 @@ function init_page_sliders(){
         $(".small-item-carousel").owlCarousel({
             loop:true,
             items: 6,
-            autoPlay: 2500,
+            autoPlay: true,
             slideTransition: 'linear',
             autoplaySpeed: 2500,
             smartSpeed: 2500,

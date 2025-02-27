@@ -92,7 +92,7 @@
 
 
      <!-- Call to Action Section -->
-     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/chox2.webp')}}'); background-size:contain cover; min-height:800px">
+     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/graduation-attire.jpg')}}'); background-size:contain cover; min-height:800px">
 
         <!-- Desktop Overlay -->
         <div class="bg-overlay bg-gradient-primary-alpha-111 d-none d-md-block"></div>
@@ -107,14 +107,14 @@
             <div class="row">
                 <div class="col-md-12 col-lg-6 col-xl-6" style="margin: 0 auto">
                     <br><br><br>
-                    <h3 class="section-title-perfection">Bespoke Choir Wear</h3>
+                    <h3 class="section-title-perfection">Are you an institution?</h3>
 
                     <p class="descr">
-                        Every community is different. Find your own voice and personalise your church and choir wear to suit any congregation.
+                        Gownsea LTD invites institutions to bulk hire or purchase high-quality graduation gowns at discounted rates. Ensure your graduates look their best with our premium, comfortable, and customizable gowns. Order in bulk today for cost savings and timely delivery!
                     </p>
 
-                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim btn-border-m">
-                        <span>Shop Bespoke</span>
+                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
+                        <span>Bulk Request</span>
                     </a>
 
                 </div>
@@ -125,71 +125,8 @@
         </div>
     </section>
     <!-- End Call to Action Section -->
-     <!-- Portfolio Section -->
-     <section class="page-section" id="portfolio">
-        <div class="container">
-           <h2 class="section-title">Popular Products</h2>
-        </div>
-        <div class="container position-relative">
 
-
-
-
-            <!-- Portfolio Grid -->
-            <div class="row mt-n50 mt-sm-n40">
-
-                @foreach ($Gowns as $gown)
-                <!-- Portfolio Item -->
-                <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
-                    <a href="#" class="portfolio-5-link">
-
-                        <div class="portfolio-4-image prod-img">
-                            <div class="portfolio-5-image-bg wow scalexIn"></div>
-                            <div class="wow fadeIn product-img" data-wow-delay="1s">
-                                <img src="{{$gown->image}}" alt="Academic Hood" />
-                            </div>
-                        </div>
-
-                        <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="{{route('our-products',$gown->slung)}}">{{$gown->title}}</a>
-                        </h3>
-                        {{--  --}}
-                        <div class="price ">
-                            <dl>
-                                <div class="price__regular">
-                                    <dt class="visually-hidden">
-                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                    </dt>
-                                    <dd>
-                                        <span class="price-item price-item--regular">
-                                        <span class="money">kes {{$gown->price}}</span>
-                                        </span>
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
-                        {{--  --}}
-
-                    </a>
-                </div>
-                <!-- End Portfolio Item -->
-                 @endforeach
-
-            </div>
-            <!-- End Portfolio Grid -->
-
-        </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-       <!-- Divider -->
-     <div class="container">
-         <hr class="white mt-0 mb-0">
-     </div>
-     <!-- End Divider -->
-
-
-           <!-- Logotypes Section -->
+    <!-- Logotypes Section -->
      <section class="small-section  pb-20 bg-gradient-darks">
         <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
         <div class="container relative">
