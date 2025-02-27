@@ -23,8 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $Random  = \App\Models\Gown::inRandomOrder()->limit('4')->get();
         $Page_title = "home";
-        return view('front.index', compact('Page_title'));
+        return view('front.index', compact('Page_title','Random'));
         // return view('front.index');
     }
 

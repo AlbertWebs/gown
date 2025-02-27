@@ -333,146 +333,20 @@
               <!-- Portfolio Grid -->
             <div class="row mt-n50 mt-sm-n40">
 
-                <!-- Portfolio Item -->
-                <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
-                    <a href="#" class="portfolio-5-link">
+                @foreach ($Random as $gown)
+                <div class="col-md-3">
+                    <div class="portfolio-1-image round product-img">
+                        <img style="" src="{{$gown->image}}" loading="lazy"  alt="Image Description">
+                        <div class="bottom-left">
+                           <h2>{{$gown->title}}</h2>
 
-                        <div class="portfolio-4-image prod-img">
-                            <div class="portfolio-5-image-bg wow scalexIn"></div>
-                            <div class="wow fadeIn product-img home-img" data-wow-delay="1s">
-                                <img src="{{asset('uploads/Hoods-Homepage.webp')}}" alt="Academic Hood" />
-                            </div>
-                        </div>
-
-                        <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="/products/men-long-sleeved-clergy-shirt">Academic Hoods</a>
-                        </h3>
-                        {{--  --}}
-                        <div class="price ">
-                            <dl>
-                                <div class="price__regular">
-                                    <dt class="visually-hidden">
-                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                    </dt>
-                                    <dd>
-                                        <span class="price-item price-item--regular">
-                                        <span class="money">kes 12,800</span>
-                                        </span>
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
-                        {{--  --}}
-
-                    </a>
+                           <a href="{{route('our-products',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim" tabindex="0">
+                            <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
+                           </a>
+                       </div>
+                    </div>
                 </div>
-                <!-- End Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
-                    <a href="#" class="portfolio-5-link">
-
-                        <div class="portfolio-5-image prod-img">
-                            <div class="portfolio-4-image-bg wow scalexIn"></div>
-                            <div class="wow fadeIn product-img home-img" data-wow-delay="1s" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-                                <img style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);" src="{{asset('uploads/DSC_8845.webp')}}" alt="Image Description" />
-                            </div>
-                        </div>
-
-                        <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="/products/men-long-sleeved-clergy-shirt">Choir Robe (Matte)</a>
-                        </h3>
-                        {{--  --}}
-                        <div class="price ">
-                            <dl>
-                                <div class="price__regular">
-                                    <dt class="visually-hidden">
-                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                    </dt>
-                                    <dd>
-                                        <span class="price-item price-item--regular">
-                                        <span class="money">kes 12,800</span>
-                                        </span>
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
-                        {{--  --}}
-
-                    </a>
-                </div>
-                <!-- End Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
-                    <a href="#" class="portfolio-5-link">
-
-                        <div class="portfolio-4-image prod-img">
-                            <div class="portfolio-5-image-bg wow scalexIn"></div>
-                            <div class="wow fadeIn product-img home-img" data-wow-delay="1s">
-                                <img  src="{{asset('uploads/ShopifyProductImageSize_44.webp')}}" alt="Image Description" />
-                            </div>
-                        </div>
-
-
-                        <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="/products/men-long-sleeved-clergy-shirt">Reliant Men’s Short Sleeved Clergy Shirt</a>
-                        </h3>
-                        {{--  --}}
-                        <div class="price ">
-                            <dl>
-                                <div class="price__regular">
-                                    <dt class="visually-hidden">
-                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                    </dt>
-                                    <dd>
-                                        <span class="price-item price-item--regular">
-                                        <span class="money">kes 12,800</span>
-                                        </span>
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
-                        {{--  --}}
-
-                    </a>
-                </div>
-                <!-- End Portfolio Item -->
-
-                <!-- Portfolio Item -->
-                <div class="col-md-6 col-lg-3 mt-50 mt-sm-40">
-                    <a href="#" class="portfolio-5-link">
-
-                        <div class="portfolio-5-image prod-img">
-                            <div class="portfolio-4-image-bg wow scalexIn"></div>
-                            <div class="wow fadeIn product-img home-img" data-wow-delay="1s">
-                                <img src="{{asset('uploads/ShopifyProductImageSize_37.webp')}}" alt="Image Description" />
-                            </div>
-                        </div>
-
-                        <h3 class="card__title h5">
-                            <a class="full-unstyled-link" href="/products/men-long-sleeved-clergy-shirt">Reliant Ladies Long Sleeved Clergy Shirs</a>
-                        </h3>
-                        {{--  --}}
-                        <div class="price ">
-                            <dl>
-                                <div class="price__regular">
-                                    <dt class="visually-hidden">
-                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                    </dt>
-                                    <dd>
-                                        <span class="price-item price-item--regular">
-                                        <span class="money">kes 12,800</span>
-                                        </span>
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
-                        {{--  --}}
-
-                    </a>
-                </div>
-                <!-- End Portfolio Item -->
+                @endforeach
 
             </div>
             <!-- End Portfolio Grid -->
