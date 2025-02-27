@@ -114,7 +114,7 @@
 
                      <div class="local-scroll ">
 
-                         <a href="{{route('legal-wear')}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim btn-border-b">
+                         <a href="{{route('legal-attire')}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim btn-border-b">
                             <span data-btn-animate="y">Shop Legal Wear</span>
                         </a>
                      </div>

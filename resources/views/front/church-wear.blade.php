@@ -66,48 +66,20 @@
          <div class="containers">
 
              <div class="row">
-                 <div class="col-md-4">
-                     <div class="portfolio-1-image round church-img">
-                         <img style="" src="{{asset('uploads/placeholder-image_c3f68cf7-7ed6-4968-8fca-e310c7b33a01.webp')}}" loading="lazy"  alt="Image Description">
-                         <div class="bottom-left">
-                            <h2>Choir</h2>
-                            <a href="" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
-                                <span>Shop Now</span>
-                                <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                     </div>
-                 </div>
-                 <div class="col-md-4">
-                    <div class="portfolio-1-image round church-img">
-                        <img style="" src="{{asset('uploads/placeholder-image_2171b732-3fae-4c56-ab3a-d83d6b7a04f2.webp')}}" loading="lazy"  alt="Image Description">
+                @foreach ($Gown as $gown)
+                <div class="col-md-3">
+                    <div class="portfolio-1-image round prod-img">
+                        <img style="" src="{{$gown->image}}" loading="lazy"  alt="Image Description">
                         <div class="bottom-left">
-                            <h2>Church Wear</h2>
-                            <a href="" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
-                                <span>Shop Now</span>
-                                <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
+                           <h2>{{$gown->title}}</h2>
+
+                           <a href="{{route('shop-church-attire',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim btn-border-m" tabindex="0">
+                              <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
+                           </a>
+                       </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="portfolio-1-image round church-img">
-                        <img style="" src="{{asset('uploads/placeholder-image_2b60e43b-8966-4325-9d26-88c18571e5f1.webp')}}" loading="lazy"  alt="Image Description">
-                        <div class="bottom-left">
-                            <h2>Clergy Collection </h2>
-                            <a href="" class="banner-grid__button button button--simple_link button--arrow  focus-inset">
-                                <span>Shop Now</span>
-                                <svg class="icon icon-button-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30644 5.5C6.89223 5.5 6.55644 5.83579 6.55644 6.25C6.55644 6.66421 6.89223 7 7.30644 7L12.5669 7L5.5976 13.9693C5.30471 14.2622 5.30471 14.7371 5.5976 15.0299C5.89049 15.3228 6.36537 15.3228 6.65826 15.0299L13.6275 8.06069V13.3211C13.6275 13.7353 13.9633 14.0711 14.3775 14.0711C14.7917 14.0711 15.1275 13.7353 15.1275 13.3211V6.25C15.1275 6.14102 15.1043 6.03747 15.0625 5.94404C15.034 5.88021 14.9961 5.81955 14.9489 5.76414C14.8817 5.68521 14.7985 5.62038 14.7042 5.5747C14.6055 5.52684 14.4946 5.5 14.3775 5.5H7.30644Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
              </div>
          </div>
      </section>

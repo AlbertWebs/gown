@@ -4076,13 +4076,13 @@ a.logo:hover{
     opacity: 1;
 }
 .main-nav.dark .mobile-nav{
-    background-color: #000000;
+    background-color: #ffffff;
     border-color: #c32728
 }
 .main-nav.dark .mobile-nav-icon,
 .main-nav.dark .mobile-nav-icon:before,
 .main-nav.dark .mobile-nav-icon:after{
-    background: #fff;
+    background: #000000;
 }
 .main-nav.dark .mobile-nav.active .mobile-nav-icon{
     background: transparent;
@@ -12595,7 +12595,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
 }
 .bottom-left h2{
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .bottom-left a{
