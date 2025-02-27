@@ -12675,8 +12675,15 @@ html:not(.mobile) .owl-animate-fadeInDown{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 }
 .product-img{
-    max-height:484px;
+    max-height:700px;
+    height:100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-img img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
 }
 
 .price {
