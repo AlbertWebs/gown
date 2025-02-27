@@ -4,7 +4,8 @@
 <main id="main">
 
     <?php
-       $gownClass = DB::table('gown_classes')->where('slung', $Gown->slung)->first();
+
+       $gownClass = DB::table('gown_classes')->where('slung', $Gown->gown_class)->first();
     ?>
     <!-- Fullwidth Slider -->
      <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">

@@ -130,7 +130,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
                                 @foreach ($Gowns as $Gown)
                                 <li>
-                                    <a href="{{route('gown-for-hire-single', $Gown->slung)}}" role="button" aria-expanded="false" aria-haspopup="true">{{$Gown->title}} </a>
+                                    <a href="{{route('gown-for-hire-single', $Gown->gown_class)}}" role="button" aria-expanded="false" aria-haspopup="true">{{$Gown->title}} </a>
                                 </li>
                                 @endforeach
 
