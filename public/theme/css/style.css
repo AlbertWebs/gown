@@ -12673,9 +12673,20 @@ html:not(.mobile) .owl-animate-fadeInDown{
 }
 .prod-img{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 30px;
+    min-height: 600px;
 }
+
+.prod-img img{
+    min-height: 600px;
+    object-fit: cover;
+    height:100% !important;
+    width:100%;
+}
+
 .product-img{
     max-height:600px;
+    margin-bottom: 30px;
     height:100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 }

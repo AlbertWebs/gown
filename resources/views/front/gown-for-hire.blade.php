@@ -46,9 +46,6 @@
                      </div>
                  </div>
                  <!-- End Home Section Content -->
-
-
-
              </div>
          </section>
          <!-- End Slide Item -->
