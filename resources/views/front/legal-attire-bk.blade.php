@@ -3,49 +3,52 @@
 @section('content')
 <main id="main">
 
-    <?php
-
-       $gownClass = DB::table('gown_classes')->where('slung', $Gown->gown_class)->first();
-    ?>
     <!-- Fullwidth Slider -->
      <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">
 
          <!-- Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-30 light-content" style="background-image: url('{{$gownClass->image}}')">
-            <div class="container  d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120 " style="min-height: 80vh">
-                        <!-- Home Section Content -->
-                        <div class="home-content">
-                            <div class="row">
+         <section class="home-section bg-scroll bg-dark-alpha-30 light-content" style="background-image: url('{{asset('uploads/barrister-wig.jpg')}}')">
+             <div class="container  d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120 " style="min-height: 80vh">
 
-                                <!-- Home Section Text -->
-                                <div class="col-md-6 mb-sm-0" style="margin: 0 auto;">
+                 <!-- Home Section Content -->
+                 <div class="home-content">
+                     <div class="row">
+
+                         <!-- Home Section Text -->
+                         <div class="col-md-6 mb-sm-0" style="margin: 0 auto;">
 
 
 
                              <h1 class="hs-title-12 mb-sm-30">
-                                 <span class="owl-animate-chars" data-splitting="chars">{{$Gown->title}}</span>
+                                 <span class="owl-animate-chars" data-splitting="chars">Legal Attire</span>
                              </h1>
 
                              <h2 class="hs-title-11  mb-xs-10 owl-animate-fadeInUp mb-sm-30">
-                                University-standard Graduation Attire
+                                Shop our collection.
                             </h2>
 
                              {{-- <div class="local-scroll owl-animate-fadeInUp owl-delay-700 wch-unset mt-20">
-                                 <a href="{{route('shop-graduation-attire', $Gown->slung)}}" class="btn btn-mod btn-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-theme" data-btn-animate="y"><i class="fa-shoppping-cart"></i> Shop Graduation</a>
+                                 <a href="{{route('shop-legal-attire', $Gown->slung)}}" class="btn btn-mod btn-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-theme" data-btn-animate="y"><i class="fa-shoppping-cart"></i> Shop Graduation</a>
                              </div> --}}
 
 
                          </div>
-
+                         <!-- End Home Section Text -->
                          <div class="local-scroll pt-20">
-                            <a href="{{route('shop-graduation-attires')}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim">
-                               <span data-btn-animate="y">Shop Graduation Attire</span>
-                           </a>
-                        </div>
+                            <a href="{{route('shop-graduation-attires')}}" class="btn btn-mod btn-w btn-large circle btn-border-b"><span>Shop Now</span></a>
+                         </div>
+
 
                      </div>
                  </div>
                  <!-- End Home Section Content -->
+
+                 <!-- Scroll Down -->
+                 <div class="local-scroll scroll-down-wrap wow fadeInUp" data-wow-offset="0">
+                     <a href="#about" class="scroll-down"><i class="mi-chevron-down"></i><span class="visually-hidden">Scroll to the next section</span></a>
+                 </div>
+                 <!-- End Scroll Down -->
+
              </div>
          </section>
          <!-- End Slide Item -->
@@ -63,22 +66,40 @@
 
 
 
-         <div class="containers" style="padding-left: 50px; padding-right: 50px">
+         <div class="containers" style="padding-left:10px; padding-right:10px;">
 
              <div class="row">
+                <?php
+                   $count = 0;
+                ?>
                 @foreach ($Gowns as $gown)
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-img-home">
-                    <div class="portfolio-1-image round product-img">
-                        <img style="" src="{{$gown->image}}" loading="lazy"  alt="Image Description">
-                        <div class="bottom-left btn-mobile-foot">
-                           <h2>{{$gown->title}}</h2>
+                  @if($count == "0")
+                    <div class="col-lg-6 col-md-6 product-img-home">
+                        <div class="portfolio-1-image round legal-img">
+                            <img style="" src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
+                            <div class="bottom-left">
+                            <h2>{{$gown->title}}</h2>
 
-                           <a href="{{route('our-products',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim" tabindex="0">
-                              <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
-                           </a>
-                       </div>
+                            <a href="{{route('shop-legal-attire',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim btn-border-b" tabindex="0">
+                                <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
+                            </a>
+                        </div>
+                        </div>
                     </div>
-                </div>
+                  @else
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-img-home">
+                        <div class="portfolio-1-image round legal-img">
+                            <img style="" src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
+                            <div class="bottom-left">
+                            <h2>{{$gown->title}}</h2>
+                            <a href="{{route('shop-legal-attire',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim btn-border-b" tabindex="0">
+                                <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                  @endif
+                  <?php $count++; ?>
                 @endforeach
              </div>
          </div>
@@ -87,7 +108,7 @@
 
 
      <!-- Call to Action Section -->
-     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/pexels-pavel-danilyuk-7942522.jpg')}}'); background-position: top; min-height:800px">
+     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/theleaflet_2024-12-02_0hkoihx5_Senior-Advocate.avif')}}'); background-position: top; min-height:700px">
 
         <!-- Desktop Overlay -->
         <div class="bg-overlay bg-gradient-primary-alpha-111 d-none d-md-block"></div>
@@ -97,19 +118,20 @@
         <div class="bg-overlay  opacity-09 d-md-none"></div>
         <!-- End Mobile Overlay -->
 
-        <div class="container position-relative sustainability">
+        <div class="container position-relative perfection">
 
             <div class="row">
-                <div class="col-md-7 col-lg-6 col-xl-5">
+                <div class="col-md-12 col-lg-6 col-xl-6" style="margin: 0 auto">
+                    <br><br><br>
 
-                    <h2 class="section-title mb-40 mb-xs-30 ">Institutional Purchase</h2>
+                    <h3 class="section-title-perfection">Tailored to perfection.</h3>
 
-                    <p class="section-descr mb-50 mb-sm-40">
-                        Are you an institution looking for quality graduation attire? At Gownsea, we understand your needs and offer the best discounts on bulk orders. Contact us today for exclusive deals!
+                    <p class="descr">
+                        Expertly crafted to the highest standards, our wigs are handmade from 100% horsehair. Explore our premium collection of legal wigs.
                     </p>
 
-                    <a href="{{route('bulk-inquiry')}}" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
-                        <span>Contact Us Now</span>
+                    <a href="{{route('shop-legal-attires')}}" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim btn-border-b">
+                        <span>Shop Legal Attire</span>
                     </a>
 
                 </div>
@@ -179,6 +201,7 @@
 
             </div>
             <!-- End Grid -->
+            <!-- End Grid -->
         </div>
 
      </section>
@@ -190,8 +213,9 @@
      </div>
      <!-- End Divider -->
 
-    <!-- Logotypes Section -->
-    <section class="small-section  pb-20 bg-gradient-darks">
+
+            <!-- Logotypes Section -->
+     <section class="small-section  pb-20 bg-gradient-darks">
         <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
         <div class="container relative">
             <div class="row wow fadeInUpShort">
@@ -254,7 +278,6 @@
          </div>
     </section>
     <!-- End Logotypes -->
-
 
 
      <!-- FAQ Section -->
@@ -326,15 +349,6 @@
          </div>
      </section>
      <!-- End FAQ Section -->
-
-
-
-
-
-
-
-
-
 
  </main>
 @endsection

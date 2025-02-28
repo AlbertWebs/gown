@@ -1113,6 +1113,7 @@ function init_page_sliders(){
             autoPlay: true,
             slideTransition: 'linear',
             autoplaySpeed: 2500,
+            autoplaySpeed: 2500,
             smartSpeed: 2500,
             stopOnHover: true,
             itemsDesktop: [1199, 4],

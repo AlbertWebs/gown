@@ -66,7 +66,7 @@
 
 
 
-         <div class="containers">
+         <div class="containers" style="padding-left: 50px; padding-right: 50px">
 
              <div class="row">
                 <?php
@@ -74,7 +74,7 @@
                 ?>
                 @foreach ($Gowns as $gown)
                   @if($count == "0")
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-6 product-img-home">
                         <div class="portfolio-1-image round legal-img">
                             <img style="" src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
                             <div class="bottom-left">
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                   @else
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-img-home">
                         <div class="portfolio-1-image round legal-img">
                             <img style="" src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
                             <div class="bottom-left">
@@ -148,11 +148,11 @@
       <section class="page-section" id="about">
         <div class="container">
             <!-- Grid -->
-            <div class="row" style="flex-wrap: nowrap;">
+            <div class="row flexrow">
 
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4 align-items-stretch mb-sm-30 bg-gray">
+                <div class="col-md-4 col-lg-4 col-sm-12 h mb-sm-30 bg-gray">
                     <div class="alt-features-item  mt-0">
                         <div class="alt-features-icon why-icon">
                             <svg class="why-icon" width="34" height="34" viewBox="0 0 24 24" fill="white" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -168,7 +168,7 @@
                 <!-- End Feature Item -->
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4  align-items-stretch mb-sm-30 bg-gray">
+                <div class="col-md-4 col-lg-4  h mb-sm-30 bg-gray">
                     <div class="alt-features-item  mt-0">
                         <div class="alt-features-icon ">
                             <svg class="why-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -184,7 +184,7 @@
                 <!-- End Feature Item -->
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4  align-items-stretch bg-gray">
+                <div class="col-md-4 col-lg-4  h bg-gray">
                     <div class="alt-features-item mt-0">
                         <div class="alt-features-icon">
                             <svg class="why-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -200,6 +200,7 @@
                 <!-- End Feature Item -->
 
             </div>
+            <!-- End Grid -->
             <!-- End Grid -->
         </div>
 

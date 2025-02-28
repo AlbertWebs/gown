@@ -364,7 +364,7 @@ a.btn-mod{
     background-image: linear-gradient( 45deg, var(--color-primary-light-1) 0%, transparent 100%);
 }
 .section-title{
-    font-size: 56px;
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.017em;
@@ -381,7 +381,7 @@ a.btn-mod{
     letter-spacing: normal;
 }
 .section-descr{
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 400;
     line-height: 1.448;
     letter-spacing: -0.005em;
@@ -754,13 +754,13 @@ a.link-hover-anim i{
         max-width: var(--container-width);
     }
     .section-title{
-        font-size: calc(1.133rem + 2.77vw);
+        font-size: calc(0.9rem + 2.77vw);
     }
     .section-title-small{
         font-size: calc(1.156rem + 1.72vw);
     }
     .section-descr{
-        font-size:  calc(1.213rem + 0.7vw);
+        /* font-size:  calc(1.213rem + 0.7vw); */
     }
     .section-descr-medium{
         font-size:  calc(1.257rem + 0.65vw);

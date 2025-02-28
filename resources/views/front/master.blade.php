@@ -105,7 +105,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 image size for support of retina screens. See details in the template documentation. *) -->
                 <div class="nav-logo-wrap local-scroll">
                     <a href="{{url('/')}}" class="logo font-alt">
-                        <img src="{{asset('theme/images/logs_g.webp')}}" alt="Your Company Logo" width="205" height="34">
+                        <img src="{{asset('theme/images/logs_g.webp')}}" alt="Gownsea Logo" class="logo-img">
                     </a>
                 </div>
 
@@ -309,7 +309,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 				  buttonImage: '<img  src="{{url('/')}}/uploads/icon/whatsapp.svg" />', //Button Image
 				  //headerColor: 'crimson', //Custom header color
 				  //backgroundColor: 'crimson', //Custom background button color
-				  position: "right" //Position: left | right
+				  position: "left" //Position: left | right
 
 			  });
 		  });

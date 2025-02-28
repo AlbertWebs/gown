@@ -4,11 +4,11 @@
 <main id="main">
 
     <!-- Fullwidth Slider -->
-     <div class="home-sectioned fullwidth-slider-fade bg-dark light-content" id="home">
+     <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">
 
          <!-- Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/graduation-attire.jpg')}}')">
-             <div class="container min-height-100vh d-flex align-items-center pt-100 pt-sm-120 pb-sm-120 correct">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/graduation-attire.jpg')}}')">
+             <div class="container min-height-100vh d-flexs align-items-center correct">
 
                     <!-- Home Section Text -->
                     <div class="herotext text-center">
@@ -32,8 +32,8 @@
              </div>
          </section>
          <!-- End Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/Amazon-seller-lawyer-renaldo-matamoro-86JiKaHF4I8-unsplash.jpg')}}')">
-            <div class="container min-height-100vh d-flex align-items-center pt-100 pt-sm-120 pb-sm-120 correct">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/Amazon-seller-lawyer-renaldo-matamoro-86JiKaHF4I8-unsplash.jpg')}}')">
+            <div class="container min-height-100vh d-flexs align-items-center correct">
 
                    <!-- Home Section Text -->
                    <div class="herotext text-center">
@@ -57,8 +57,8 @@
          </section>
 
          <!-- End Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/4_412a431e-bccb-445a-be63-d0315d27516a.webp')}}')">
-            <div class="container min-height-100vh d-flex align-items-center pt-100 pt-sm-120 pb-sm-120 correct">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/4_412a431e-bccb-445a-be63-d0315d27516a.webp')}}')">
+            <div class="container min-height-100vh d-flexs align-items-center correct">
 
                    <!-- Home Section Text -->
                    <div class="herotext text-center">
@@ -95,40 +95,42 @@
          <div class="container position-relative">
 
              <div class="row mb-70 mb-sm-50">
-                 <div class="col-md-6 mb-sm-30">
+                 <div class="col-md-6 col-lg-6 col-sm-12 mb-sm-30">
                      <div class="portfolio-1-image round">
-                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/2143ac7d-e37d-48f5-b488-e6c735d75c29_a54b3def-4fa2-4842-a0bf-3a23080731e3.webp')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
+                         <a class="abt-img" href="#"><img src="{{asset('uploads/2143ac7d-e37d-48f5-b488-e6c735d75c29_a54b3def-4fa2-4842-a0bf-3a23080731e3.jpg')}}" loading="lazy" alt="Gownsea LTD Legal Wear"></a>
                      </div>
                  </div>
-                 <div class="col-md-6 col-lg-6 ">
-                     <br><br><br>
-                     <h2 class="section-title mb-40 mb-xs-30">Making a <span class="mark-decoration-legal">difference</span> in the world while looking great doing it!</h2>
+                 <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="middle-center">
 
-                     <p class="section-descr mb-0">
-                         You’re taking on cases, advocating for your clients, and striving to make a meaningful difference in the pursuit of justice.
+                        <h2 class="section-title mb-40 mb-xs-30">Making a <span class="mark-decoration-legal">difference</span> in the world while looking great doing it!</h2>
 
-                         Elevate your courtroom presence with our meticulously crafted legal gowns and accessories, designed to ensure you look confident and professional while championing fairness and integrity.
-                     </p>
+                        <p class="section-descr mb-0">
+                            You’re taking on cases, advocating for your clients, and striving to make a meaningful difference in the pursuit of justice.
 
-                     <br>
+                            Elevate your courtroom presence with our meticulously crafted legal gowns and accessories, designed to ensure you look confident and professional while championing fairness and integrity.
+                        </p>
 
-                     <div class="local-scroll ">
+                        <br>
 
-                         <a href="{{route('legal-attire')}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim btn-border-b">
-                            <span data-btn-animate="y">Shop Legal Wear</span>
-                        </a>
-                     </div>
+                        <div class="local-scroll ">
+
+                            <a href="{{route('legal-attire')}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim btn-border-b">
+                                <span data-btn-animate="y">Shop Legal Wear</span>
+                            </a>
+                        </div>
+                    </div>
 
                  </div>
              </div>
 
              {{--  --}}
               <!-- Grid -->
-              <div class="row" style="flex-wrap: nowrap;">
+              <div class="row flexrow">
 
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4 align-items-stretch mb-sm-30 bg-gray">
+                <div class="col-md-4 col-lg-4 col-sm-12 h mb-sm-30 bg-gray">
                     <div class="alt-features-item  mt-0">
                         <div class="alt-features-icon why-icon">
                             <svg class="why-icon" width="34" height="34" viewBox="0 0 24 24" fill="white" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -144,7 +146,7 @@
                 <!-- End Feature Item -->
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4  align-items-stretch mb-sm-30 bg-gray">
+                <div class="col-md-4 col-lg-4  h mb-sm-30 bg-gray">
                     <div class="alt-features-item  mt-0">
                         <div class="alt-features-icon ">
                             <svg class="why-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -160,7 +162,7 @@
                 <!-- End Feature Item -->
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4  align-items-stretch bg-gray">
+                <div class="col-md-4 col-lg-4  h bg-gray">
                     <div class="alt-features-item mt-0">
                         <div class="alt-features-icon">
                             <svg class="why-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -192,8 +194,13 @@
          <div class="container position-relative">
 
              <div class="row mb-70 mb-sm-50">
-                 <div class="col-md-6 col-lg-6">
-                     <br><br><br><br>
+                <div class="col-md-6 mb-sm-30 d-none-desktop">
+                    <div class="portfolio-1-image round">
+                        <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/ce3e6d015e368db7efd118676dd2ff22.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-6 middle-center-section" >
+
                      <h2 class="section-title mb-40 mb-xs-30">Be the <span class="mark-decoration-church">heart</span> of your community.</h2>
 
                      <p class="section-descr mb-0">
@@ -210,7 +217,7 @@
                      </div>
 
                  </div>
-                 <div class="col-md-6 mb-sm-30">
+                 <div class="col-md-6 mb-sm-30 d-none-mobile">
                      <div class="portfolio-1-image round">
                          <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/ce3e6d015e368db7efd118676dd2ff22.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
@@ -231,8 +238,8 @@
                          <a href="#" ><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/pexels-erisvanartsfotografias-6952553.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
                  </div>
-                 <div class="col-md-6 col-lg-6">
-                     <br> <br> <br><br><br>
+                 <div class="col-md-6 col-lg-6 middle-center-section">
+
                      <h2 class="section-title mb-40 mb-xs-30">Celebrate in  <span class="mark-decoration-graduation">style</span> </h2>
 
                      <p class="section-descr mb-0">
@@ -263,7 +270,7 @@
 
         <!-- Logotypes Section -->
      <section class="small-section  pb-20 bg-gradient-darks">
-         <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
+         <h3 class="section-title-small mb-40 text-center" style="font-weight:500">Our Clients</h3>
          <div class="container relative">
              <div class="row wow fadeInUpShort">
                  <div class="col-md-12" >
@@ -328,32 +335,35 @@
 
       <!-- Portfolio Section -->
       <section class="page-section" id="portfolio">
-         <div class="container position-relative">
+         <div class="container ">
 
               <!-- Portfolio Grid -->
             <div class="row mt-n50 mt-sm-n40">
+                <div class="col-md-12">
+                    <div class="row">
+                        @foreach ($Random as $gown)
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-img-home">
+                                <div class="portfolio-1-image round product-img">
+                                    <img style="" src="{{$gown->image}}" loading="lazy"  alt="Image Description">
+                                    <div class="bottom-left btn-mobile-foot">
+                                        <h2>{{$gown->title}}</h2>
 
-                @foreach ($Random as $gown)
-                <div class="col-md-3">
-                    <div class="portfolio-1-image round product-img">
-                        <img style="" src="{{$gown->image}}" loading="lazy"  alt="Image Description">
-                        <div class="bottom-left">
-                           <h2>{{$gown->title}}</h2>
-
-                           <a href="{{route('our-products',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim" tabindex="0">
-                            <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
-                           </a>
-                       </div>
+                                        <a href="{{route('our-products',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim btn-mobile" tabindex="0">
+                                            <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
-                @endforeach
-
             </div>
             <!-- End Portfolio Grid -->
 
          </div>
      </section>
      <!-- End Portfolio Section -->
+
 
 
 

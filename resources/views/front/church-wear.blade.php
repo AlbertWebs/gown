@@ -63,11 +63,11 @@
 
 
 
-         <div class="containers">
+         <div class="containers" style="padding-left: 50px; padding-right: 50px">
 
              <div class="row">
                 @foreach ($Gown as $gown)
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-img-home">
                     <div class="portfolio-1-image round prod-img">
                         <img style="" src="{{$gown->image}}" loading="lazy"  alt="Image Description">
                         <div class="bottom-left">
