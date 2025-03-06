@@ -250,7 +250,7 @@
 
                      <div class="local-scroll ">
 
-                         <a href="{{route('church-wear')}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim">
+                         <a href="{{route('gown-for-hire')}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim">
                             <span data-btn-animate="y">Shop Graduation Attire</span>
                         </a>
                      </div>

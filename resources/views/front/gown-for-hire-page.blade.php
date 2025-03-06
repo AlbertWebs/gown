@@ -126,7 +126,7 @@
 
     <!-- Logotypes Section -->
      <section class="small-section  pb-20 bg-gradient-darks">
-        <h3 class="section-title-small mb-40 text-center" style="font-weight:600">Our Clients</h3>
+        <h3 class="section-title-small mb-40 text-center" style="font-weight:500">Our Clients</h3>
         <div class="container relative">
             <div class="row wow fadeInUpShort">
                 <div class="col-md-12" >

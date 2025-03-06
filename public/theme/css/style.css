@@ -12732,6 +12732,13 @@ html:not(.mobile) .owl-animate-fadeInDown{
     background: rgb(1, 22, 36);
 }
 
+.btn-mod.btn-border-whatsapp{
+    color: #ffffff;
+    border: 5px solid rgb(220,248,198);
+    background: rgb(37,211,102);
+}
+
+
 .btn-mod.btn-border-m{
     color: #ffffff;
     border: 5px solid #621e29;
@@ -12782,6 +12789,38 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .middle-center-section{
     padding-top: 200px;
 }
+.single-product{
+    max-height:580px;
+    width: 100%;
+    object-fit: cover;
+}
+.product-title{
+    font-size: 32px;
+    font-weight:500;
+}
+.money{
+    color:#000;
+    font-weight: lighter;
+}
+.no-borders{
+    border:none !important;
+}
+.weight-500{
+    font-weight:600;
+}
+.dd-product p{
+    font-size: 15px;
+    margin:0;
+    /* line-height:normal; */
+}
+.order-details {
+    background-color: #f8f8fa;
+  }
+
+  .rounded {
+    border-radius: 15px !important;
+  }
+
 @media only screen and (max-width: 540px) {
     .sdg-images{
         width:100%;
@@ -12878,5 +12917,8 @@ html:not(.mobile) .owl-animate-fadeInDown{
         object-fit: cover;
         height:100% !important;
         width:100%;
+    }
+    .mobile-pt-30{
+        padding-top: 30px;
     }
 }

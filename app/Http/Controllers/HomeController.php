@@ -90,10 +90,27 @@ class HomeController extends Controller
         return view('front.product', compact('Page_title','Gown'));
     }
 
+    public function shop_attire ($id)
+    {
+
+        $Category = \App\Models\Category::where('slung',$id)->first();
+        $Gowns = \App\Models\Gown::where('category_id',$Category->id)->get();
+        $Page_title = "shop";
+        return view('front.products', compact('Page_title','Category','Gowns'));
+    }
+
+
+    public function buy_with_m_pesa ($slung)
+    {
+        $Gown = \App\Models\Gown::where('slung', $slung)->first();
+        $Page_title = "shop";
+        return view('front.stk', compact('Page_title','Gown'));
+    }
+
     public function our_products ($slung)
     {
-        $Gown = \App\Models\Gown::where('slung', $slung)->get();
-        $Page_title = "church-wear";
+        $Gown = \App\Models\Gown::where('slung', $slung)->first();
+        $Page_title = $Gown->gown_class;
         return view('front.product', compact('Page_title','Gown'));
     }
 

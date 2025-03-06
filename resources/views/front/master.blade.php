@@ -145,6 +145,32 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <li><a class="@if($Page_title=="legal-attire") active @endif" href="{{route('legal-attire')}}">Legal Attire</a></li>
                         <li><a  class="@if($Page_title=="church-wear") active @endif" href="{{route('church-wear')}}">Church Wear</a></li>
                         <li><a class="@if($Page_title=="about-us") active @endif" href="{{route('about-us')}}">About Us</a></li>
+
+                        <?php
+                           $Cats = \App\Models\Category::all();
+                        ?>
+                        <li>
+                            <a href="#" class="mn-has-sub @if($Page_title=="shop") active @endif" role="button" aria-expanded="false" aria-haspopup="true"> Shop Attire <i class="mi-chevron-down"></i></a>
+
+                            <!-- Sub -->
+                            <ul class="mn-sub" style="display: none;">
+
+
+                                @foreach ($Cats as $cats)
+                                <li>
+                                    <a href="{{route('shop-attire', $cats->slung)}}" role="button" aria-expanded="false" aria-haspopup="true">{{$cats->title}} </a>
+                                </li>
+                                @endforeach
+
+
+
+
+                            </ul>
+                            <!-- End Sub -->
+
+                        </li>
+
+
                         <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">Blog</a></li>
                         <li><a class="@if($Page_title=="blog") active @endif" href="{{route('bulk-inquiry')}}" href="#">Bulk Hire</a></li>
                         <li><a class="@if($Page_title=="contact-us") active @endif" href="{{route('contact-us')}}">Contact Us</a></li>
