@@ -133,7 +133,7 @@
                         Expertly crafted to the highest standards, our wigs are handmade from 100% horsehair. Explore our premium collection of legal wigs.
                     </p>
 
-                    <a href="{{route('shop-legal-attires')}}" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim btn-border-b">
+                    <a href="{{route('shop-attire',$Cats->slung)}}" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim btn-border-b">
                         <span>Shop Legal Attire</span>
                     </a>
 
