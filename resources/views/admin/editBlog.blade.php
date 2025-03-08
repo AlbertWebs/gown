@@ -71,25 +71,9 @@
                                     </select>
                                     <label>Choose Category</label>
                                 </div>
-                                <a href="#ex1" rel="modal:open"> <strong>+ Add New Category</strong> </a>
-                                {{--  --}}
+
                                 <div class="section-space col s12"></div>
-                                <div class="input-field col s12">
-                                    <select required name="tags" multiple>
-                                        <option value="" disabled selected>Choose Tags</option>
-                                        <option value="Bitcoin">Bitcoin</option>
-                                        <option value="Forex">Forex</option>
-                                        <option value="Crypto">Crypto</option>
-                                        <option value="Stock">Stock</option>
-                                        <option value="Currency">Currency</option>
-                                        <option value="New York">New York</option>
-                                        <option value="Forbes">Forbes</option>
-                                        <option value="Educations">Educations</option>
-                                        <option value="Events">Events</option>
-                                        <option value="Clubs">Clubs</option>
-                                    </select>
-                                    <label>Select Tags</label>
-                                </div>
+
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
@@ -156,7 +140,7 @@
                                             </span>
                                             <input type="text" class="form-control" readonly>
                                         </div>
-                                        <img class="image-preview" style="width:auto;" src="{{url('/')}}/uploads/blogs/{{$Blog->image_one}}" id='img-upload'/>
+                                        <img class="image-preview" style="width:auto;" src="{{$Blog->image_one}}" id='img-upload'/>
                                     </div>
                                 </div>
                                 </div>

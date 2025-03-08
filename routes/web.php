@@ -43,12 +43,18 @@ Route::post('/mobile-stk-initiate-post', [App\Http\Controllers\HomeController::c
 Route::get('/mobile-payment-received', [App\Http\Controllers\HomeController::class, 'mobile_payment_received'])->name('mobile-payment-received');
 Route::get('/mobile-payment-failed', [App\Http\Controllers\HomeController::class, 'mobile_payment_failed'])->name('mobile-payment-failed');
 
+Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacy_policy'])->name('privacy-policy');
+Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class, 'terms_and_conditions'])->name('terms-and-conditions');
+Route::get('/return-policy', [App\Http\Controllers\HomeController::class, 'return_policy'])->name('return-policy');
+Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
+
 Auth::routes();
 
 // group routes with prefix
 Route::prefix('admin')->group(function () {
 
     Route::get('/', [AdminsController::class, 'adminHome'])->name('admin.home');
+    Route::get('/home', [AdminsController::class, 'adminHome'])->name('admin.homes');
     Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
     // SiteSettings

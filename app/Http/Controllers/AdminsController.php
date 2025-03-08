@@ -612,11 +612,18 @@ class AdminsController extends Controller
             $SaveFilePath = $request->image_one_cheat;
         }
 
+        if(isset($request->gown_class)){
+            $gown_class = $request->gown_class;
+        }else{
+            $gown_class = Str::slug($request->title);
+        }
+
         $Product = new \App\Models\Gown;
         $Product->title = $request->title;
         $Product->slung = Str::slug($request->title);
         $Product->category_id = $request->category;
-        $Product->gown_class = $request->gown_class;
+        $Product->price_hire = $request->price_hire;
+        $Product->gown_class = $gown_class;
         $Product->price = $request->price;
         $Product->content = $request->content;
         $Product->image = $SaveFilePath;
@@ -645,12 +652,20 @@ class AdminsController extends Controller
             $SaveFilePath = $request->image_one_cheat;
         }
 
+
+        if(isset($request->gown_class)){
+            $gown_class = $request->gown_class;
+        }else{
+            $gown_class = Str::slug($request->title);
+        }
+
         $updateDetails = array(
             'title'=>$request->title,
             'slung' => Str::slug($request->title),
             'content'=>$request->content,
             'price'=>$request->price,
-            'gown_class'=>$request->gown_class,
+            'price_hire'=>$request->price_hire,
+            'gown_class'=>$gown_class,
             'category_id'=>$request->category,
             'image'=>$SaveFilePath,
 
@@ -923,20 +938,13 @@ class AdminsController extends Controller
 
 
         $category = $request->cat;
-        $path = 'uploads/blogs';
+        $dir = 'uploads/blogs';
         if(isset($request->image_one)){
-
-
-                $file = $request->file('image_one');
-                $filename = str_replace(' ', '', $file->getClientOriginalName());
-                $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
-                $image_main_temp = $new_timestamp.'image'.$filename;
-                $image_one = str_replace(' ', '',$image_main_temp);
-                $file->move($path, $image_one);
-
+            $file = $request->file('image_one');
+            $realPath = $request->file('image_one')->getRealPath();
+            $image_one = $this->genericFIleUpload($file,$dir,$realPath);
         }else{
-            $image_one = $request->pro_img_cheat;
+            $image_one = $request->image_one_cheat;
         }
 
         $blog = new Blog;
@@ -981,64 +989,35 @@ class AdminsController extends Controller
 
     public function edit_Blog(Request $request, $id){
         activity()->log('Evoked an Edit Blog Operation For Blog ID number '.$id.' ');
-        $path = 'uploads/blogs';
+        $dir = 'uploads/blogs';
         if(isset($request->image_one)){
-
-
-                $file = $request->file('image_one');
-                $filename = str_replace(' ', '', $file->getClientOriginalName());
-                $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
-                $image_main_temp = $new_timestamp.'image'.$filename;
-                $image_one = str_replace(' ', '',$image_main_temp);
-                $file->move($path, $image_one);
-
+            $file = $request->file('image_one');
+            $realPath = $request->file('image_one')->getRealPath();
+            $image_one = $this->genericFIleUpload($file,$dir,$realPath);
         }else{
             $image_one = $request->image_one_cheat;
         }
 
+
         if(isset($request->image_two)){
-
-                $file = $request->file('image_two');
-                $filename = str_replace(' ', '', $file->getClientOriginalName());
-                $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
-                $image_main_temp = $new_timestamp.'image'.$filename;
-                $image_two = str_replace(' ', '',$image_main_temp);
-                $file->move($path, $image_two);
-
+            $file = $request->file('image_two');
+            $realPath = $request->file('image_two')->getRealPath();
+            $image_two = $this->genericFIleUpload($file,$dir,$realPath);
         }else{
             $image_two = $request->image_two_cheat;
         }
 
-
         if(isset($request->image_three)){
-
-                $file = $request->file('image_three');
-                $filename = str_replace(' ', '', $file->getClientOriginalName());
-                $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
-                $image_main_temp = $new_timestamp.'image'.$filename;
-                $image_three = str_replace(' ', '',$image_main_temp);
-                $file->move($path, $image_three);
-
+            $file = $request->file('image_three');
+            $realPath = $request->file('image_three')->getRealPath();
+            $image_three = $this->genericFIleUpload($file,$dir,$realPath);
         }else{
             $image_three = $request->image_three_cheat;
         }
-        //Additional images
 
-        if(isset($request->image_four)){
-                $file = $request->file('image_four');
-                $filename = str_replace(' ', '', $file->getClientOriginalName());
-                $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
-                $image_main_temp = $new_timestamp.'image'.$filename;
-                $image_four = str_replace(' ', '',$image_main_temp);
-                $file->move($path, $image_four);
 
-        }else{
-            $image_four = $request->image_four_cheat;
-        }
+
+
 
         $updateDetails = array(
             'title' => $request->title,
@@ -1050,7 +1029,6 @@ class AdminsController extends Controller
             'image_one' =>$image_one,
             'image_two' =>$image_two,
             'image_three' =>$image_three,
-            'image_four' =>$image_four,
         );
         DB::table('blogs')->where('id',$id)->update($updateDetails);
         Session::flash('message', "Changes have been saved");
@@ -1082,7 +1060,7 @@ class AdminsController extends Controller
 
     public function lnmo_api_response(){
         activity()->log('Accessed The Lipa na M-PESA Online Table ');
-        $LNMO = DB::table('lnmo_api_response')->get();
+        $LNMO = DB::table('kopokopostks')->get();
         $page_title = 'list';
         $page_name = 'Blog';
         return view('admin.lnmo_api_response',compact('page_title','LNMO','page_name'));

@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.seo.master-gown-for-hire')
 
 @section('content')
 <main id="main">

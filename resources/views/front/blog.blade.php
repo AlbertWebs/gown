@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.seo.master-blog')
 
 @section('content')
     <main id="main">
@@ -43,137 +43,34 @@
                 <!-- Blog Posts Grid -->
                 <div class="row mt-n50 mb-60 mb-sm-40">
 
-                    <!-- Blog Post Item -->
-                    <div class="post-prev-2 col-md-6 mt-50">
+                    @foreach ($Blog as $blog)
+                        <!-- Blog Post Item -->
+                        <div class="post-prev-2 col-md-6 mt-50">
 
-                        <div class="post-prev-2-img">
-                            <a href="corporate-blog-single.html"><img src="{{asset('theme/images/demo-corporate/blog/post-prev-1.jpg')}}" alt="Image Description" /></a>
+                            <div class="post-prev-2-img">
+                                <a href="{{route('blog-single',$blog->slung)}}"><img src="{{$blog->image_one}}" alt="{{$blog->title}}" /></a>
+                            </div>
+
+                            <h3 class="post-prev-2-title"><a href="{{route('blog-single',$blog->slung)}}">{{$blog->title}}</a></h3>
+
+                            <p class="post-prev-2-text">
+                                {{$blog->meta}}
+                            </p>
+
+                            <div class="post-prev-2-tags">
+                                <span class="post-prev-2-tag">February 13, 2025</span>
+                                <span class="post-prev-2-tag"><i class="mi-circle color-primary-1"></i> Articles</span>
+                            </div>
+
                         </div>
+                        <!-- End Blog Post Item -->
+                    @endforeach
 
-                        <h3 class="post-prev-2-title"><a href="corporate-blog-single.html">Content Marketing Steps That Will Help You to Grow Your Business</a></h3>
-
-                        <p class="post-prev-2-text">
-                            The macro-environment, over which a firm holds little control, consists of a variety of external factors that manifest on a large scale.
-                        </p>
-
-                        <div class="post-prev-2-tags">
-                            <span class="post-prev-2-tag">February 13, 2025</span>
-                            <span class="post-prev-2-tag"><i class="mi-circle color-primary-1"></i> Articles</span>
-                        </div>
-
-                    </div>
-                    <!-- End Blog Post Item -->
-
-                    <!-- Blog Post Item -->
-                    <div class="post-prev-2 col-md-6 mt-50">
-
-                        <div class="post-prev-2-img">
-                            <a href="corporate-blog-single.html"><img src="{{asset('theme/images/demo-corporate/blog/post-prev-2.jpg')}}" alt="Image Description" /></a>
-                        </div>
-
-                        <h3 class="post-prev-2-title"><a href="corporate-blog-single.html">Top Five Trends for Small Investment Companies Marketing</a></h3>
-
-                        <p class="post-prev-2-text">
-                            The micro-environment, over which a firm holds a greater amount control, typically includes Employees, Suppliers and the Media.
-                        </p>
-
-                        <div class="post-prev-2-tags">
-                            <span class="post-prev-2-tag">February 11, 2025</span>
-                            <span class="post-prev-2-tag"><i class="mi-circle color-primary-2"></i> Guides</span>
-                        </div>
-
-                    </div>
-                    <!-- End Blog Post Item -->
-
-
-                    <!-- Blog Post Item -->
-                    <div class="post-prev-2 col-md-6 mt-50">
-
-                        <div class="post-prev-2-img">
-                            <a href="corporate-blog-single.html"><img src="{{asset('theme/images/demo-corporate/blog/post-prev-3.jpg')}}" alt="Image Description" /></a>
-                        </div>
-
-                        <h3 class="post-prev-2-title"><a href="corporate-blog-single.html">Powerful Content Marketing Strategies for Business Growth</a></h3>
-
-                        <p class="post-prev-2-text">
-                            The micro-environment, over which a firm holds a greater amount control, typically includes Employees, Suppliers and the Media.
-                        </p>
-
-                        <div class="post-prev-2-tags">
-                            <span class="post-prev-2-tag">February 11, 2025</span>
-                            <span class="post-prev-2-tag"><i class="mi-circle color-primary-3"></i> Guides</span>
-                        </div>
-
-                    </div>
-                    <!-- End Blog Post Item -->
-
-                    <!-- Blog Post Item -->
-                    <div class="post-prev-2 col-md-6 mt-50">
-
-                        <div class="post-prev-2-img">
-                            <a href="corporate-blog-single.html"><img src="{{asset('theme/images/demo-corporate/blog/post-prev-4.jpg')}}" alt="Image Description" /></a>
-                        </div>
-
-                        <h3 class="post-prev-2-title"><a href="corporate-blog-single.html">Content Marketing Mastery: Accelerating Your Business Success</a></h3>
-
-                        <p class="post-prev-2-text">
-                            The macro-environment, over which a firm holds little control, consists of a variety of external factors that manifest on a large scale.
-                        </p>
-
-                        <div class="post-prev-2-tags">
-                            <span class="post-prev-2-tag">February 13, 2025</span>
-                            <span class="post-prev-2-tag"><i class="mi-circle color-primary-4"></i> Articles</span>
-                        </div>
-
-                    </div>
-                    <!-- End Blog Post Item -->
-
-                    <!-- Blog Post Item -->
-                    <div class="post-prev-2 col-md-6 mt-50">
-
-                        <div class="post-prev-2-img">
-                            <a href="corporate-blog-single.html"><img src="{{asset('theme/images/demo-corporate/blog/post-prev-5.jpg')}}" alt="Image Description" /></a>
-                        </div>
-
-                        <h3 class="post-prev-2-title"><a href="corporate-blog-single.html">Winning with Content Marketing: Steps for Business Growth</a></h3>
-
-                        <p class="post-prev-2-text">
-                            The micro-environment, over which a firm holds a greater amount control, typically includes Employees, Suppliers and the Media.
-                        </p>
-
-                        <div class="post-prev-2-tags">
-                            <span class="post-prev-2-tag">February 11, 2025</span>
-                            <span class="post-prev-2-tag"><i class="mi-circle color-primary-1"></i> Guides</span>
-                        </div>
-
-                    </div>
-                    <!-- End Blog Post Item -->
-
-                    <!-- Blog Post Item -->
-                    <div class="post-prev-2 col-md-6 mt-50">
-
-                        <div class="post-prev-2-img">
-                            <a href="corporate-blog-single.html"><img src="{{asset('theme/images/demo-corporate/blog/post-prev-6.jpg')}}" alt="Image Description" /></a>
-                        </div>
-
-                        <h3 class="post-prev-2-title"><a href="corporate-blog-single.html">From Content to Success: Essential Business Growth Steps</a></h3>
-
-                        <p class="post-prev-2-text">
-                            The macro-environment, over which a firm holds little control, consists of a variety of external factors that manifest on a large scale.
-                        </p>
-
-                        <div class="post-prev-2-tags">
-                            <span class="post-prev-2-tag">February 13, 2025</span>
-                            <span class="post-prev-2-tag"><i class="mi-circle color-primary-2"></i> Articles</span>
-                        </div>
-
-                    </div>
-                    <!-- End Blog Post Item -->
                 </div>
                 <!-- End Blog Posts Grid -->
 
                 <!-- Pagination -->
-                <div class="pagination">
+                {{-- <div class="pagination">
                     <a href="#"><i class="mi-chevron-left"></i><span class="visually-hidden">Previous page</span></a>
                     <a href="#" class="active">1</a>
                     <a href="#">2</a>
@@ -181,7 +78,7 @@
                     <span class="no-active">...</span>
                     <a href="#">9</a>
                     <a href="#"><i class="mi-chevron-right"></i><span class="visually-hidden">Next page</span></a>
-                </div>
+                </div> --}}
                 <!-- End Pagination -->
 
             </div>
@@ -210,36 +107,17 @@
 
                     <div class="widget-body">
                         <ul class="clearlist widget-menu">
+                            <?php
+                               $Categorgy = DB::table('categories')->get();
+                            ?>
+                            @foreach ($Categorgy as $category)
                             <li>
-                                <a href="#" title="">PHD Gowns</a>
+                                <a href="#" title="">{{$category->title}}</a>
                                 <small>
-                                    - 7
+                                    - {{count(DB::table('blogs')->where('category',$category->id)->get())}}
                                 </small>
                             </li>
-                            <li>
-                                <a href="#" title="">Legal Wear</a>
-                                <small>
-                                    - 15
-                                </small>
-                            </li>
-                            <li>
-                                <a href="#" title="">Diploma Gowns</a>
-                                <small>
-                                    - 3
-                                </small>
-                            </li>
-                            <li>
-                                <a href="#" title="">Gowns</a>
-                                <small>
-                                    - 5
-                                </small>
-                            </li>
-                            <li>
-                                <a href="#" title="">Other</a>
-                                <small>
-                                    - 1
-                                </small>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
 
@@ -274,41 +152,18 @@
 
                     <div class="widget-body">
                         <ul class="clearlist widget-posts">
+                            <?php
+                               $Latest = DB::table('blogs')->orderby('id','DESC')->limit(5)->get();
+                            ?>
+                            @foreach ($Latest as $latest)
                             <li class="clearfix">
-                                <a href="#"><img src="{{asset('theme/images/blog/previews/post-prev-1.jpg')}}" alt="" width="100" class="widget-posts-img" /></a>
+                                <a href="#"><img src="{{$latest->image_one}}" alt="" width="100" class="widget-posts-img" /></a>
                                 <div class="widget-posts-descr">
-                                    <a href="#" title="">Minimalistic Design Forever</a>
-                                    Posted by Julie Koi
+                                    <a href="#" title="">{{$latest->title}}</a>
+                                    Posted by Admin
                                 </div>
                             </li>
-                            <li class="clearfix">
-                                <a href="#"><img src="{{asset('theme/images/blog/previews/post-prev-2.jpg')}}" alt="" width="100" class="widget-posts-img" /></a>
-                                <div class="widget-posts-descr">
-                                    <a href="#" title="">Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</a>
-                                    Posted by Julie Koi
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <a href="#"><img src="{{asset('theme/images/blog/previews/post-prev-3.jpg')}}" alt="" width="100" class="widget-posts-img" /></a>
-                                <div class="widget-posts-descr">
-                                    <a href="#" title="">New Web Design Trends in 2025 Year</a>
-                                    Posted by Julie Koi
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <a href="#"><img src="{{asset('theme/images/blog/previews/post-prev-4.jpg')}}" alt="" width="100" class="widget-posts-img" /></a>
-                                <div class="widget-posts-descr">
-                                    <a href="#" title="">Hipster’s Style in Web Design and Logo</a>
-                                    Posted by Julie Koi
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <a href="#"><img src="{{asset('theme/images/blog/previews/post-prev-5.jpg')}}" alt="" width="100" class="widget-posts-img" /></a>
-                                <div class="widget-posts-descr">
-                                    <a href="#" title="">Duis Tristique Condimentum Nulla Bibendum Consectetu</a>
-                                    Posted by Julie Koi
-                                </div>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
 

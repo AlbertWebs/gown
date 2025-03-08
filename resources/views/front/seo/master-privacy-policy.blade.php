@@ -7,17 +7,18 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {{--  --}}
-        <title>Graduation Gowns for Sale & Rent in Kenya | Gownsea LTD</title>
-        <meta name="description" content="Gownsea LTD offers high-quality graduation gowns for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
-        <meta name="keywords" content="graduation gowns Kenya, buy graduation gown, rent graduation gown, custom graduation gowns, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
+        <title>Privacy Policy | Gownsea LTD</title>
+        <meta name="description" content="Gownsea LTD offers high-quality Privacy Policy and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
+        <meta name="keywords" content="Kenya, buy graduation gown, rent graduation gown, custom Gown For Leaasing, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
         <meta name="author" content="Gownsea LTD">
         <meta name="robots" content="index, follow">
+        <link rel="canonical" href="{{url('/')}}/about-us" />
 
         <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="Graduation Gowns for Sale & Rent in Kenya | Gownsea LTD">
-        <meta property="og:description" content="We sell and rent high-quality graduation gowns, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available!">
-        <meta property="og:image" content="{{url('/')}}/theme/images/logs_g.webp">
-        <meta property="og:url" content="https://gownsea.com/">
+        <meta property="og:title" content="Privacy Policy | Gownsea LTD">
+        <meta property="og:description" content="We sell and rent high-quality Gown For Leaasing, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available!">
+        <meta property="og:image" content="{{url('/')}}/favicon/apple-touch-icon.png">
+        <meta property="og:url" content="{{url('/')}}/about-us">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Gownsea LTD">
         <meta property="og:phone_number" content="+254 728 311537">
@@ -25,9 +26,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Graduation Gowns for Sale & Rent in Kenya | Gownsea LTD">
-        <meta name="twitter:description" content="We offer premium graduation gowns for sale and hire, with custom stitching options. Find the perfect gown for your special day!">
-        <meta name="twitter:image" content="{{url('/')}}/theme/images/logs_g.webp">
+        <meta name="twitter:title" content="Privacy Policy | Gownsea LTD">
+        <meta name="twitter:description" content="We offer premium Privacy Policy and hire, with custom stitching options. Find the perfect gown for your special day!">
+        <meta name="twitter:image" content="{{url('/')}}/favicon/apple-touch-icon.png">
         <meta name="twitter:site" content="@gownsea_ke">
         <meta name="twitter:creator" content="@gownsea_ke">
 
@@ -39,7 +40,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
           "name": "Gownsea LTD",
           "url": "https://gownsea.com/",
           "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
+          "description": "We offer high-quality Privacy Policy and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
           "telephone": "+254 728 311537",
           "image": "{{url('/')}}/theme/images/logs_g.webp",
           "address": {
@@ -203,115 +204,8 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             <!-- End Divider -->
 
             <!-- Footer -->
-            <footer class="footer-2 pb-50">
-                <div class="container position-relative">
-
-                    <!-- Back to Top Link -->
-                    <div class="local-scroll position-relative z-index-1">
-                        <a href="#top" class="link-to-top color position-absolute top-0 end-0 translate-middle-y">
-                            <i class="mi-arrow-up size-24"></i>
-                            <span class="visually-hidden">Scroll to top</span>
-                        </a>
-                    </div>
-                    <!-- End Back to Top Link -->
-
-                    <div class="page-section">
-                        <div class="row">
-
-                            <div class="col-lg-6 mb-md-60">
-
-                                <h2 class="section-title mb-60 mb-sm-40">Need Graduation Attire?</h2>
-
-                                <div class="local-scroll">
-                                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
-                                        <span>Hire a Gown</span>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-5 offset-lg-1 pt-10">
-                                <div class="row">
-
-                                    <div class="col-md-6 mb-sm-40">
-                                        <ul class="fw-menu-large clearlist">
-                                            <li>
-                                                <a href="#">About us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">What We Do</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Hire a Gown</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">FAQ</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Contact Us</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <ul class="fw-menu-large clearlist">
-                                            <li>
-                                                <a href="#">Privacy Policy</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Terms & Conditions</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Return Policy</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Copyright</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Footer Text -->
-                    <div class="row">
-
-                        <div class="col-md-6 mb-sm-40">
-                           Powered By Gownsea <br>
-                            © Gownsea 2023.
-                        </div>
-
-                        <!-- Social Links -->
-                        <div class="col-md-6 footer-2-social-links text-md-end mb-md-40">
-                            <a href="#" title="Facebook" rel="noopener nofollow" target="_blank">
-                                <span class="visually-hidden">Facebook</span>
-                                <i class="fa-facebook-f"></i>
-                            </a>
-                            <a href="#" title="Twitter" rel="noopener nofollow" target="_blank">
-                                <span class="visually-hidden">Instagram</span>
-                                <i class="fa-instagram"></i>
-                            </a>
-                            <a href="#" title="Pinterest" rel="noopener nofollow" target="_blank">
-                                <span class="visually-hidden">Pinterest</span>
-                                <i class="fa-pinterest"></i>
-                            </a>
-                            <a href="#" title="Behance" rel="noopener nofollow" target="_blank">
-                                <span class="visually-hidden">Twitter</span>
-                                <i class="fa-twitter"></i>
-                             </a>
-
-                        </div>
-                        <!-- End Social Links -->
-
-                    </div>
-                    <!-- End Footer Text -->
-
-                 </div>
-            </footer>
-            <!-- End Footer -->
+           @include('front.footer')
+           <!-- End Footer -->
 
         </div>
         <!-- End Page Wrap -->

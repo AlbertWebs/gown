@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.seo.master-bulk')
 
 @section('content')
 <main id="main">
@@ -56,6 +56,18 @@
                                 <!-- End Name -->
 
                             </div>
+
+                            <div class="col-md-12">
+
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label for="name">Mobile</label>
+                                    <input type="text" name="phone" id="name" class="input-lg round form-control" placeholder="Enter your Phone Number" pattern=".{3,100}" required aria-required="true">
+                                </div>
+                                <!-- End Name -->
+
+                            </div>
+
 
                             <div class="col-md-12">
 

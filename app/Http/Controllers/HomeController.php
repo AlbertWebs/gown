@@ -55,7 +55,7 @@ class HomeController extends Controller
         $Page_title = "gown-for-hire";
         $Gown = \App\Models\Gown::where('gown_class', $slung)->first();
         $Gowns = \App\Models\Gown::where('gown_class', $slung)->get();
-        return view('front.gown-for-hire', compact('Gown','Page_title','Gowns'));
+        return view('front.gown-for-hire', compact('Gown','Page_title','Gowns','slung'));
     }
 
     public function shop_church_attires ()
@@ -72,12 +72,36 @@ class HomeController extends Controller
         return view('front.products', compact('Page_title','Gown'));
     }
 
+    public function privacy_policy(){
+        $Page_title = "legal-attire";
+        return view('front.privacy_policy', compact('Page_title'));
+    }
+
+    public function return_policy(){
+        $Page_title = "legal-attire";
+        return view('front.return-policy', compact('Page_title'));
+    }
+
+    public function terms_and_conditions(){
+        $Page_title = "legal-attire";
+        return view('front.terms-and-conditions', compact('Page_title'));
+    }
+
+    public function copyright(){
+        $Page_title = "legal-attire";
+        return view('front.copyright', compact('Page_title'));
+    }
+
+
+
+
 
     public function legal_attire ()
     {
+        $Category = \App\Models\Category::find(2);
         $Gowns = \App\Models\Gown::where('category_id', '2')->limit('3')->get();
         $Page_title = "legal-attire";
-        return view('front.legal-attire', compact('Page_title','Gowns'));
+        return view('front.legal-attire', compact('Page_title','Gowns','Category'));
     }
 
 
@@ -97,7 +121,6 @@ class HomeController extends Controller
 
     public function shop_attire ($id)
     {
-
         $Category = \App\Models\Category::where('slung',$id)->first();
         $Gowns = \App\Models\Gown::where('category_id',$Category->id)->get();
         $Page_title = "shop";
@@ -115,16 +138,18 @@ class HomeController extends Controller
     public function our_products ($slung)
     {
         $Gown = \App\Models\Gown::where('slung', $slung)->first();
+        $Category = \App\Models\Category::find($Gown->category_id);
         $Page_title = "shop";
-        return view('front.product', compact('Page_title','Gown'));
+        return view('front.product', compact('Page_title','Gown','Category'));
     }
 
 
     public function church_wear ()
     {
+        $Category = \App\Models\Category::find(3);
         $Gown = \App\Models\Gown::where('category_id', '3')->get();
         $Page_title = "church-wear";
-        return view('front.church-wear', compact('Page_title','Gown'));
+        return view('front.church-wear', compact('Page_title','Gown','Category'));
     }
 
 
@@ -144,7 +169,8 @@ class HomeController extends Controller
     public function blog ()
     {
         $Page_title = "blog";
-        return view('front.blog', compact('Page_title'));
+        $Blog = DB::table('blogs')->get();
+        return view('front.blog', compact('Page_title','Blog'));
     }
 
     public function mobile_stk_received(Request $request){

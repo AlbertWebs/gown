@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('content')->nullable();
             $table->string('price');
+            $table->string('price_hire');
             $table->timestamps();
         });
     }

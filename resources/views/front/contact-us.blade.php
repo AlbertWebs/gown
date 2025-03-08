@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.seo.master-contact')
 
 @section('content')
 <main id="main">
@@ -35,7 +35,7 @@
             <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
 
                 <p class="section-descr mb-0">
-                    Gownsea Ltd is a graduation gown company in Nairobi, Kenya that offers gowns for hire or purchase
+                    Get in touch with Gownsea for graduation gown rentals, bulk orders, and inquiries. We’re here to assist universities, colleges, and individuals with quality academic regalia. Contact us today!
                 </p>
 
             </div>
@@ -226,47 +226,23 @@
         <div class="row position-relative">
 
             <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <?php
+                   $Faq = DB::table('faq')->get();
+                ?>
 
 
 
                 <!-- Accordion -->
                 <dl class="toggle">
 
+                    @foreach ($Faq as $faq)
                     <dt>
-                        <a href="#" >How do I hire a graduation gown?</a>
+                        <a href="#" >{{$faq->title}}</a>
                     </dt>
                     <dd class="blacks" >
-                        Head to our Private Hire request form and we'll respond as soon as we can.
+                        {!!html_entity_decode($faq->content)!!}
                     </dd>
-
-                    <dt>
-                        <a  href="#">How much is it to rent a gown?</a>
-                    </dt>
-                   <dd class="blacks" >
-                        It can vary depending on the quantity and award level but starts from £25.
-
-                        For an accurate quote head to our Private Hire request form and we'll respond as soon as we can.
-                    </dd>
-
-                    <dt>
-                        <a  href="#">What do you wear under a university graduation gown?</a>
-                    </dt>
-                    <dd class="blacks" >
-                        Typically you should dress smart for a formal occasion.
-
-                        Head to our Journal Article for a full guide!
-                    </dd>
-
-                    <dt>
-                        <a  href="#">How much are graduation gowns in Kenya</a>
-                    </dt>
-                    <dd class="blacks" >
-                        Prices can vary depending on the level of your award but our gowns start from £25.
-
-                        Head to our Gown Collection for a full list.
-                    </dd>
-
-
+                    @endforeach
 
                 </dl>
                 <!-- End Accordion -->

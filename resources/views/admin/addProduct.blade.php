@@ -59,11 +59,28 @@
                                     <label for="list-title">Product Price</label>
                                 </div>
 
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="price_hire" id="list-title"  type="number" class="validate">
+                                    <label for="list-title">Hire Price Per Day</label>
+                                </div>
 
 
                                 {{--  --}}
                                 <div class="input-field col s12">
-                                    <select required name="gown_class" class="icons" id="mydiv">
+                                    <select required name="category" class="icons" id="mydiv">
+                                        <option value="" disabled selected>Choose your Category</option>
+                                        @foreach ($Category as $Categories)
+                                        <option value="{{$Categories->id}}" data-icon="{{$Categories->image}}" class="circle">{{$Categories->title}}</option>
+                                        @endforeach
+                                    </select>
+                                    <label>Choose Category</label>
+                                </div>
+
+
+
+                                {{--  --}}
+                                <div class="input-field col s12" id="Menu2Container">
+                                    <select required name="gown_class" class="icons">
                                         <?php
 
                                             $GClass = DB::table('gown_classes')->get();
@@ -73,20 +90,13 @@
                                         @foreach ($GClass as $gclass)
                                         <option value="{{$gclass->slung}}" data-icon="{{$gclass->image}}" class="circle">{{$gclass->title}}</option>
                                         @endforeach
+                                        <option value=""class="circle">Legal Attire</option>
+                                        <option value=""class="circle">Church Attire</option>
                                     </select>
                                     <label>Choose Gown Class</label>
                                 </div>
 
-                                {{--  --}}
-                                <div class="input-field col s12">
-                                    <select required name="category" class="icons" id="mydiv">
-                                        <option value="" disabled selected>Choose your Category</option>
-                                        @foreach ($Category as $Categories)
-                                        <option value="{{$Categories->id}}" data-icon="{{url('/')}}/uploads/categories/{{$Categories->image}}" class="circle">{{$Categories->title}}</option>
-                                        @endforeach
-                                    </select>
-                                    <label>Choose Category</label>
-                                </div>
+
 
 
                                 <div class="input-field col s12">

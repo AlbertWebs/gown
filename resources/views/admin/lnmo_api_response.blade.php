@@ -25,7 +25,7 @@
                     </li>
                     <li class="active-bre"><a href="#"> Lipa na M-PESA Online Transactions(STK)</a>
                     </li>
-                    <li class="page-back"><a href="{{url('/')}}/admin/accountbalance"> Account Balance</a>
+                    {{-- <li class="page-back"><a href="{{url('/')}}/admin/accountbalance"> Account Balance</a>
                     </li>
                     <li class="page-back"><a href="{{url('/')}}/admin/b2b"> B2B</a>
                     </li>
@@ -36,29 +36,29 @@
                     <li class="page-back"><a href="{{url('/')}}/admin/reverse_transaction">Reversed Transactions </a>
                     </li>
                     <li class="page-back"><a href="{{url('/')}}/admin/transaction_status">Transcation Status </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
             <div class="sb2-2-1">
-                <h2>All STK Payments</h2>
+                <h3>All STK Payments</h3>
                 <center>
                     @if(Session::has('message'))
                                   <div class="alert alert-success">{{ Session::get('message') }}</div>
                    @endif
-   
+
                    @if(Session::has('messageError'))
                                   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
                    @endif
                 </center>
-               
+
                 <table class="table">
                     <thead>
                         <tr>
                             <th>IDs#</th>
                             <th>Details</th>
-                            
+
                             <th>Durations</th>
-                            <th>Delete</th>
+                            {{-- <th>Delete</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -66,34 +66,34 @@
                         @foreach ($LNMO as $item)
                         <tr>
                             <td>
-                                lnmoID: {{$item->lnmoID}}<br>
-                                
+                                TransID: {{$item->TransID}}<br>
+                                TransReference:  {{$item->TransReference}}
+
                             </td>
                             <td>
-                              
-                                    Amount: {{$item->Amount}}<br>
-                                    MpesaReceiptNumber: {{$item->MpesaReceiptNumber}}<br>
-                                    PhoneNumber: {{$item->PhoneNumber}}<br>
-                                 
+
+                                    Amount: {{$item->TransAmount}}<br>
+                                    MpesaReceiptNumber: {{$item->TransPhoneNumber}}<br>
+                                    Full Name: {{$item->TransFirstName}} {{$item->TransMiddleName}} {{$item->TransLastName}}<br>
+
                             </td>
                             <td>
-                                TransactionDate: {{$item->TransactionDate}}
-                                UpdatedTime: {{$item->updateTime}}
+                                TransactionDate: {{$item->created_at}}
                             </td>
-                           
-                          
-                            <td>
+
+
+                            {{-- <td>
                                 @if($item->status == 1)
-                                <a onclick="return confirm('Are you sure you want to un-approve this STK transaction')" title="Approve This Transaction" href="{{url('/')}}/admin/approve-transaction-stk/{{$item->lnmoID}}" class="sb2-2-1-edit"><i class="fa fa-close" aria-hidden="true"></i></a>
-                                @else 
-                                <a onclick="return confirm('Are you sure you want to approve this STK transaction')" title="Approve This Transaction" href="{{url('/')}}/admin/approve-transaction-stk/{{$item->lnmoID}}" class="sb2-2-1-edit"><i class="fa fa-check" aria-hidden="true"></i></a>
+                                <a onclick="return confirm('Are you sure you want to un-approve this STK transaction')" title="Approve This Transaction" href="{{url('/')}}/admin/approve-transaction-stk/{{$item->TransID}}" class="sb2-2-1-edit"><i class="fa fa-close" aria-hidden="true"></i></a>
+                                @else
+                                <a onclick="return confirm('Are you sure you want to approve this STK transaction')" title="Approve This Transaction" href="{{url('/')}}/admin/approve-transaction-stk/{{$item->TransID}}" class="sb2-2-1-edit"><i class="fa fa-check" aria-hidden="true"></i></a>
                                 @endif
                                 <br><br>
-                                <a onclick="archiveFunction{{$item->lnmoID}}()" href="#" class="sb2-2-1-edit"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                            </td>
+                                <a onclick="archiveFunction{{$item->TransID}}()" href="#" class="sb2-2-1-edit"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </td> --}}
                         </tr>
                         <script>
-                            function archiveFunction{{$item->lnmoID}}()
+                            function archiveFunction{{$item->TransID}}()
                                 {
                                     event.preventDefault(); // prevent form submit
                                     swal({
@@ -110,9 +110,9 @@
                                                 url: "{{url('/')}}/admin/deleteSTKAjax",
                                                 headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                                                 type: "POST",
-                                                data: {id: {{$item->lnmoID}}},
+                                                data: {id: {{$item->TransID}}},
                                                 dataType: "html",
-                                                success: function () 
+                                                success: function ()
                                                 {
                                                     swal("Done!","It was succesfully deleted!","success");
                                                     setTimeout(function() {
@@ -121,8 +121,8 @@
 
                                                 }
                                             });
-                                            // 
-                                          
+                                            //
+
                                         } else {
                                             swal("Your imaginary file is safe!");
                                         }

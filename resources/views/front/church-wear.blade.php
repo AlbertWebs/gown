@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.seo.master-church-wear')
 
 @section('content')
 <main id="main">
@@ -76,7 +76,7 @@
                         <div class="bottom-left">
                            <h2>{{$gown->title}}</h2>
 
-                           <a href="{{route('shop-church-attire',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim btn-border-m" tabindex="0">
+                           <a href="{{route('our-products',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim btn-border-m" tabindex="0">
                               <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
                            </a>
                        </div>
@@ -254,75 +254,51 @@
 
 
 
-     <!-- FAQ Section -->
-     <section class="page-section">
-         <div class="container position-relative">
+   <!-- FAQ Section -->
+ <section class="page-section">
+    <div class="container position-relative">
 
-             <div class="row mb-70 mb-sm-50">
-                 <div class="col-md-8 offset-md-2 text-center">
+        <div class="row mb-70 mb-sm-50">
+            <div class="col-md-8 offset-md-2 text-center">
 
-                     <h2 class="section-title mb-40 mb-xs-30">FAQs</h2>
+                <h2 class="section-title mb-40 mb-xs-30">FAQs</h2>
 
-                 </div>
-             </div>
+            </div>
+        </div>
 
-         </div>
-         <div class="container position-relative">
+    </div>
+    <div class="container position-relative">
 
-             <div class="row position-relative">
+        <div class="row position-relative">
 
-                 <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-
-
-
-                     <!-- Accordion -->
-                     <dl class="toggle">
-
-                         <dt>
-                             <a href="#" >How do I hire a graduation gown?</a>
-                         </dt>
-                         <dd class="blacks" >
-                             Head to our Private Hire request form and we'll respond as soon as we can.
-                         </dd>
-
-                         <dt>
-                             <a  href="#">How much is it to rent a gown?</a>
-                         </dt>
-                        <dd class="blacks" >
-                             It can vary depending on the quantity and award level but starts from £25.
-
-                             For an accurate quote head to our Private Hire request form and we'll respond as soon as we can.
-                         </dd>
-
-                         <dt>
-                             <a  href="#">What do you wear under a university graduation gown?</a>
-                         </dt>
-                         <dd class="blacks" >
-                             Typically you should dress smart for a formal occasion.
-
-                             Head to our Journal Article for a full guide!
-                         </dd>
-
-                         <dt>
-                             <a  href="#">How much are graduation gowns in Kenya</a>
-                         </dt>
-                         <dd class="blacks" >
-                             Prices can vary depending on the level of your award but our gowns start from £25.
-
-                             Head to our Gown Collection for a full list.
-                         </dd>
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <?php
+                   $Faq = DB::table('faq')->get();
+                ?>
 
 
 
-                     </dl>
-                     <!-- End Accordion -->
+                <!-- Accordion -->
+                <dl class="toggle">
 
-                 </div>
+                    @foreach ($Faq as $faq)
+                    <dt>
+                        <a href="#" >{{$faq->title}}</a>
+                    </dt>
+                    <dd class="blacks" >
+                        {!!html_entity_decode($faq->content)!!}
+                    </dd>
+                    @endforeach
 
-             </div>
-         </div>
-     </section>
-     <!-- End FAQ Section -->
+                </dl>
+                <!-- End Accordion -->
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End FAQ Section -->
 
  </main>
 @endsection

@@ -58,6 +58,11 @@
                                     <label for="list-title">Product Price</label>
                                 </div>
 
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="price_hire" id="list-title" value="{{$Product->price_hire}}"  type="number" class="validate">
+                                    <label for="list-title">Hire Price Per Day</label>
+                                </div>
+
 
 
                             </div>
@@ -71,7 +76,7 @@
                                         <option value="{{$CatSel->id}}" selected>{{$CatSel->title}}</option>
                                         @endforeach
                                         @foreach ($Category as $Categories)
-                                        <option value="{{$Categories->id}}" data-icon="{{url('/')}}/uploads/categories/{{$Categories->image}}" class="circle">{{$Categories->title}}</option>
+                                        <option value="{{$Categories->id}}" data-icon="{{$Categories->image}}" class="circle">{{$Categories->title}}</option>
                                         @endforeach
                                     </select>
                                     <label>Choose Category</label>
@@ -96,6 +101,8 @@
                                         @foreach ($GClass as $gclass)
                                         <option value="{{$gclass->slung}}" data-icon="{{$gclass->image}}" class="circle">{{$gclass->title}}</option>
                                         @endforeach
+                                        <option value=""class="circle">Legal Attire</option>
+                                        <option value=""class="circle">Church Attire</option>
                                     </select>
                                     <label>Choose Gown Class</label>
                                 </div>
