@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a32631453f8a4e63d3229a56f56cbf18",
+    "content-hash": "e0ef15550708f5ce250ed4568f3b810f",
     "packages": [
         {
             "name": "brick/math",
@@ -3180,6 +3180,69 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "sparkworldke/kopokopo-laravel-support",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sparkworldke/kopokopo-laravel-support.git",
+                "reference": "f06b3448d9670c643d85e409f84ad48f605a0eba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sparkworldke/kopokopo-laravel-support/zipball/f06b3448d9670c643d85e409f84ad48f605a0eba",
+                "reference": "f06b3448d9670c643d85e409f84ad48f605a0eba",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.1",
+                "laravel/framework": "^9.0|^10.0 |^11.0",
+                "php": "^8.0|^8.1"
+            },
+            "require-dev": {
+                "pestphp/pest-plugin-laravel": "^1.3",
+                "phpunit/phpunit": "^9.3.3"
+            },
+            "type": "laravel",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Kopokopo": "Patrickmwangi017\\Kopokopo\\Facades\\Kopokopo"
+                    },
+                    "providers": [
+                        "Patrickmwangi017\\Kopokopo\\KopokopoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Patrickmwangi017\\Kopokopo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Forked from Patrick Mwangi",
+                    "email": "mwangipatrick017@gmail.com"
+                }
+            ],
+            "description": "A simple package for developers to consume Kopokopo Mpesa API in Laravel 9, 10, 11",
+            "homepage": "https://github.com/sparkworldke/kopokopo-laravel-support",
+            "keywords": [
+                "kopokopo",
+                "laravel",
+                "mpesa",
+                "patrickmwangi017"
+            ],
+            "support": {
+                "issues": "https://github.com/sparkworldke/kopokopo-laravel-support/issues",
+                "source": "https://github.com/sparkworldke/kopokopo-laravel-support/tree/v1.0.0"
+            },
+            "time": "2024-04-06T18:34:30+00:00"
         },
         {
             "name": "spatie/laravel-activitylog",

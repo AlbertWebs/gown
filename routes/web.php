@@ -37,8 +37,11 @@ Route::get('/buy-gown-wear/checkout', [App\Http\Controllers\HomeController::clas
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
 Route::get('/blog/{slung}', [App\Http\Controllers\HomeController::class, 'blog_single'])->name('blog-single');
 
-
-
+Route::post('/mobile-stk-received', [App\Http\Controllers\HomeController::class, 'mobile_stk_received'])->name('mobile-stk-received');
+Route::get('/mobile-stk-initiate', [App\Http\Controllers\HomeController::class, 'mobile_stk_initiate'])->name('mobile-stk-initiate');
+Route::post('/mobile-stk-initiate-post', [App\Http\Controllers\HomeController::class, 'mobile_stk_initiate_post'])->name('mobile-stk-initiate-post');
+Route::get('/mobile-payment-received', [App\Http\Controllers\HomeController::class, 'mobile_payment_received'])->name('mobile-payment-received');
+Route::get('/mobile-payment-failed', [App\Http\Controllers\HomeController::class, 'mobile_payment_failed'])->name('mobile-payment-failed');
 
 Auth::routes();
 

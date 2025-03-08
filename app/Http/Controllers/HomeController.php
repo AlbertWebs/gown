@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use App\Models\Kopokopostk;
+use Kopokopo;
+use Illuminate\Support\Facades\Response;
+use DB;
 
 class HomeController extends Controller
 {
@@ -110,7 +115,7 @@ class HomeController extends Controller
     public function our_products ($slung)
     {
         $Gown = \App\Models\Gown::where('slung', $slung)->first();
-        $Page_title = $Gown->gown_class;
+        $Page_title = "shop";
         return view('front.product', compact('Page_title','Gown'));
     }
 
@@ -142,7 +147,125 @@ class HomeController extends Controller
         return view('front.blog', compact('Page_title'));
     }
 
+    public function mobile_stk_received(Request $request){
+        Log::info($request->getContent());
+        $content=json_decode($request->getContent(), true);
 
+        $TransID = $content['event']['resource']['id'];
+        $TransAmount = $content['event']['resource']['amount'];
+        $TransStatus = $content['event']['resource']['status'];
+        $TransSystem = $content['event']['resource']['system'];
+        $TransCurrency = $content['event']['resource']['currency'];
+        $TransReference = $content['event']['resource']['reference'];
+        $TransTill = $content['event']['resource']['till_number'];
+        $TransPhoneNumber = $content['event']['resource']['sender_phone_number'];
+        $TransLastName = $content['event']['resource']['sender_last_name'];
+        $TransFirstName = $content['event']['resource']['sender_first_name'];
+        $TransMiddleName = $content['event']['resource']['sender_middle_name'];
+
+        $Kopokopostk = new Kopokopostk;
+        $Kopokopostk->TransID = $TransID;
+        $Kopokopostk->TransAmount = $TransAmount;
+        $Kopokopostk->TransStatus = $TransStatus;
+        $Kopokopostk->Transsystem = $TransSystem;
+        $Kopokopostk->TransCurrency =$TransCurrency;
+        $Kopokopostk->TransReference = $TransReference;
+        $Kopokopostk->TransTill = $TransTill;
+        $Kopokopostk->TransPhoneNumber = $TransPhoneNumber;
+        $Kopokopostk->TransLastName = $TransLastName;
+        $Kopokopostk->TransFirstName = $TransFirstName;
+        $Kopokopostk->TransMiddleName = $TransMiddleName;
+        $Kopokopostk->save();
+
+    }
+
+    public function getAccessToken(){
+        $token=Kopokopo::getAccessToken();
+        return $token;
+    }
+
+    public function checklast($phone){
+        $TableData = DB::table('kopokopostks')->where('TransPhoneNumber', $phone)->where('status','0')->orderBy('id','DESC')->first();
+        if($TableData==null){
+            sleep(10);
+            return $this->checklast($phone);
+        }else{
+            $UpdateDetail = array(
+                'status'=>1,
+            );
+            DB::table('kopokopostks')->where('TransPhoneNumber', $phone)->update($UpdateDetail);
+            return "Success";
+        }
+    }
+
+    public function mobile_stk_initiate_post(Request $request){
+
+        $res= Kopokopo::authenticate($this->getAccessToken())->stkPush(
+            amount:  $request->amount,
+            phone: $request->phone,
+            first_name: 'null',//optional
+            last_name: 'null',//optional
+            email: 'info@gownsea.com',//optional
+            metadata: [
+                'user_id'=>1,
+                'action'=>'deposit'
+            ]//optional
+        );
+        // dd($res);.
+        Log::info($res);
+        // dd($res['status']);
+        $phone = $request->phone;
+        $CheckLast = $this->checklast($phone);
+        if($CheckLast == "Success"){
+            if($res['status'] == 'success')
+            {
+                return Response::json(array(
+                    'response' => $res['status'],
+                ));
+            }else{
+                return response()->json(['response' => 'Oups!! Something went wrong']);
+            }
+        }else{
+            return response()->json(['response' => 'Oups!! Something went wrong']);
+        }
+    }
+
+    public function mobile_payment_received ()
+    {
+        $Page_title = "shop";
+        return view('front.success', compact('Page_title'));
+    }
+
+    public function mobile_payment_failed ()
+    {
+        $Page_title = "shop";
+        return view('front.failed', compact('Page_title'));
+    }
+
+
+
+
+    public function mobile_stk_initiate(){
+        // dd($this->getAccessToken());
+        $res= Kopokopo::authenticate($this->getAccessToken())->stkPush(
+            amount:  1,
+            phone: '+254723014032',
+            first_name: 'Albert',//optional
+            last_name: 'Muhatia',//optional
+            email: 'albertmuhatia@gmail.com',//optional
+            metadata: [
+                'user_id'=>1,
+                'action'=>'deposit'
+            ]//optional
+        );
+        dd($res);
+
+        if($res['status'] == 'success')
+        {
+            dump ("The resource location is:" . json_encode($res['location']));
+            // => 'https://sandbox.kopokopo.com/api/v1/incoming_payments/247b1bd8-f5a0-4b71-a898-f62f67b8ae1c'
+        }
+    }
 
 
 

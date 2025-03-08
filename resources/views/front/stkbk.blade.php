@@ -40,7 +40,7 @@
                   <form method="POST" action="{{route('mobile-stk-initiate-post')}}" id="stkForm">
                     @csrf
 
-                    <input name="phone" class="my-4 rounded form-control form-control-lg" id="formControlLg" placeholder="+254" value="" type="text" required="This field is required">
+                    <input name="phone" class="my-4 rounded form-control form-control-lg" id="formControlLg" placeholder="M-PESA Phone Number +254 &rarr;" type="text" required>
                     <input type="hidden" name="amount" value="{{$Gown->price}}" required>
                     <div class="mt-4 pt-4">
                         <div class="d-grid gap-2">

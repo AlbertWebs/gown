@@ -340,6 +340,48 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 			  });
 		  });
 	  </script>
+      <script>
+        $("#stkForm").on('submit', (function(e) {
+            e.preventDefault();
+            $('.loading-img').show();
+
+            $('.stk-check').html('Check your phone and enter your pin......');
+            $.ajax({
+                url: $(this).attr('action'),
+                type: "POST",
+                data: new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function(response) {
+                    $('.stk-check').html('');
+
+                    var responses = response['response'];
+
+                    $('.loading-img').hide();
+                    $("#stkForm").trigger("reset");
+
+                    if(responses == "success"){
+                        $('.stk-check').html('Thank You For Choosing Gownsea, We are now redirecting you......');
+                        setTimeout(function() {
+                            $(location).attr('href', '{{route('mobile-payment-received')}}');
+                        }, 5000);
+                    }else{
+                        $('.stk-check').html(responses);
+                        $(location).attr('href', '{{route('mobile-payment-failed')}}');
+                    }
+                },
+                error: function(e) {
+                    console.log(e);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong!',
+                    })
+                }
+            });
+        }));
+      </script>
 
     </body>
 </html>

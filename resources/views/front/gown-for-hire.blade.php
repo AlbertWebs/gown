@@ -36,9 +36,12 @@
 
 
                          </div>
+                         <?php
+                                $Cats = \App\Models\Category::find($Gown->category_id);
+                            ?>
 
                          <div class="local-scroll pt-20">
-                            <a href="{{route('shop-graduation-attires')}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim">
+                            <a href="{{route('shop-attire',$Cats->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim">
                                <span data-btn-animate="y">Shop Graduation Attire</span>
                            </a>
                         </div>

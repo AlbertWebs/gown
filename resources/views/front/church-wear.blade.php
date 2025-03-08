@@ -31,9 +31,12 @@
 
 
                          </div>
+                         <?php
+                            $Cats = \App\Models\Category::find(3);
+                        ?>
                          <!-- End Home Section Text -->
                          <div class="local-scroll pt-20">
-                            <a href="{{route('shop-church-attires')}}" class="btn btn-mod btn-w btn-large circle btn-border-m"><span>Shop Now Church Wear</span></a>
+                            <a href="{{route('shop-attire',$Cats->slung)}}" class="btn btn-mod btn-w btn-large circle btn-border-m"><span>Shop Now Church Wear</span></a>
                          </div>
 
                      </div>
