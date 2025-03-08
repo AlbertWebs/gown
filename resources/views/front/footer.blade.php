@@ -78,21 +78,21 @@
 
                         <!-- Social Links -->
                         <div class="col-md-6 footer-2-social-links text-md-end mb-md-40">
-                            <a href="#" title="Facebook" rel="noopener nofollow" target="_blank">
+                            <a href="https://web.facebook.com/GownseaLtd/?_rdc=1&_rdr#" title="Facebook" rel="noopener nofollow" target="_blank">
                                 <span class="visually-hidden">Facebook</span>
                                 <i class="fa-facebook-f"></i>
                             </a>
-                            <a href="#" title="Twitter" rel="noopener nofollow" target="_blank">
+                            <a href="https://www.instagram.com/gownsea_ke/?hl=en" title="Twitter" rel="noopener nofollow" target="_blank">
                                 <span class="visually-hidden">Instagram</span>
                                 <i class="fa-instagram"></i>
                             </a>
-                            <a href="#" title="Pinterest" rel="noopener nofollow" target="_blank">
-                                <span class="visually-hidden">Pinterest</span>
-                                <i class="fa-pinterest"></i>
+                            <a href="https://www.tiktok.com/@gownsea" title="Pinterest" rel="noopener nofollow" target="_blank">
+                                <span class="visually-hidden">Tiktok</span>
+                                <i class="fa-tiktok"></i>
                             </a>
-                            <a href="#" title="Behance" rel="noopener nofollow" target="_blank">
-                                <span class="visually-hidden">Twitter</span>
-                                <i class="fa-twitter"></i>
+                            <a href="https://www.linkedin.com/company/gownsea-ltd" title="Behance" rel="noopener nofollow" target="_blank">
+                                <span class="visually-hidden">Linkedin</span>
+                                <i class="fa-linkedin"></i>
                              </a>
 
                         </div>
