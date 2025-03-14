@@ -33,18 +33,22 @@
                         <span class="h5 mb-1">{{$Gown->title}}</span> <span class="small text-muted"><?php $Category = DB::table('categories')->where('id',$Gown->category_id)->first(); echo $Category->title; ?></span>
                       </div>
                     </div>
-                    <div class="d-flex flex-row align-items-center">
+                    <div class="d-flex flex-row align-items-center d-none-mobile">
                       <sup class="btc fw-bold text-muted">KES</sup> <span class="h2 mx-1 mb-0">{{$Gown->price}}</span>
                     </div>
                   </div>
                   <form method="POST" action="{{route('mobile-stk-initiate-post')}}" id="stkForm">
                     @csrf
 
-                    <input name="phone" class="my-4 rounded form-control form-control-lg" id="formControlLg" placeholder="+254" value="" type="text" required="This field is required">
+                    <div class="mt-4 pt-4">
+                        <div class="d-grid gap-2">
+                            <input name="phone" class="my-4 rounded form-control form-control-lg" id="formControlLg" placeholder="+254" value="" type="text" required="This field is required">
+                        </div>
+                    </div>
                     <input type="hidden" name="amount" value="{{$Gown->price}}" required>
                     <div class="mt-4 pt-4">
                         <div class="d-grid gap-2">
-                            <button class="h3 p-4 rounded btn-primaray btn-border-w" type="submit" style="background-color:#c32728; color:#ffffff;">Buy Now &nbsp; &nbsp; &nbsp; <img class="loading-img" src="{{url('/')}}/uploads/icon/ZKZg.gif"></button>
+                            <button class="h6 p-4 rounded btn-primaray btn-border-w" type="submit" style="background-color:#c32728; color:#ffffff;">Buy Now &nbsp; &nbsp; &nbsp; <img class="loading-img" src="{{url('/')}}/uploads/icon/ZKZg.gif"></button>
                         </div>
                     </div>
                     <p class="text-center stk-check text-success">

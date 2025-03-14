@@ -1578,6 +1578,7 @@ a.btn-mod:focus{
 }
 .btn-mod.btn-color.btn-hover-anim:hover{
     border-color: var(--color-primary-1-a);
+    border: 4px solid;
 }
 
 .btn-mod.btn-ellipse,
@@ -12732,6 +12733,11 @@ html:not(.mobile) .owl-animate-fadeInDown{
     background: rgb(1, 22, 36);
 }
 
+.border-5px{
+    border: 5px solid #ffffff;
+
+}
+
 .btn-mod.btn-border-whatsapp{
     color: #ffffff;
     border: 5px solid rgb(220,248,198);
@@ -12865,7 +12871,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
         text-align: center;
     }
     .logo-img{
-        width:135px;
+        width:185px;
         height:34px;
     }
     .herotext h1{
@@ -12921,7 +12927,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
         padding-top: 5px;
     }
     .d-none-mobile{
-        display:none;
+        display:none !important;
     }
     .bottom-left h2{
         font-size:15px;
@@ -12955,5 +12961,8 @@ html:not(.mobile) .owl-animate-fadeInDown{
     }
     .mobile-pt-30{
         padding-top: 30px;
+    }
+    .floating-wpp-button{
+        width:42px !important;
     }
 }

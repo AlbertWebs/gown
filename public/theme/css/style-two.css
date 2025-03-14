@@ -1,0 +1,17 @@
+.floating-wpp-button{
+    width:72px !important;
+    height:72px !important;
+ }
+ .floating-wpp .floating-wpp-popup.active {
+    bottom: 82px;
+ }
+
+@media only screen and (max-width: 768px) {
+    .floating-wpp-button{
+        width:42px !important;
+        height:42px !important;
+     }
+    .floating-wpp .floating-wpp-popup.active {
+        bottom: 50px;
+    }
+}

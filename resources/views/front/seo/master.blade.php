@@ -75,6 +75,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <link rel="stylesheet" href="{{asset('theme/css/demo-brutalist/demo-brutalist.css')}}">
         <!--Floating WhatsApp css-->
         <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+        <link rel="stylesheet" href="{{asset('theme/css/style-two.css')}}">
 
 
     </head>
