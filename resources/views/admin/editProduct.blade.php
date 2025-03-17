@@ -85,6 +85,23 @@
                                 <div class="section-space col s12"></div>
                             </div>
 
+                            {{--  --}}
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select required name="subcategory" class="icons" id="mydiv">
+                                        <?php $CategorySelected = DB::table('sub_categories')->where('id',$Product->sub_category_id)->get() ?>
+                                        @foreach ($CategorySelected as $CatSel)
+                                        <option value="{{$CatSel->id}}" selected>{{$CatSel->title}}</option>
+                                        @endforeach
+                                        @foreach ($SubCategory as $Categories)
+                                           <option value="{{$Categories->id}}" data-icon="{{$Categories->image}}" class="circle">{{$Categories->title}}</option>
+                                        @endforeach
+                                    </select>
+                                    <label>Choose Sub Category</label>
+                                </div>
+                            </div>
+                            {{--  --}}
+
                             <div class="row">
 
                                 {{--  --}}

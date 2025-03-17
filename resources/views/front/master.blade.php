@@ -171,6 +171,8 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         </li>
 
 
+
+
                         <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">Blog</a></li>
                         <li><a class="@if($Page_title=="blog") active @endif" href="{{route('bulk-inquiry')}}" href="#">Bulk Hire</a></li>
                         <li><a class="@if($Page_title=="contact-us") active @endif" href="{{route('contact-us')}}">Contact Us</a></li>

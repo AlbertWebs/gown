@@ -73,6 +73,17 @@
             </li>
             {{--  --}}
 
+             {{--  --}}
+             <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-folder" aria-hidden="true"></i> Sub Categories </a>
+                <div class="collapsible-body left-sub-menu">
+                    <ul>
+                        <li><a href="{{url('/')}}/admin/sub_categories">All Sub Category </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            {{--  --}}
+
 
 
 

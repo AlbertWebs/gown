@@ -18,7 +18,7 @@
         @include('admin.sidebar')
 
         <!--== BODY INNER CONTAINER ==-->
-        
+
         <div class="sb2-2">
             <div class="sb2-2-2">
                 <ul>
@@ -29,7 +29,7 @@
                     <li class="page-back"><a href="{{url('/')}}/admin/categories"><i class="fa fa-backward" aria-hidden="true"></i> All Categories</a>
                     </li>
                 </ul>
-               
+
             </div>
             <div class="sb2-2-add-blog sb2-2-1">
                 <h2>Edit {{$Category->title}}</h2>
@@ -38,7 +38,7 @@
                     @if(Session::has('message'))
                                   <div class="alert alert-success">{{ Session::get('message') }}</div>
                    @endif
-   
+
                    @if(Session::has('messageError'))
                                   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
                    @endif
@@ -103,7 +103,7 @@
                                                 </span>
                                                 <input type="text" class="form-control" readonly>
                                             </div>
-                                            <img class="image-preview" style="width:auto;" src="{{url('/')}}/uploads/categories/{{$Category->image}}" id='img-upload'/>
+                                            <img class="image-preview" style="width:auto;" src="{{$Category->image}}" id='img-upload'/>
                                         </div>
                                     </div>
                                 </div>

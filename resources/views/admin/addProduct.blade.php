@@ -78,6 +78,17 @@
 
 
 
+
+                                {{--  --}}
+                                <div class="input-field col s12">
+                                    <select required name="subcategory" class="icons" id="mydiv">
+                                        <option value="" disabled selected>Choose your Sub Category</option>
+                                        @foreach ($SubCategory as $Categories)
+                                        <option value="{{$Categories->id}}" data-icon="{{$Categories->image}}" class="circle">{{$Categories->title}}</option>
+                                        @endforeach
+                                    </select>
+                                    <label>Choose Sub Category</label>
+                                </div>
                                 {{--  --}}
                                 <div class="input-field col s12" id="Menu2Container">
                                     <select required name="gown_class" class="icons">

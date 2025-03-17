@@ -28,7 +28,7 @@
                         <!-- Photo Item -->
                         <div class="mb-30 round wow fadeInUp" data-wow-offset="0">
                         <a href="{{$Gown->image_image}}" class="lightbox-gallery-2 mfp-image">
-                            <img class="single-product" src="{{$Gown->image_image}}" alt="Image Description">
+                            <img class="single-product" src="{{$Gown->image_two}}" alt="Image Description">
                         </a>
                         </div>
                         <!-- End Photo Item -->

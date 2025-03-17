@@ -10,6 +10,9 @@ use App\Models\Privacy;
 
 use App\Models\Copyright;
 
+use App\Models\SubCategory;
+
+
 use App\Models\FAQ;
 
 use App\Models\How;
@@ -508,6 +511,84 @@ class AdminsController extends Controller
         return Redirect::back();
     }
 
+
+
+    // Sub Categories Here
+    public function sub_categories(){
+        activity()->log('Accessed All Categories');
+        $Category = SubCategory::all();
+        $TheCategory = Category::get();
+        $page_title = 'list';
+        $page_name = 'Categories';
+        return view('admin.sub_categories',compact('page_title','Category','page_name','TheCategory'));
+    }
+
+
+    public function addSubCategory(){
+        activity()->log('Accessed Add Category Page');
+        $TheCategory = Category::get();
+        $page_title = 'formfiletext';
+        $page_name = 'Add Sub Category';
+        return view('admin.addSubCategory',compact('page_title','page_name','TheCategory'));
+    }
+
+    public function add_SubCategory(Request $request){
+        activity()->log('Evoked add Category Operation');
+        $path = 'uploads/sub_categories';
+        if(isset($request->image)){
+            $file = $request->file('image');
+            $filename = $file->getClientOriginalName();
+            $file->move($path, $filename);
+            $image = $filename;
+        }else{
+            $image = "0";
+        }
+        $Category = new SubCategory;
+        $Category->category_id = $request->category_id;
+        $Category->title = $request->title;
+        $Category->slung = Str::slug($request->title);
+        // $Category->content = $request->content;
+        $Category->image = $image;
+        $Category->save();
+        Session::flash('message', "Category Has Been Added");
+        return Redirect::back();
+    }
+
+    public function editSubCategory($id){
+        activity()->log('Access Edit Category ID number '.$id.' ');
+        $Category = SubCategory::find($id);
+        $TheCategory = Category::all();
+        $page_title = 'formfiletext';
+        $page_name = 'Edit Home Page Slider';
+        return view('admin.editSubCategory',compact('page_title','Category','page_name','TheCategory'));
+    }
+
+    public function edit_SubCategory(Request $request, $id){
+        activity()->log('Evoked Edit Category For Category ID number '.$id.' ');
+        $dir = 'uploads/sub_categories';
+
+
+            if(isset($request->image)){
+                $file = $request->file('image');
+                $realPath = $request->file('image')->getRealPath();
+                $image = $this->genericFIleUpload($file,$dir,$realPath);
+            }else{
+                $image = $request->image_one_cheat;
+            }
+
+        $updateDetails = array(
+            'category_id' => $request->category_id,
+            'title'=>$request->title,
+            'slung' => Str::slug($request->title),
+            // 'content'=>$request->content,
+            'image'=>$image
+
+        );
+        DB::table('sub_categories')->where('id',$id)->update($updateDetails);
+        Session::flash('message', "Changes have been saved");
+        return Redirect::back();
+    }
+
     // Categories Here
     public function categories(){
         activity()->log('Accessed All Categories');
@@ -555,14 +636,22 @@ class AdminsController extends Controller
 
     public function edit_Category(Request $request, $id){
         activity()->log('Evoked Edit Category For Category ID number '.$id.' ');
-        $path = 'uploads/categories';
+        $dir = 'uploads/categories';
+            // if(isset($request->image)){
+            //     $file = $request->file('image');
+            //     $filename = $file->getClientOriginalName();
+            //     $file->move($path, $filename);
+            //     $image = $filename;
+            // }else{
+            //     $image = $request->image_cheat;
+            // }
+
             if(isset($request->image)){
                 $file = $request->file('image');
-                $filename = $file->getClientOriginalName();
-                $file->move($path, $filename);
-                $image = $filename;
+                $realPath = $request->file('image')->getRealPath();
+                $image = $this->genericFIleUpload($file,$dir,$realPath);
             }else{
-                $image = $request->image_cheat;
+                $image = $request->image_one_cheat;
             }
 
         $updateDetails = array(
@@ -594,10 +683,11 @@ class AdminsController extends Controller
 
     public function addProduct(){
         $Category = Category::all();
+        $SubCategory = SubCategory::all();
         activity()->log('Accessed Add Product Page');
         $page_title = 'formfiletext';
         $page_name = 'Add Product';
-        return view('admin.addProduct',compact('page_title','page_name','Category'));
+        return view('admin.addProduct',compact('page_title','page_name','Category','SubCategory'));
     }
 
     public function add_Product(Request $request){
@@ -621,6 +711,7 @@ class AdminsController extends Controller
         $Product = new \App\Models\Gown;
         $Product->title = $request->title;
         $Product->slung = Str::slug($request->title);
+        $Product->sub_category_id = $request->subcategory;
         $Product->category_id = $request->category;
         $Product->price_hire = $request->price_hire;
         $Product->gown_class = $gown_class;
@@ -629,16 +720,65 @@ class AdminsController extends Controller
         $Product->image = $SaveFilePath;
         $Product->save();
         Session::flash('message', "Product Has Been Added");
-        return Redirect::back();
+        //Search Image ID
+        $Product = \App\Models\Gown::orderBy('id','DESC')->first();
+        $page_title = 'list';
+        $page_name = 'Products';
+        return view('admin.addImage',compact('page_title','Product','page_name'));
     }
+
+    public function add_image(Request $request, $id){
+        activity()->log('Evoked add Product Image Operation');
+
+        $dir = 'uploads/products';
+        if(isset($request->image_two)){
+            $file = $request->file('image_two');
+            $realPath = $request->file('image_two')->getRealPath();
+            $image_two = $this->genericFIleUpload($file,$dir,$realPath);
+        }else{
+            $image_two = $request->image_one_cheat;
+        }
+
+        if(isset($request->image_three)){
+            $file = $request->file('image_three');
+            $realPath = $request->file('image_three')->getRealPath();
+            $image_three = $this->genericFIleUpload($file,$dir,$realPath);
+        }else{
+            $image_three = $request->image_one_cheat;
+        }
+
+        if(isset($request->image_four)){
+            $file = $request->file('image_four');
+            $realPath = $request->file('image_four')->getRealPath();
+            $image_four = $this->genericFIleUpload($file,$dir,$realPath);
+        }else{
+            $image_four = $request->image_one_cheat;
+        }
+
+        $updateDetails = array(
+            'image_two'=>$image_two,
+            'image_three'=>$image_three,
+            'image_four'=>$image_four,
+        );
+        DB::table('gowns')->where('id',$id)->update($updateDetails);
+
+        activity()->log('Accessed All Products');
+        $Product = \App\Models\Gown::all();
+        $page_title = 'list';
+        $page_name = 'Products';
+        return view('admin.products',compact('page_title','Product','page_name'));
+    }
+
+
 
     public function editProducts($id){
         $Category = Category::all();
+        $SubCategory = SubCategory::all();
         activity()->log('Access Edit Product ID number '.$id.' ');
         $Product = \App\Models\Gown::find($id);
         $page_title = 'formfiletext';
         $page_name = 'Edit Home Page Slider';
-        return view('admin.editProduct',compact('page_title','Product','page_name','Category'));
+        return view('admin.editProduct',compact('page_title','Product','page_name','Category','SubCategory'));
     }
 
     public function edit_Product(Request $request, $id){
@@ -666,6 +806,8 @@ class AdminsController extends Controller
             'price'=>$request->price,
             'price_hire'=>$request->price_hire,
             'gown_class'=>$gown_class,
+
+            'sub_category_id'=>$request->subcategory,
             'category_id'=>$request->category,
             'image'=>$SaveFilePath,
 

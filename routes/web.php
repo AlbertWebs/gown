@@ -155,8 +155,19 @@ Route::prefix('admin')->group(function () {
     Route::post('/edit_Category/{id}', [AdminsController::class, 'edit_Category']);
     Route::get('/deleteCategory/{id}', [AdminsController::class, 'deleteCategory']);
 
+    // Sub Categories
+    Route::get('/sub_categories', [AdminsController::class, 'sub_categories']);
+    Route::get('/addSubCategory', [AdminsController::class, 'addSubCategory']);
+    Route::post('/add_SubCategory', [AdminsController::class, 'add_SubCategory']);
+    Route::get('/editSubCategory/{id}', [AdminsController::class, 'editSubCategory']);
+    Route::post('/edit_SubCategory/{id}', [AdminsController::class, 'edit_SubCategory']);
+    Route::get('/deleteSubCategory/{id}', [AdminsController::class, 'deleteSubCategory']);
+
+
     // Products
     Route::get('/products', [AdminsController::class, 'products']);
+    Route::post('/add_image/{id}', [AdminsController::class, 'add_image']);
+
     Route::get('/addProduct', [AdminsController::class, 'addProduct']);
     Route::post('/add_Product', [AdminsController::class, 'add_Product']);
     Route::get('/editProducts/{id}', [AdminsController::class, 'editProducts']);
