@@ -4,7 +4,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
+        <meta name="author" content="https://designekta.com">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {{--  --}}
         <title>{{$Category->title}} For Sale | Gownsea LTD</title>
@@ -117,80 +117,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 </div>
 
                 <!-- Main Menu -->
-                <div class="inner-nav desktop-nav">
-                    <ul class="clearlist local-scroll">
-                        <li><a href="{{url('/')}}" class="@if($Page_title=="home") active @endif">Home</a></li>
-                        <li>
-                            <a href="#" class="mn-has-sub @if($Page_title=="gown-for-hire") active @endif" role="button" aria-expanded="false" aria-haspopup="true">Graduation Attire <i class="mi-chevron-down"></i></a>
-
-                            <!-- Sub -->
-                            <ul class="mn-sub" style="display: none;">
-                                <?php
-                                    $Gowns = DB::table('gowns')->where('category_id','1')->where('home','1')->get();
-                                ?>
-
-                                @foreach ($Gowns as $Gown)
-                                <li>
-                                    <a href="{{route('gown-for-hire-single', $Gown->gown_class)}}" role="button" aria-expanded="false" aria-haspopup="true">{{$Gown->title}} </a>
-                                </li>
-                                @endforeach
-
-
-
-
-                            </ul>
-                            <!-- End Sub -->
-
-                        </li>
-
-                        <li><a class="@if($Page_title=="legal-attire") active @endif" href="{{route('legal-attire')}}">Legal Attire</a></li>
-                        <li><a  class="@if($Page_title=="church-wear") active @endif" href="{{route('church-wear')}}">Church Wear</a></li>
-                        <li><a class="@if($Page_title=="about-us") active @endif" href="{{route('about-us')}}">About Us</a></li>
-
-                        <?php
-                           $Cats = \App\Models\Category::all();
-                        ?>
-                        <li>
-                            <a href="#" class="mn-has-sub @if($Page_title=="shop") active @endif" role="button" aria-expanded="false" aria-haspopup="true"> Shop Attire <i class="mi-chevron-down"></i></a>
-
-                            <!-- Sub -->
-                            <ul class="mn-sub" style="display: none;">
-
-
-                                @foreach ($Cats as $cats)
-                                <li>
-                                    <a href="{{route('shop-attire', $cats->slung)}}" role="button" aria-expanded="false" aria-haspopup="true">{{$cats->title}} </a>
-                                </li>
-                                @endforeach
-
-
-
-
-                            </ul>
-                            <!-- End Sub -->
-
-                        </li>
-
-
-                        <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">Blog</a></li>
-                        <li><a class="@if($Page_title=="blog") active @endif" href="{{route('bulk-inquiry')}}" href="#">Bulk Hire</a></li>
-                        <li><a class="@if($Page_title=="contact-us") active @endif" href="{{route('contact-us')}}">Contact Us</a></li>
-                    </ul>
-
-
-
-                    <ul class="items-end clearlist local-scroll">
-                        <li>
-                            <a href="{{route('contact-us')}}" class="opacity-1 no-hover">
-                                <span class="btn btn-mod btn-small btn-border-w btn-circle" data-btn-animate="y">
-                                    Let’s talk
-                                    <i class="icon-arrow-right1 size-16"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
+                @include('front.seo.menu')
                 <!-- End Main Menu -->
 
             </div>

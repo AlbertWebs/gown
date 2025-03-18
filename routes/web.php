@@ -9,6 +9,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/gown-for-hire', [App\Http\Controllers\HomeController::class, 'gown_hire'])->name('gown-for-hire');
 Route::get('/legal-attire', [App\Http\Controllers\HomeController::class, 'legal_attire'])->name('legal-attire');
 Route::get('/shop-attire/{slung}', [App\Http\Controllers\HomeController::class, 'shop_attire'])->name('shop-attire');
+Route::get('/shop-attire-collection/{category_id}/{subcategory_id}', [App\Http\Controllers\HomeController::class, 'shop_attire_collection'])->name('shop-attire-collection');
+
 Route::get('/church-wear', [App\Http\Controllers\HomeController::class, 'church_wear'])->name('church-wear');
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about_us'])->name('about-us');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact_us'])->name('contact-us');

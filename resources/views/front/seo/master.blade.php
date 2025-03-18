@@ -4,10 +4,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
+        <meta name="author" content="https://designekta.com">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {{--  --}}
-        <title>Graduation Gowns for Sale & Rent in Kenya | Gownsea LTD</title>
+        <title>Graduation Gowns for Hire & Sale in Kenya | High-Quality Custom Gowns - Gownsea LTD</title>
         <meta name="description" content="Gownsea LTD offers high-quality graduation gowns for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
         <meta name="keywords" content="graduation gowns Kenya, buy graduation gown, rent graduation gown, custom graduation gowns, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
         <meta name="author" content="Gownsea LTD">
@@ -15,10 +15,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <link rel="canonical" href="{{url('/')}}" />
 
         <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="Graduation Gowns for Sale & Rent in Kenya | Gownsea LTD">
+        <meta property="og:title" content="Graduation Gowns for Hire & Sale in Kenya | High-Quality Custom Gowns - Gownsea LTD">
         <meta property="og:description" content="We sell and rent high-quality graduation gowns, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available!">
-        <meta property="og:image" content="https://gownsea.designekta.com/public/theme/images/logs_g.webp">
-        <meta property="og:url" content="https://gownsea.com/">
+        <meta property="og:image" content="{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp">
+        <meta property="og:url" content="{{url('/')}}/">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Gownsea LTD">
         <meta property="og:phone_number" content="+254 728 311537">
@@ -26,9 +26,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Graduation Gowns for Sale & Rent in Kenya | Gownsea LTD">
+        <meta name="twitter:title" content="Graduation Gowns for Hire & Sale in Kenya | High-Quality Custom Gowns - Gownsea LTD">
         <meta name="twitter:description" content="We offer premium graduation gowns for sale and hire, with custom stitching options. Find the perfect gown for your special day!">
-        <meta name="twitter:image" content="https://gownsea.designekta.com/public/theme/images/logs_g.webp">
+        <meta name="twitter:image" content="{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp">
         <meta name="twitter:site" content="@gownsea_ke">
         <meta name="twitter:creator" content="@gownsea_ke">
 
@@ -38,11 +38,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "Gownsea LTD",
-          "url": "https://gownsea.com/",
-          "logo": "https://gownsea.designekta.com/public/theme/images/logs_g.webp",
+          "url": "{{url('/')}}/",
+          "logo": "{{url('/')}}/theme/images/logs_g.webp",
           "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
           "telephone": "+254 728 311537",
-          "image": "https://gownsea.designekta.com/public/theme/images/logs_g.webp",
+          "image": "{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Valji Building, Moktar Daddah St",

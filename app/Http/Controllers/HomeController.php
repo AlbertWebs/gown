@@ -127,6 +127,17 @@ class HomeController extends Controller
         return view('front.products', compact('Page_title','Category','Gowns'));
     }
 
+    public function shop_attire_collection ($category,$subcategory)
+    {
+        $Category = \App\Models\Category::where('slung',$category)->first();
+        $SubCategory =  \App\Models\SubCategory::where('slung',$subcategory)->first();
+        $Gowns = \App\Models\Gown::where('category_id',$Category->id)->where('sub_category_id',$SubCategory->id)->get();
+        $Page_title = "shop";
+        return view('front.product_subcategory', compact('Page_title','Category','Gowns','SubCategory'));
+    }
+
+
+
 
     public function buy_with_m_pesa ($slung)
     {

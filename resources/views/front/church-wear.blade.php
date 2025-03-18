@@ -7,7 +7,7 @@
      <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">
 
          <!-- Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/bigstock-Priest-Wearing-Cassock-With-Cl-427132097.webp')}}')">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content" style="background-image: url('{{asset('uploads/clergy-wear.webp')}}')">
              <div class="container  d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120 " style="min-height: 80vh">
 
                  <!-- Home Section Content -->
@@ -90,7 +90,7 @@
 
 
      <!-- Call to Action Section -->
-     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/chox2.webp')}}'); background-size:contain cover; min-height:800px">
+     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/clergy-wear.webp')}}'); background-size:contain cover; min-height:800px">
 
         <!-- Desktop Overlay -->
         <div class="bg-overlay bg-gradient-primary-alpha-111 d-none d-md-block"></div>

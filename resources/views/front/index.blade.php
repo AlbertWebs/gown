@@ -7,7 +7,7 @@
      <div class="home-section fullwidth-slider-fades bg-dark light-content" id="home">
 
          <!-- Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/graduation-attire.jpg')}}')">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/hero.webp')}}')">
              <div class="container min-height-100vh d-flexs align-items-center correct">
 
                     <!-- Home Section Text -->
@@ -57,7 +57,7 @@
          </section>
 
          <!-- End Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/4_412a431e-bccb-445a-be63-d0315d27516a.webp')}}')">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/clergy-wear.webp')}}')">
             <div class="container min-height-100vh d-flexs align-items-center correct">
 
                    <!-- Home Section Text -->
@@ -219,7 +219,7 @@
                  </div>
                  <div class="col-md-6 mb-sm-30 d-none-mobile">
                      <div class="portfolio-1-image round">
-                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/ce3e6d015e368db7efd118676dd2ff22.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
+                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/clergywear.webp')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
                  </div>
              </div>
@@ -235,7 +235,7 @@
 
                  <div class="col-md-6 mb-sm-30">
                      <div class="portfolio-1-image round">
-                         <a href="#" ><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/pexels-erisvanartsfotografias-6952553.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
+                         <a href="#" ><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/celebrate-in-stye.webp')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
                  </div>
                  <div class="col-md-6 col-lg-6 middle-center-section">

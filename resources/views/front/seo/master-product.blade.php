@@ -4,7 +4,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
+        <meta name="author" content="https://designekta.com">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {{--  --}}
         <title>Buy {{$Gown->title}} in Nairobi | Gownsea LTD</title>

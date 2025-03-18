@@ -2,7 +2,7 @@
                     <ul class="clearlist local-scroll">
                         <li><a href="{{url('/')}}" class="@if($Page_title=="home") active @endif">Home</a></li>
                         <li>
-                            <a href="#" class="mn-has-sub @if($Page_title=="gown-for-hire") active @endif" role="button" aria-expanded="false" aria-haspopup="true">Graduation Attire <i class="mi-chevron-down"></i></a>
+                            <a href="{{route('gown-for-hire')}}" class="mn-has-subs @if($Page_title=="gown-for-hire") active @endif" role="button" aria-expanded="false" aria-haspopup="true">Graduation Attire </a>
 
                             <!-- Sub -->
                             <ul class="mn-sub" style="display: none;">
@@ -70,14 +70,12 @@
 
 
                                     @if($SubCategory->isEmpty())
-                                      <a class="#" href="{{route('shop-attire', $cats->slung)}}" role="button" aria-expanded="true" aria-haspopup="true">{{$cats->title}}</a>
+                                      <a class="mn-has-subs" href="{{route('shop-attire', $cats->slung)}}" >{{$cats->title}}</a>
                                     @else
-                                      <a class="mn-has-sub" href="{{route('shop-attire', $cats->slung)}}" role="button" aria-expanded="true" aria-haspopup="true">{{$cats->title}} <i class="mi-chevron-right right"></i></a>
+                                      <a class="mn-has-sub" href="{{route('shop-attire', $cats->slung)}}" >{{$cats->title}} <i class="mi-chevron-right right"></i></a>
                                     @endif
 
-                                    @if($SubCategory->isEmpty())
 
-                                    @else
                                     <!-- Sub Sub -->
                                     <ul class="mn-sub">
 
@@ -87,8 +85,12 @@
                                         ?>
 
                                         <li>
-                                            <a href="#" class="mn-has-sub">{{$subcategory->title}} <i class="mi-chevron-right right"></i></a>
 
+                                            @if($SpecialGown->isEmpty())
+                                               <a class="mn-has-subs" href="{{route('shop-attire-collection', ['category_id' => $cats->slung, 'subcategory_id'=>$subcategory->slung])}}"  >{{$subcategory->title}} <i class="mi-chevron-right right"></i></a>
+                                            @else
+                                               <a class="mn-has-sub" href="{{route('shop-attire-collection', ['category_id' => $cats->slung, 'subcategory_id'=>$subcategory->slung])}}"  >{{$subcategory->title}} <i class="mi-chevron-right right"></i></a>
+                                            @endif
                                             <ul class="mn-sub">
                                                 @foreach ($SpecialGown as $specialgown)
                                                 <li>
@@ -97,12 +99,13 @@
                                                 @endforeach
                                             </ul>
                                         </li>
-
                                         @endforeach
+
+
 
                                     </ul>
                                     <!-- End Sub Sub -->
-                                    @endif
+
 
                                 </li>
                                 @endforeach
