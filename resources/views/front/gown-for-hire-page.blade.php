@@ -33,7 +33,7 @@
                          </div>
                          <!-- End Home Section Text -->
                          <div class="local-scroll pt-20">
-                            <a href="{{route('bulk-inquiry')}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim"><span>Buy Instead?</span></a>
+                            <a href="{{route('bulk-inquiry')}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim"><span>Buy Bulk Instead?</span></a>
                          </div>
 
                      </div>

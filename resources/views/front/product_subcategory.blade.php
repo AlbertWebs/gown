@@ -8,6 +8,9 @@
 
             <div class="row page-section relative z-index-1 wow fadeInUp" data-wow-offset="0">
                 <div class="col-lg-7 col-md-12 col-sm-12">
+                    <h2 class="sub-category">
+                        {{$SubCategory->title}}
+                    </h2>
 
                     <div >
                         <p class="section-descr">
@@ -22,7 +25,7 @@
             <!-- Image -->
             <div class="row section-image-1-wrap d-none-mobile" data-rellax-y="" data-rellax-speed="1" data-rellax-percentage="0.17">
                 <div class="col-5 offset-7 col-sm-4 offset-sm-8">
-                    <img src="{{$Category->image}}" class="section-image-1" alt="Image Description">
+                    <img src="{{$SubCategory->image}}" class="section-image-1" alt="Image Description">
                 </div>
             </div>
             <!-- End Image -->

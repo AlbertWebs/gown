@@ -12862,6 +12862,10 @@ html:not(.mobile) .owl-animate-fadeInDown{
     height:50px !important;
     display: none;
 }
+.sub-category{
+    text-decoration: underline;
+    text-decoration-color:#c32728;
+}
 @media only screen and (max-width: 540px) {
     .sdg-images{
         width:100%;

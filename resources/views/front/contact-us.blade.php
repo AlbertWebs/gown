@@ -15,9 +15,11 @@
 
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
-
-
-
+                <h1 class="hs-title-9 mb-10">
+                    <span class="wow charsAnimIn" data-splitting="chars" style="color:#fff;">
+                        Contact Us
+                    </span>
+                </h1>
             </div>
         </div>
 

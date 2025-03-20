@@ -165,7 +165,7 @@
                         At Gownsea, we believe that graduation is a once-in-a-lifetime moment, and your attire should reflect your unique journey. That’s why we go beyond just selling and renting graduation gowns—we offer limitless possibilities! Our collection includes gowns for preschool, certificate, diploma, degree, master’s, and PhD graduations. However, if you don’t find exactly what you’re looking for in our collection, we can custom-stitch a gown tailored to your specifications. No matter your style or preference, we are committed to making your graduation day truly special with a perfectly crafted gown just for you!
                     </p>
 
-                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
+                    <a href="{{url('/')}}/shop-attire/graduation-attire" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
                         <span>Shop Attire</span>
                     </a>
 
