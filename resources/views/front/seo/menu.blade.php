@@ -89,7 +89,7 @@
                                             @if($SpecialGown->isEmpty())
                                                <a class="mn-has-subs" href="{{route('shop-attire-collection', ['category_id' => $cats->slung, 'subcategory_id'=>$subcategory->slung])}}"  >{{$subcategory->title}} <i class="mi-chevron-right right"></i></a>
                                             @else
-                                               <a class="mn-has-subs" href="{{route('shop-attire-collection', ['category_id' => $cats->slung, 'subcategory_id'=>$subcategory->slung])}}"  >{{$subcategory->title}} <i class="mi-chevron-right right"></i></a>
+                                               <a class="mn-has-sub" href="{{route('shop-attire-collection', ['category_id' => $cats->slung, 'subcategory_id'=>$subcategory->slung])}}"  >{{$subcategory->title}} <i class="mi-chevron-right right"></i></a>
                                             @endif
                                             <ul class="mn-sub">
                                                 @foreach ($SpecialGown as $specialgown)

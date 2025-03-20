@@ -69,7 +69,7 @@
                        <div class="portfolio-1-image round  prod-img">
                            <img src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
                            <div class="bottom-left">
-                                <h2>{{$gown->title}}</h2>
+                                <h2 class="product-title-h2">{{$gown->title}}</h2>
 
                                 <a href="{{route('our-products',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim" tabindex="0">
                                     <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Shop Now</span><span class="btn-animate-y-2" aria-hidden="true">Shop Graduation Attire</span></span></span>
