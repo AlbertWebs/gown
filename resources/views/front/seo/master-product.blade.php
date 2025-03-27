@@ -6,57 +6,78 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta charset="utf-8">
         <meta name="author" content="https://designekta.com">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         {{--  --}}
-        <title>Buy {{$Gown->title}} in Nairobi | Gownsea LTD</title>
+        <meta name="developer" content="https://designekta.com">
+        <meta name="author" content="Gownsea LTD">
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+        <meta name="subject" content="Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD">
+        <meta name="rating" content="General">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="theme-color" content="#c32728">
+
+        {{--  --}}
+        <title>Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD</title>
         <meta name="description" content="Gownsea LTD offers high-quality {{$Gown->title}} for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
         <meta name="keywords" content="{{$Category->title}} Kenya, buy graduation gown, rent graduation gown, custom {{$Gown->title}}, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
-        <meta name="author" content="Gownsea LTD">
-        <meta name="robots" content="index, follow">
         <link rel="canonical" href="{{url('/')}}/our-products/{{$Gown->slung}}" />
 
-        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="Buy {{$Gown->title}} in Nairobi | Gownsea LTD">
-        <meta property="og:description" content="We sell and rent high-quality {{$Gown->title}}, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available!">
-        <meta property="og:image" content="{{$Gown->image}}">
-        <meta property="og:url" content="{{url('/')}}/our-products/{{$Gown->slung}}">
-        <meta property="og:type" content="website">
+        <!-- Open Graph Meta Tags (Facebook & Social Media) -->
+        <meta property="og:title" content="Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD" />
+        <meta property="og:description" content="We sell and rent high-quality {{$Gown->title}}, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available, Order Now" />
+        <meta property="og:type" content="product" />
+        <meta property="og:url" content="{{url('/')}}/our-products/{{$Gown->slung}}" />
+        <meta property="og:image" content="{{url('/')}}/uploads/products/{{$Gown->image}}" />
         <meta property="og:site_name" content="Gownsea LTD">
         <meta property="og:phone_number" content="+254 728 311537">
         <meta property="og:locale" content="en_KE">
+        <meta property="fb:app_id" content="" />
+        <meta property="og:id" content="{{$Gown->id}}" />
+        <meta property="product:brand" content="Gownsea LTD" />
+        <meta property="product:availability" content="in stock" />
+        <meta property="product:condition" content="new" />
+        <meta property="product:price:amount" content="KES {{$Gown->price}}.00" />
+        <meta property="product:price:currency" content="KES" />
+        <meta property="product:retailer_item_id" content="{{$Gown->id}}" />
 
-        <!-- Twitter Card -->
+         <!-- Twitter Meta Tags -->
+        <meta name="twitter:title" content="Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD" />
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Buy {{$Gown->title}} in Nairobi | Gownsea LTD">
-        <meta name="twitter:description" content="We offer premium {{$Gown->title}} for sale and hire, with custom stitching options. Find the perfect gown for your special day!">
-        <meta name="twitter:image" content="{{$Gown->image}}">
-        <meta name="twitter:site" content="@gownsea_ke">
+        <meta name="twitter:site" content="@gownsea">
+        <meta name="twitter:url" content="{{url('/')}}/our-products/{{$Gown->slung}}">
+        <meta name="twitter:description" content="We sell and rent high-quality {{$Gown->title}}, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available, Order Now" />
+        <meta name="twitter:image" content="{{url('/')}}/uploads/products/{{$Gown->image}}">
         <meta name="twitter:creator" content="@gownsea_ke">
+        <meta name="twitter:image:alt" content="{{$Gown->title}}">
 
         <!-- Schema Markup (Google Rich Results) -->
         <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Gownsea LTD",
-          "url": "https://gownsea.com/",
-          "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "We offer high-quality {{$Category->title}} for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
-          "telephone": "+254 728 311537",
-          "image": "{{url('/')}}/theme/images/logs_g.webp",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Valji Building, Moktar Daddah St",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-          },
-          "openingHours": "Mo-Fr 08:00-17:00",
-          "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-          ]
-        }
-        </script>
+            {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "{{$Gown->title}}",
+            "brand": {
+                "@type": "Brand",
+                "name": "Gownsea LTD"
+            },
+            "description": "We sell and rent high-quality {{$Gown->title}}, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available, Order Now",
+            "image": "{{url('/')}}/uploads/products/{{$Gown->image}}",
+            "url": "{{url('/')}}/our-products/{{$Gown->slung}}",
+            "sku": "GRAD-HOOD-KE",
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "KES",
+                "price": "2500",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                "@type": "LocalBusiness",
+                "name": "Gownsea LTD"
+                }
+            }
+            }
+            </script>
         {{--  --}}
 
         <!-- Favicon -->
