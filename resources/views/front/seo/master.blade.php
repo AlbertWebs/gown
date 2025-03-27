@@ -3,15 +3,18 @@
 You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="author" content="https://designekta.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         {{--  --}}
+        <meta charset="utf-8">
+        <meta name="developer" content="https://designekta.com">
+        <meta name="author" content="Gownsea LTD">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Gownsea LTD">
+        <meta name="robots" content="index, follow">
+
         <title>Graduation Gowns for Hire & Sale in Kenya | High-Quality Custom Gowns - Gownsea LTD</title>
         <meta name="description" content="Gownsea LTD offers high-quality graduation gowns for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
         <meta name="keywords" content="graduation gowns Kenya, buy graduation gown, rent graduation gown, custom graduation gowns, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
-        <meta name="author" content="Gownsea LTD">
-        <meta name="robots" content="index, follow">
         <link rel="canonical" href="{{url('/')}}" />
 
         <!-- Open Graph (Facebook, LinkedIn, etc.) -->
@@ -23,6 +26,8 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta property="og:site_name" content="Gownsea LTD">
         <meta property="og:phone_number" content="+254 728 311537">
         <meta property="og:locale" content="en_KE">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
@@ -31,31 +36,33 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta name="twitter:image" content="{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp">
         <meta name="twitter:site" content="@gownsea_ke">
         <meta name="twitter:creator" content="@gownsea_ke">
+        <meta name="twitter:image:alt" content="Graduation gowns available for sale and hire - Gownsea LTD">
+
 
         <!-- Schema Markup (Google Rich Results) -->
         <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Gownsea LTD",
-          "url": "{{url('/')}}/",
-          "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
-          "telephone": "+254 728 311537",
-          "image": "{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Valji Building, Moktar Daddah St",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-          },
-          "openingHours": "Mo-Fr 08:00-17:00",
-          "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-          ]
-        }
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Gownsea LTD",
+                "url": "{{url('/')}}/",
+                "logo": "{{url('/')}}/theme/images/logs_g.webp",
+                "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
+                "telephone": "+254 728 311537",
+                "image": "{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Valji Building, Moktar Daddah St",
+                    "addressLocality": "Nairobi",
+                    "addressCountry": "KE"
+                },
+                "openingHours": "Mo-Fr 08:00-17:00",
+                "sameAs": [
+                    "https://www.facebook.com/GownseaLtd/",
+                    "https://www.instagram.com/gownsea_ke/",
+                    "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
+                ]
+            }
         </script>
         {{--  --}}
 
