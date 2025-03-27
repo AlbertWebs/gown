@@ -18,9 +18,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         {{--  --}}
         <title>Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD</title>
         <meta name="description" content="Gownsea LTD offers high-quality {{$Gown->title}} for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
-        <meta name="keywords" content="{{$Category->title}} Kenya, buy graduation gown, rent graduation gown, custom {{$Gown->title}}, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
+        <meta name="keywords" content="{{$Category->title}} Kenya, buy graduation gown, rent graduation gown, custom {{$Gown->title}}, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns, Graduation Attire Kenya, buy graduation gown, rent graduation gown, custom Academic Graduation Hoods, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns, graduation hoods price in Kenya, affordable graduation gowns, academic regalia prices">
         <link rel="canonical" href="{{url('/')}}/our-products/{{$Gown->slung}}" />
-        <meta name="keywords" content="Graduation Attire Kenya, buy graduation gown, rent graduation gown, custom Academic Graduation Hoods, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns, graduation hoods price in Kenya, affordable graduation gowns, academic regalia prices">
+        <link rel="alternate" hreflang="en-KE" href="{{url('/')}}/our-products/{{$Gown->slung}}" />
 
         <!-- Open Graph Meta Tags (Facebook & Social Media) -->
         <meta property="og:title" content="Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD" />
