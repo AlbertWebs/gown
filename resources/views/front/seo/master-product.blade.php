@@ -5,8 +5,6 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {{--  --}}
         <meta name="developer" content="https://designekta.com">
         <meta name="author" content="Gownsea LTD">
         <meta name="robots" content="index,follow">
@@ -32,7 +30,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta property="og:image" content="{{$Gown->image}}" />
         <meta property="og:image:alt" content="{{$Gown->title}} available at Gownsea LTD">
         <meta property="og:site_name" content="Gownsea LTD">
-        <meta property="og:phone_number" content="+254 728 311537">
+        <meta property="og:phone_number" content="+254728311537">
         <meta property="og:locale" content="en_KE">
         <meta property="fb:app_id" content="" />
         <meta property="og:id" content="{{$Gown->id}}" />
