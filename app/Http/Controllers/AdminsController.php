@@ -2113,7 +2113,7 @@ class AdminsController extends Controller
 
     // S3
     public function genericFIleUpload($file,$dir,$realPath){
-        $image_name = $file->getClientOriginalName();
+        $image_name = str_replace(' ', '-', $file->getClientOriginalName());
         $file->move(public_path($dir),$image_name);
         $url = url('/');
         $image_path = "$url/$dir/" . $image_name;
