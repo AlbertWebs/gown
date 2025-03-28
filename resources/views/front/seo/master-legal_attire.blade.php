@@ -103,6 +103,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
     </head>
     <body class="appear-animate">
+        <h1 style="display:none">Legal Wear in Kenya – Premium Barrister Wigs, Gowns & Advocates’ Robes for Hire & Sale</h1>
         <div style="z-index:100000;" id="WAButton"></div>
 
         <!-- Page Loader -->

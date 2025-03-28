@@ -3,61 +3,67 @@
 You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="author" content="https://designekta.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{--  --}}
-        <title>Contact Gownsea | Graduation Gown Rentals & Bulk Orders</title>
-        <meta name="description" content="Get in touch with Gownsea for graduation gown rentals, bulk orders, and inquiries. We’re here to assist universities, colleges, and individuals with quality academic regalia. Contact us today!">
-        <meta name="keywords" content="contact Gownsea, graduation gown rental inquiry, bulk graduation gowns contact, academic regalia support, cap and gown orders, graduation gown suppliers, Gownsea customer service">
-        <meta name="author" content="Gownsea LTD">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="{{url('/')}}/bulk-inquiry" />
 
-        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="Contact Gownsea | Graduation Gown Rentals & Bulk Orders">
-        <meta property="og:description" content="Get in touch with Gownsea for graduation gown rentals, bulk orders, and inquiries. We’re here to assist universities, colleges, and individuals with quality academic regalia. Contact us today!">
-        <meta property="og:image" content="{{url('/')}}/theme/images/logs_g.webp">
-        <meta property="og:url" content="{{url('/')}}/bulk-inquiry">
-        <meta property="og:type" content="website">
+        <!-- Standard Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="developer" content="https://designekta.com">
+        <meta name="author" content="Gownsea LTD">
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+        <meta name="subject" content="Contact Gownsea LTD | Graduation Gowns, Legal Attire & Church Wear in Kenya">
+        <meta name="rating" content="General">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="theme-color" content="#c32728">
+        <meta name="expires" content="never">
+
+        <title>Contact Gownsea LTD | Graduation Gowns, Legal Attire & Church Wear in Kenya</title>
+        <meta name="description" content="Need graduation gowns, legal attire, or clergy wear? Contact Gownsea LTD today. Visit us at Valji Building, Moktar Daddah St, Nairobi, or call +254 728 311 537." />
+        <link rel="canonical" href="https://gownsea.com/contact-us" />
+        <meta name="keywords" content="contact Gownsea LTD, graduation gown supplier Kenya, legal attire Nairobi, clergy wear supplier, ceremonial robes Kenya, where to rent graduation gowns in Kenya" />
+
+        <!-- Open Graph (OG) Tags for Social Media -->
+        <meta property="og:title" content="Contact Gownsea LTD | Graduation Gowns, Legal Attire & Church Wear in Kenya" />
+        <meta property="og:description" content="Get in touch with Gownsea LTD for high-quality graduation gowns, legal attire, and clergy wear. Visit us in Nairobi or call +254 728 311 537." />
+        <meta property="og:image" content="https://gownsea.com/uploads/about-gownsea.webp" />
+        <meta property="og:url" content="https://gownsea.com/contact-us" />
+        <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Gownsea LTD">
         <meta property="og:phone_number" content="+254 728 311537">
         <meta property="og:locale" content="en_KE">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Contact Gownsea | Graduation Gown Rentals & Bulk Orders">
-        <meta name="twitter:description" content="Get in touch with Gownsea for graduation gown rentals, bulk orders, and inquiries. We’re here to assist universities, colleges, and individuals with quality academic regalia. Contact us today!">
-        <meta name="twitter:image" content="{{url('/')}}/theme/images/logs_g.webp">
-        <meta name="twitter:site" content="@gownsea_ke">
-        <meta name="twitter:creator" content="@gownsea_ke">
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Gownsea LTD | Graduation Gowns, Legal Attire & Church Wear in Kenya" />
+        <meta name="twitter:description" content="Need premium ceremonial wear? Contact Gownsea LTD today. Call +254 728 311 537 or visit us at Valji Building, Moktar Daddah St, Nairobi." />
+        <meta name="twitter:image" content="https://gownsea.com/uploads/about-gownsea.webp" />
 
-        <!-- Schema Markup (Google Rich Results) -->
+        <!-- Structured Data (Schema Markup) for SEO -->
         <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Gownsea LTD",
-          "url": "https://gownsea.com/",
-          "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "Get in touch with Gownsea for graduation gown rentals, bulk orders, and inquiries. We’re here to assist universities, colleges, and individuals with quality academic regalia. Contact us today!",
-          "telephone": "+254 728 311537",
-          "image": "{{url('/')}}/theme/images/logs_g.webp",
-          "address": {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Gownsea LTD",
+        "url": "https://gownsea.com/contact-us",
+        "image": "https://gownsea.com/uploads/about-gownsea.webp",
+        "description": "Reach out to Gownsea LTD for premium ceremonial wear, including graduation gowns, legal robes, and clergy attire in Kenya.",
+        "address": {
             "@type": "PostalAddress",
             "streetAddress": "Valji Building, Moktar Daddah St",
             "addressLocality": "Nairobi",
             "addressCountry": "KE"
-          },
-          "openingHours": "Mo-Fr 08:00-17:00",
-          "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-          ]
+        },
+        "telephone": "+254728311537",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+254728311537",
+            "contactType": "customer service",
+            "areaServed": "KE",
+            "availableLanguage": "en"
+        }
         }
         </script>
-        {{--  --}}
+
 
         <!-- Favicon -->
         @include('favicon')

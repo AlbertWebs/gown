@@ -4,60 +4,68 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="https://designekta.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{--  --}}
-        <title>About Gown Hiring Company | Gownsea LTD</title>
-        <meta name="description" content="Gownsea LTD offers high-quality About Gown Hiring Company and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
-        <meta name="keywords" content="Kenya, buy graduation gown, rent graduation gown, custom Gown For Leaasing, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="developer" content="https://designekta.com">
         <meta name="author" content="Gownsea LTD">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="{{url('/')}}/about-us" />
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+        <meta name="subject" content="About Gownsea LTD | Kenya’s Leading Supplier of Graduation, Legal & Church Wear">
+        <meta name="rating" content="General">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="theme-color" content="#c32728">
+        <meta name="expires" content="never">
 
-        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="About Gown Hiring Company | Gownsea LTD">
-        <meta property="og:description" content="We sell and rent high-quality Gown For Leaasing, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available!">
-        <meta property="og:image" content="{{url('/')}}/favicon/apple-touch-icon.png">
-        <meta property="og:url" content="{{url('/')}}/about-us">
-        <meta property="og:type" content="website">
+        <title>About Gownsea LTD | Kenya’s Leading Supplier of Graduation, Legal & Church Wear</title>
+        <meta name="description" content="Gownsea LTD is Kenya’s trusted supplier of premium graduation gowns, legal attire, and church wear. Our goal is to provide high-quality, affordable ceremonial outfits for professionals, students, and clergy members." />
+        <link rel="canonical" href="https://gownsea.com/about-us" />
+        <meta name="keywords" content="about Gownsea LTD, gown supplier in Kenya, graduation gowns Kenya, legal attire Nairobi, church robes supplier Kenya, ceremonial wear supplier Kenya" />
+
+
+        <meta property="og:title" content="About Gownsea LTD | Kenya’s Leading Supplier of Graduation, Legal & Church Wear" />
+        <meta property="og:description" content="Gownsea LTD is Kenya’s trusted supplier of premium graduation gowns, legal attire, and church wear. Our goal is to provide high-quality, affordable ceremonial outfits for professionals, students, and clergy members." />
+        <meta property="og:image" content="https://gownsea.com/uploads/pexels-olia-danilevich-8093039.jpg" />
+        <meta property="og:url" content="https://gownsea.com/about-us" />
+        <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Gownsea LTD">
         <meta property="og:phone_number" content="+254 728 311537">
         <meta property="og:locale" content="en_KE">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="About Gown Hiring Company | Gownsea LTD">
-        <meta name="twitter:description" content="We offer premium About Gown Hiring Company and hire, with custom stitching options. Find the perfect gown for your special day!">
-        <meta name="twitter:image" content="{{url('/')}}/favicon/apple-touch-icon.png">
-        <meta name="twitter:site" content="@gownsea_ke">
-        <meta name="twitter:creator" content="@gownsea_ke">
 
-        <!-- Schema Markup (Google Rich Results) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Gownsea LTD | Kenya’s Leading Supplier of Graduation, Legal & Church Wear" />
+        <meta name="twitter:description" content="Discover Gownsea LTD – Kenya’s trusted provider of premium-quality graduation gowns, legal attire, and clergy wear. Serving students, professionals, and religious leaders." />
+        <meta name="twitter:image" content="https://gownsea.com/uploads/pexels-olia-danilevich-8093039.jpg" />
+
+        {{-- <!— Structured Data (Schema Markup) for SEO —> --}}
         <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Gownsea LTD",
-          "url": "https://gownsea.com/",
-          "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "We offer high-quality About Gown Hiring Company and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
-          "telephone": "+254 728 311537",
-          "image": "{{url('/')}}/theme/images/logs_g.webp",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Valji Building, Moktar Daddah St",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-          },
-          "openingHours": "Mo-Fr 08:00-17:00",
-          "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-          ]
-        }
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Gownsea LTD",
+                "url": "https://gownsea.com",
+                "logo": "https://gownsea.com/theme/images/logs_g.webp",
+                "description": "Gownsea LTD is Kenya’s trusted supplier of premium graduation gowns, legal attire, and church wear. Our mission is to provide high-quality ceremonial outfits at affordable prices.",
+                "foundingDate": "2024",
+                "sameAs": [
+                  "https://www.facebook.com/GownseaLtd/",
+                  "https://www.instagram.com/gownsea_ke/",
+                  "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
+                ],
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Valji Building, Moktar Daddah St",
+                  "addressLocality": "Nairobi",
+                  "addressCountry": "KE"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+254728311537",
+                  "contactType": "customer service",
+                  "areaServed": "KE",
+                  "availableLanguage": "en"
+                }
+              }
         </script>
-        {{--  --}}
 
         <!-- Favicon -->
         @include('favicon')

@@ -26,7 +26,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta property="og:image" content="https://gownsea.com/uploads/clergy-wear.webp" />
         <meta property="og:url" content="https://gownsea.com/church-wear" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Gownsea LTD" />
+        <meta property="og:site_name" content="Gownsea LTD">
+        <meta property="og:phone_number" content="+254 728 311537">
+        <meta property="og:locale" content="en_KE">
 
         <!-- Twitter Card Tags -->
         <meta name="twitter:card" content="summary_large_image" />
@@ -102,6 +104,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
     </head>
     <body class="appear-animate">
+        <h1 style="display: none">Church Wear in Kenya – Premium Clergy Robes, Cassocks & Liturgical Attire for Hire & Sale</h1>
         <div style="z-index:100000;" id="WAButton"></div>
 
         <!-- Page Loader -->

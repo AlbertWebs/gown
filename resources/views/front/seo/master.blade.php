@@ -87,6 +87,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
     </head>
     <body class="appear-animate">
+        <h1 style="display: none">Graduation Gown Hire in Kenya – Premium Academic Gowns for Rent at Affordable Prices</h1>
         <div style="z-index:100000;" id="WAButton"></div>
 
         <!-- Page Loader -->

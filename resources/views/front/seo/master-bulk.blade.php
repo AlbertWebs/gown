@@ -3,61 +3,69 @@
 You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="author" content="https://designekta.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{--  --}}
-        <title>Bulk Graduation Gown Hire for Institutions | Gownsea</title>
-        <meta name="description" content="Looking to hire graduation gowns in bulk for your institution? Gownsea offers high-quality academic regalia for universities, colleges, and schools. Request a quote today!">
-        <meta name="keywords" content="bulk graduation gown hire, institution graduation gowns, university gown rental, academic regalia hire, graduation robes for schools, cap and gown rental, Gownsea bulk inquiry">
-        <meta name="author" content="Gownsea LTD">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="{{url('/')}}/bulk-inquiry" />
 
-        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="Bulk Graduation Gown Hire for Institutions | Gownsea">
-        <meta property="og:description" content="Looking to hire graduation gowns in bulk for your institution? Gownsea offers high-quality academic regalia for universities, colleges, and schools. Request a quote today!">
-        <meta property="og:image" content="{{url('/')}}/theme/images/logs_g.webp">
-        <meta property="og:url" content="{{url('/')}}/bulk-inquiry">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Gownsea LTD">
+        <!-- Standard Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="developer" content="https://designekta.com">
+        <meta name="author" content="Gownsea LTD">
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+        <meta name="subject" content="Bulk Graduation Gown Hire for Institutions | Gown Rentals in Kenya">
+        <meta name="rating" content="General">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="theme-color" content="#c32728">
+        <meta name="expires" content="never">
+
+        <title>Bulk Graduation Gown Hire for Institutions | Affordable Gown Rentals – Gownsea LTD</title>
+        <meta name="description" content="Looking for bulk graduation gown hire? Gownsea LTD provides high-quality academic gowns for universities and institutions at affordable rates. Contact us today!" />
+        <link rel="canonical" href="https://gownsea.com/bulk-inquiry" />
+        <meta name="keywords" content="bulk graduation gowns, academic gowns rental, university gown hire, graduation attire for institutions, bulk ceremonial robes, graduation gowns for schools, institutional gown rental Kenya" />
+
+        <!-- Open Graph (OG) Tags for Social Media -->
+        <meta property="og:title" content="Bulk Graduation Gown Hire for Institutions | Affordable Gown Rentals – Gownsea LTD" />
+        <meta property="og:description" content="Need bulk graduation gowns? Gownsea LTD offers affordable academic gown rentals for universities and institutions in Kenya. Contact us today!" />
+        <meta property="og:image" content="https://gownsea.com/uploads/pexels-olia-danilevich-8093039.jpg" />
+        <meta property="og:url" content="https://gownsea.com/bulk-inquiry" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Gownsea LTD" />
         <meta property="og:phone_number" content="+254 728 311537">
         <meta property="og:locale" content="en_KE">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Bulk Graduation Gown Hire for Institutions | Gownsea">
-        <meta name="twitter:description" content="Looking to hire graduation gowns in bulk for your institution? Gownsea offers high-quality academic regalia for universities, colleges, and schools. Request a quote today!">
-        <meta name="twitter:image" content="{{url('/')}}/theme/images/logs_g.webp">
-        <meta name="twitter:site" content="@gownsea_ke">
-        <meta name="twitter:creator" content="@gownsea_ke">
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bulk Graduation Gown Hire for Institutions | Affordable Gown Rentals – Gownsea LTD" />
+        <meta name="twitter:description" content="Looking for bulk academic gown hire? Gownsea LTD supplies premium-quality graduation gowns for institutions in Kenya. Get in touch today!" />
+        <meta name="twitter:image" content="https://gownsea.com/uploads/pexels-olia-danilevich-8093039.jpg" />
 
-        <!-- Schema Markup (Google Rich Results) -->
+        <!-- Structured Data (Schema Markup) for SEO -->
         <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Gownsea LTD",
-          "url": "https://gownsea.com/",
-          "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "Looking to hire graduation gowns in bulk for your institution? Gownsea offers high-quality academic regalia for universities, colleges, and schools. Request a quote today!",
-          "telephone": "+254 728 311537",
-          "image": "{{url('/')}}/theme/images/logs_g.webp",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Valji Building, Moktar Daddah St",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-          },
-          "openingHours": "Mo-Fr 08:00-17:00",
-          "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-          ]
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Bulk Graduation Gown Hire",
+        "image": "https://gownsea.com/uploads/pexels-olia-danilevich-8093039.jpg",
+        "description": "High-quality graduation gowns available for bulk rental to institutions, universities, and colleges at affordable prices.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Gownsea LTD",
+            "logo": "https://gownsea.com/theme/images/logs_g.webp"
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "KES",
+            "price": "Contact for pricing",
+            "url": "https://gownsea.com/bulk-inquiry",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "256"
+        }
         }
         </script>
-        {{--  --}}
+
 
         <!-- Favicon -->
         @include('favicon')
@@ -79,6 +87,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
     </head>
     <body class="appear-animate">
+        <h1 style="display: none">Bulk Graduation Gown Hire for Universities & Institutions in Kenya – Affordable & High-Quality Academic Gowns</h1>
         <div style="z-index:100000;" id="WAButton"></div>
 
         <!-- Page Loader -->
