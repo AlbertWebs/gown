@@ -305,7 +305,7 @@ class HomeController extends Controller
     }
 
     public function changeImageurl(){
-        $Gown = App\Models\Gown::all(); // Assuming you have a Product model
+        $Gown = \App\Models\Gown::all();
 
         foreach ($gown as $product) {
             $product->image = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image);
