@@ -304,6 +304,20 @@ class HomeController extends Controller
         }
     }
 
+    public function changeImageurl(){
+        $Gown = Gown::all(); // Assuming you have a Product model
+
+        foreach ($gown as $product) {
+            $product->image = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image);
+            $product->image_two = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image_two);
+            $product->image_three = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image_three);
+            $product->image_four = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image_four);
+
+            $product->save();
+        }
+
+    }
+
 
 
 
