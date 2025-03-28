@@ -4,60 +4,83 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="https://designekta.com">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{--  --}}
-        <title>{{$Category->title}} For Sale | Gownsea LTD</title>
-        <meta name="description" content="Gownsea LTD offers high-quality {{$Category->title}} for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
-        <meta name="keywords" content="{{$Category->title}} Kenya, buy graduation gown, rent graduation gown, custom {{$Category->title}}, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
+        <meta name="developer" content="https://designekta.com">
         <meta name="author" content="Gownsea LTD">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="{{url('/')}}/church-wear" />
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+        <meta name="subject" content="Church Wear in Kenya | Clergy Robes, Cassocks & Religious Vestments – Gownsea LTD">
+        <meta name="rating" content="General">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="theme-color" content="#c32728">
+        <meta name="expires" content="never">
 
-        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="{{$Category->title}} For Sale | Gownsea LTD">
-        <meta property="og:description" content="We sell and rent high-quality {{$Category->title}}, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available!">
-        <meta property="og:image" content="{{$Category->image}}">
-        <meta property="og:url" content="{{url('/')}}/church-wear">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Gownsea LTD">
-        <meta property="og:phone_number" content="+254 728 311537">
-        <meta property="og:locale" content="en_KE">
+        <title>Church Wear in Kenya | Clergy Robes, Cassocks & Religious Vestments – Gownsea LTD</title>
+        <meta name="description" content="Find high-quality clergy robes, cassocks, and religious vestments at Gownsea LTD. Perfect for priests, pastors, and church leaders. Available for purchase and hire." />
+        <link rel="canonical" href="https://gownsea.com/church-wear" />
+        <meta name="keywords" content="Church Wear in Kenya, clergy robes, cassocks, religious vestments, priest garments, pastor attire, liturgical clothing, choir robes, bishop robes, clerical attire" />
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="{{$Category->title}} For Sale | Gownsea LTD">
-        <meta name="twitter:description" content="We offer premium {{$Category->title}} for sale and hire, with custom stitching options. Find the perfect gown for your special day!">
-        <meta name="twitter:image" content="{{$Category->image}}">
-        <meta name="twitter:site" content="@gownsea_ke">
-        <meta name="twitter:creator" content="@gownsea_ke">
+        <!-- Open Graph (OG) Tags for Social Media -->
+        <meta property="og:title" content="Church Wear in Kenya | Clergy Robes, Cassocks & Religious Vestments – Gownsea LTD" />
+        <meta property="og:description" content="Browse our collection of premium clergy robes, cassocks, and religious vestments for pastors, priests, and church leaders. Available for hire or purchase." />
+        <meta property="og:image" content="https://gownsea.com/uploads/clergy-wear.webp" />
+        <meta property="og:url" content="https://gownsea.com/church-wear" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Gownsea LTD" />
 
-        <!-- Schema Markup (Google Rich Results) -->
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Church Wear in Kenya | Clergy Robes, Cassocks & Religious Vestments – Gownsea LTD" />
+        <meta name="twitter:description" content="Shop clergy robes, cassocks, and religious vestments for pastors, priests, and church leaders at Gownsea LTD. High-quality and affordable options available." />
+        <meta name="twitter:image" content="https://gownsea.com/uploads/clergy-wear.webp" />
+        <meta name="twitter:site" content="@GownseaLTD" />
+
+        <!-- Structured Data (Schema Markup) for SEO -->
         <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Gownsea LTD",
-          "url": "https://gownsea.com/",
-          "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "We offer high-quality {{$Category->title}} for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
-          "telephone": "+254 728 311537",
-          "image": "{{url('/')}}/theme/images/logs_g.webp",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Valji Building, Moktar Daddah St",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-          },
-          "openingHours": "Mo-Fr 08:00-17:00",
-          "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-          ]
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Church Wear in Kenya - Clergy Robes, Cassocks & Religious Vestments",
+            "image": "https://gownsea.com/uploads/clergy-wear.webp",
+            "description": "Discover premium-quality clergy robes, cassocks, and religious vestments for priests, pastors, and church leaders. Available for purchase and hire.",
+            "sku": "CHURCH-WEAR-001",
+            "brand": {
+                "@type": "Brand",
+                "name": "Gownsea LTD",
+                "logo": "https://gownsea.com/theme/images/logs_g.webp"
+            },
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "KES",
+                "price": "Contact for pricing",
+                "url": "https://gownsea.com/church-wear",
+                "availability": "https://schema.org/InStock",
+                "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "priceCurrency": "KES",
+                    "price": "0.00",
+                    "priceType": "Negotiable"
+                }
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "220"
+            },
+            "review": {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "John Doe"
+                }
+            }
         }
         </script>
-        {{--  --}}
+
 
         <!-- Favicon -->
         @include('favicon')

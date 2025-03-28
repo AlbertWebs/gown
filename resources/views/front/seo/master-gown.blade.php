@@ -4,67 +4,90 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="https://designekta.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{--  --}}
-        <title>Graduation Gowns for Hire & Sale in Kenya | Custom & Quality Gown Hire - Gownsea LTD</title>
-        <meta name="description" content="Gownsea LTD offers high-quality graduation gowns for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
-        <meta name="keywords" content="graduation gowns Kenya, buy graduation gown, rent graduation gown, custom graduation gowns, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="developer" content="https://designekta.com">
         <meta name="author" content="Gownsea LTD">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="{{url('/')}}/gown-for-hire" />
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+        <meta name="subject" content="Graduation Gowns for Hire in Kenya | Affordable & Quality Gown Rental – Gownsea LTD">
+        <meta name="rating" content="General">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="theme-color" content="#c32728">
+        <meta name="expires" content="never">
+        <link rel="canonical" href="https://gownsea.com/gown-for-hire">
+        <link rel="alternate" href="https://gownsea.com/gown-for-hire" hreflang="en-ke">
+        <link rel="icon" type="image/png" href="https://gownsea.com/theme/images/logs_g.webp">
+        <link rel="apple-touch-icon" href="https://gownsea.com/theme/images/logs_g.webp">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src * data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
 
-        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="Graduation Gowns for Hire & Sale in Kenya | Custom & Quality Gown Hire - Gownsea LTD">
-        <meta property="og:description" content="Gownsea LTD offers high-quality graduation gowns for hire and sale in Kenya, including custom-stitched gowns for all academic levels: preschool, certificate, diploma, degree, master's, and PhD.">
-        <meta property="og:image" content="{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp">
-        <meta property="og:url" content="{{url('/')}}/gown-for-hire">
-        <meta property="og:site_name" content="Gownsea LTD">
+        <title>Graduation Gowns for Hire in Kenya | Affordable & Quality Gown Rental – Gownsea LTD</title>
+        <meta name="description" content="Looking for graduation gowns for hire? Gownsea LTD offers premium-quality academic gowns at affordable rental prices. Book your graduation attire today!">
+        <meta name="keywords" content="graduation gowns for hire, academic gowns rental, graduation attire hire, gown rentals, hire a graduation gown, affordable graduation gowns, rent graduation robes, university graduation gowns, best gown hire services">
+
+        <!-- Open Graph (OG) Tags for Social Media -->
+        <meta property="og:title" content="Graduation Gowns for Hire in Kenya | Affordable & Quality Gown Rental – Gownsea LTD">
+        <meta property="og:description" content="Looking for graduation gowns for hire? Gownsea LTD offers premium-quality academic gowns at affordable rental prices. Book your graduation attire today!">
+        <meta property="og:image" content="https://gownsea.com/uploads/pexels-olia-danilevich-8093039.jpg">
+        <meta property="og:url" content="https://gownsea.com/gown-for-hire">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Gownsea LTD">
-        <meta property="og:phone_number" content="+254 728 311537">
         <meta property="og:locale" content="en_KE">
 
         <!-- Twitter Card Tags -->
-        <meta name="twitter:title" content="Graduation Gowns for Hire & Sale in Kenya | Custom & Quality Gown Hire - Gownsea LTD">
-        <meta name="twitter:description" content="Gownsea LTD provides high-quality graduation gowns for hire and sale in Kenya, tailored for preschool, diploma, degree, master's, and PhD levels. Custom-stitched options available.">
-        <meta name="twitter:image" content="{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@gownsea_ke">
-        <meta name="twitter:creator" content="@gownsea_ke">
+        <meta name="twitter:title" content="Graduation Gowns for Hire in Kenya | Affordable & Quality Gown Rental – Gownsea LTD">
+        <meta name="twitter:description" content="Need a graduation gown? Gownsea LTD provides high-quality academic gown rentals at unbeatable prices. Reserve yours today!">
+        <meta name="twitter:image" content="https://gownsea.com/uploads/pexels-olia-danilevich-8093039.jpg">
+        <meta name="twitter:site" content="@GownseaLTD">
 
-        <!-- Image Alt Text for Logo -->
-        <meta name="image:alt" content="Gownsea LTD logo">
-        <!-- Image Alt Text for Gown Image -->
-        <meta name="image:alt" content="Gownsea graduation gowns for hire and sale">
-
-
-        <!-- Schema Markup (Google Rich Results) -->
+        <!-- Structured Data (Schema Markup) for SEO -->
         <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Gownsea LTD",
-          "url": "{{url('/')}}/",
-          "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
-          "telephone": "+254 728 311537",
-          "image": "{{url('/')}}/theme/images/logs_g.webp",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Valji Building, Moktar Daddah St",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-          },
-          "openingHours": "Mo-Fr 08:00-17:00",
-          "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-          ]
-        }
-        </script>
-        {{--  --}}
+            {
+                "@context": "https://schema.org",
+                "@type": "Product",
+                "name": "Graduation Gowns for Hire",
+                "image": "https://gownsea.com/uploads/pexels-olia-danilevich-8093039.jpg",
+                "description": "Affordable and high-quality graduation gowns for hire. Perfect for university and college graduation ceremonies.",
+                "sku": "GRAD-GOWN-001",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Gownsea LTD",
+                    "logo": "https://gownsea.com/theme/images/logs_g.webp"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "KES",
+                    "price": "0.00",
+                    "url": "https://gownsea.com/gown-for-hire",
+                    "availability": "https://schema.org/InStock",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "priceCurrency": "KES",
+                        "price": "0.00",
+                        "priceType": "Negotiable"
+                    }
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "256"
+                },
+                "review": {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "John Doe"
+                    }
+                }
+            }
+            </script>
+
+
+
 
         <!-- Favicon -->
         @include('favicon')

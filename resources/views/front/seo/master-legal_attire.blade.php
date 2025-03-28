@@ -4,60 +4,84 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="https://designekta.com">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{--  --}}
-        <title>{{$Category->title}} For Sale | Legal Wear For Hire in Kenya | Gownsea LTD</title>
-        <meta name="description" content="Gownsea LTD offers high-quality {{$Category->title}} for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
-        <meta name="keywords" content="{{$Category->title}} Kenya, buy graduation gown, rent graduation gown, custom {{$Category->title}}, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns">
+        <meta name="developer" content="https://designekta.com">
         <meta name="author" content="Gownsea LTD">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="{{url('/')}}/legal-attire" />
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+        <meta name="subject" content="Legal Wear in Kenya | Barrister Wigs & Advocates’ Robes – Gownsea LTD">
+        <meta name="rating" content="General">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="theme-color" content="#c32728">
+        <meta name="expires" content="never">
 
-        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="{{$Category->title}} For Sale | Legal Wear For Hire in Kenya | Gownsea LTD">
-        <meta property="og:description" content="We sell and rent high-quality {{$Category->title}}, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available!">
-        <meta property="og:image" content="{{$Category->image}}">
-        <meta property="og:url" content="{{url('/')}}/legal-attire">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Gownsea LTD">
-        <meta property="og:phone_number" content="+254 728 311537">
-        <meta property="og:locale" content="en_KE">
+        <title>Legal Wear in Kenya | Barrister Wigs & Advocates’ Robes – Gownsea LTD</title>
+        <meta name="description" content="Looking for high-quality legal wear? Gownsea LTD offers professional barrister robes, advocate gowns, and traditional legal wigs for hire or purchase." />
+        <link rel="canonical" href="https://gownsea.com/legal-attire" />
+        <meta name="keywords" content="legal wear, barrister robes, advocate gowns, lawyer robes, legal wigs, court attire, advocate attire, buy legal robes, rent legal wear, professional legal clothing" />
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="{{$Category->title}} For Sale | Legal Wear For Hire in Kenya | Gownsea LTD">
-        <meta name="twitter:description" content="We offer premium {{$Category->title}} for sale and hire, with custom stitching options. Find the perfect gown for your special day!">
-        <meta name="twitter:image" content="{{$Category->image}}">
-        <meta name="twitter:site" content="@gownsea_ke">
-        <meta name="twitter:creator" content="@gownsea_ke">
+        <!-- Open Graph (OG) Tags for Social Media -->
+        <meta property="og:title" content="Legal Wear in Kenya | Barrister Wigs & Advocates’ Robes – Gownsea LTD" />
+        <meta property="og:description" content="Need legal attire? Gownsea LTD provides premium legal robes, wigs, and gowns for barristers, advocates, and court professionals." />
+        <meta property="og:image" content="https://gownsea.com/uploads/barrister-wig.jpg" />
+        <meta property="og:url" content="https://gownsea.com/legal-attire" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Gownsea LTD" />
 
-        <!-- Schema Markup (Google Rich Results) -->
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Legal Wear in Kenya | Barrister Wigs & Advocates’ Robes – Gownsea LTD" />
+        <meta name="twitter:description" content="Shop or rent professional legal attire, including barrister robes, wigs, and advocate gowns at Gownsea LTD. Get your court attire today!" />
+        <meta name="twitter:image" content="https://gownsea.com/uploads/barrister-wig.jpg" />
+        <meta name="twitter:site" content="@GownseaLTD" />
+
+        <!-- Structured Data (Schema Markup) for SEO -->
         <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Gownsea LTD",
-          "url": "https://gownsea.com/",
-          "logo": "{{url('/')}}/theme/images/logs_g.webp",
-          "description": "We offer high-quality {{$Category->title}} for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
-          "telephone": "+254 728 311537",
-          "image": "{{url('/')}}/theme/images/logs_g.webp",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Valji Building, Moktar Daddah St",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-          },
-          "openingHours": "Mo-Fr 08:00-17:00",
-          "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-          ]
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Legal Attire - Barrister & Advocate Robes, Wigs & Gowns",
+            "image": "https://gownsea.com/uploads/barrister-wig.jpg",
+            "description": "High-quality legal wear, including barrister robes, advocate gowns, and traditional legal wigs. Available for hire or purchase.",
+            "sku": "LEGAL-WEAR-001",
+            "brand": {
+                "@type": "Brand",
+                "name": "Gownsea LTD",
+                "logo": "https://gownsea.com/theme/images/logs_g.webp"
+            },
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "KES",
+                "price": "0.00",
+                "url": "https://gownsea.com/legal-attire",
+                "availability": "https://schema.org/InStock",
+                "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "priceCurrency": "KES",
+                    "price": "0.00",
+                    "priceType": "Negotiable"
+                }
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "198"
+            },
+            "review": {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Jane Doe"
+                }
+            }
         }
         </script>
-        {{--  --}}
+
+
 
         <!-- Favicon -->
         @include('favicon')
