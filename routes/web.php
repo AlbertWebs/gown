@@ -49,6 +49,9 @@ Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'priv
 Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class, 'terms_and_conditions'])->name('terms-and-conditions');
 Route::get('/return-policy', [App\Http\Controllers\HomeController::class, 'return_policy'])->name('return-policy');
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
+Route::get('/change-image-url', [App\Http\Controllers\HomeController::class, 'changeImageurl'])->name('change-image-url');
+
+
 
 Auth::routes();
 

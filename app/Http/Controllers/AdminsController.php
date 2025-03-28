@@ -2111,14 +2111,28 @@ class AdminsController extends Controller
     //write a method to send email
 
 
-        // S3
-        public function genericFIleUpload($file,$dir,$realPath){
-            $image_name = $file->getClientOriginalName();
-            $file->move(public_path($dir),$image_name);
-            $url = url('/');
-            $image_path = "$url/$dir/" . $image_name;
-            return $image_path;
+    // S3
+    public function genericFIleUpload($file,$dir,$realPath){
+        $image_name = $file->getClientOriginalName();
+        $file->move(public_path($dir),$image_name);
+        $url = url('/');
+        $image_path = "$url/$dir/" . $image_name;
+        return $image_path;
+    }
+
+    public function changeImageurl(){
+        $Gown = Gown::all(); // Assuming you have a Product model
+
+        foreach ($gown as $product) {
+            $product->image = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image);
+            $product->image_two = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image_two);
+            $product->image_three = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image_three);
+            $product->image_four = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $product->image_four);
+
+            $product->save();
         }
+
+    }
 
 }
 
