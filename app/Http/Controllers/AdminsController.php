@@ -781,6 +781,18 @@ class AdminsController extends Controller
         return view('admin.editProduct',compact('page_title','Product','page_name','Category','SubCategory'));
     }
 
+
+
+    public function addGallery($id){
+
+        activity()->log('Add Galllery Product ID number '.$id.' ');
+        $Product = \App\Models\Gown::find($id);
+        $page_title = 'formfiletext';
+        $page_name = 'Edit Home Page Slider';
+        return view('admin.addGallery',compact('page_title','Product','page_name','id'));
+    }
+
+
     public function edit_Product(Request $request, $id){
         activity()->log('Evoked Edit Product For Product ID number '.$id.' ');
         $dir = 'uploads/products';

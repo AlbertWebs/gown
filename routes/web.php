@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\DropzoneController;
+
 
 
 
@@ -174,6 +176,7 @@ Route::prefix('admin')->group(function () {
     Route::post('/add_image/{id}', [AdminsController::class, 'add_image']);
 
     Route::get('/addProduct', [AdminsController::class, 'addProduct']);
+    Route::get('/addGallery/{id}', [AdminsController::class, 'addGallery']);
     Route::post('/add_Product', [AdminsController::class, 'add_Product']);
     Route::get('/editProducts/{id}', [AdminsController::class, 'editProducts']);
     Route::post('/edit_Product/{id}', [AdminsController::class, 'edit_Product']);
@@ -288,5 +291,14 @@ Route::prefix('admin')->group(function () {
     Route::get('/google', [LoginController::class, 'google']);
     Route::get('/google/redirect', [LoginController::class, 'googleRedirect']);
 
+
+
 });
 
+Route::controller(DropzoneController::class)->group(function(){
+
+    Route::get('dropzone', 'index');
+
+    Route::post('dropzone/store', 'store')->name('dropzone.store');
+
+});
