@@ -77,8 +77,8 @@
                             <dt>
                                 <a  class="no-borders weight-500" href="#" >Product Details</a>
                             </dt>
-                            <dd class="blacks dd-product" >
-                                <p>Head to our Private Hire request form and we'll respond as soon as we can.</p>
+                            <dd class="black dd-product" >
+                                <p>{!!html_entity_decode($Gown->content)!!}.</p>
                             </dd>
                         </dl>
 
@@ -126,6 +126,16 @@
                             <a href="https://wa.me/+254728311537?text=Hello i came across *{{$Gown->title}}* on your website {{url('/')}}/our-products/{{$Gown->slung}} and would love to place an order" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim btn-border-whatsapp">
                                 <span data-btn-animate="y"><span class="fa fa-whatsapp"></span>&nbsp; Order on WhatsApp</span>
                             </a>
+                            <?php
+                               $Gallery = \App\Models\Gallery::where('product_id',$Gown->id)->get();
+                            ?>
+                            @if($Gallery->isEmpty())
+
+                            @else
+                            <a href="{{route('open-gallery',$Gown->id)}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim btn-border-b">
+                                <span data-btn-animate="y">Expore Gallery</span>
+                            </a>
+                            @endif
                         </div>
 
 

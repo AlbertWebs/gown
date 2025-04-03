@@ -279,6 +279,13 @@ class HomeController extends Controller
         return view('front.failed', compact('Page_title'));
     }
 
+    public function open_gallery ($id)
+    {
+        $Gallery = \App\Models\Gallery::where('product_id', $id)->get();
+        $Gown = \App\Models\Gown::where('id', $id)->first();
+        $Page_title = "shop";
+        return view('front.gallery', compact('Page_title','Gallery','Gown'));
+    }
 
 
 

@@ -52,6 +52,8 @@ Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class,
 Route::get('/return-policy', [App\Http\Controllers\HomeController::class, 'return_policy'])->name('return-policy');
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
 Route::get('/change-image-url', [App\Http\Controllers\HomeController::class, 'changeImageurl'])->name('change-image-url');
+Route::get('/open-gallery/{id}', [App\Http\Controllers\HomeController::class, 'open_gallery'])->name('open-gallery');
+
 
 
 
