@@ -12,11 +12,19 @@ class DropzoneController extends Controller
     {
         return view('dropzone');
     }
+    public function genericFIleUpload($file,$dir,$realPath){
+        $image_name = str_replace(' ', '-', $file->getClientOriginalName());
+        $file->move(public_path($dir),$image_name);
+        $url = url('/');
+        $image_path = "$url/$dir/" . $image_name;
+        return $image_path;
+    }
     public function store(Request $request)
     {
-        $image = $request->file('file');
-        $imageName = time().'.'.$image->extension();
-        $image->move(public_path('uploads/gallery'),$imageName);
+        $dir = "uploads/gallery";
+        $file = $request->file('file');
+        $realPath = $request->file('file')->getRealPath();
+        $imageName = $this->genericFIleUpload($file,$dir,$realPath);
 
         $Product = new Gallery();
         $Product->image = $imageName;
