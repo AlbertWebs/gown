@@ -4,7 +4,7 @@
 <main id="main">
 
     <!-- Home Section -->
-    <section class="page-section bg-dark-alpha-50 light-content" style="background-image: url(images/demo-elegant/section-bg-1.jpg)" id="home">
+    <section class="page-section bg-dark-alpha-50 light-content" style="background-image: url('{{asset('uploads/banner.jpg')}}')" id="home">
         <div class="container position-relative pt-20 pt-sm-20 text-center">
 
             <h1 class="hs-title-3 mb-10 wow fadeInUpShort" data-wow-duration="0.6s">{{$Gown->title}}</h1>

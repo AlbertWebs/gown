@@ -46,7 +46,7 @@ class HomeController extends Controller
     public function gown_hire ()
     {
         $Page_title = "gown-for-hire";
-        $Gowns = \App\Models\Gown::where('category_id', 1)->get();
+        $Gowns = \App\Models\Gown::where('category_id', 1)->limit('4')->inRandomOrder()->get();
         return view('front.gown-for-hire-page', compact('Gowns','Page_title'));
     }
 

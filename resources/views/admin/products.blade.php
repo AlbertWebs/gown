@@ -67,7 +67,7 @@
                             <td>
                                 <a target="new" href="{{url('/')}}/product/{{$item->slung}}"><img width="150" src="{{$item->image}}"></a>
                                 <hr>
-                                <a target="new" href="{{url('/')}}/admin/addGallery/{{$cat->id}}"> Add Gallery </a>
+                                <a target="new" href="{{url('/')}}/admin/addGallery/{{$item->id}}"> Add Gallery </a>
                             </td>
                             <td><a href="{{url('/')}}/admin/editProducts/{{$item->id}}" class="sb2-2-1-edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                             </td>

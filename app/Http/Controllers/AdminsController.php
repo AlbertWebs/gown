@@ -716,7 +716,7 @@ class AdminsController extends Controller
         $Product->price_hire = $request->price_hire;
         $Product->gown_class = $gown_class;
         $Product->price = $request->price;
-        $Product->content = $request->content;
+        $Product->content = $request->ckeditor;
         $Product->image = $SaveFilePath;
         $Product->save();
         Session::flash('message', "Product Has Been Added");
@@ -814,7 +814,7 @@ class AdminsController extends Controller
         $updateDetails = array(
             'title'=>$request->title,
             'slung' => Str::slug($request->title),
-            'content'=>$request->content,
+            'content'=>$request->ckeditor,
             'price'=>$request->price,
             'price_hire'=>$request->price_hire,
             'gown_class'=>$gown_class,

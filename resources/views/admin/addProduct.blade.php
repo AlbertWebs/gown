@@ -127,7 +127,7 @@
 
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <textarea required id="article-ckeditor" name="content" class="materialilze-textarea" placeholder="content"></textarea>
+                                    <textarea required id="article-ckeditor" name="ckeditor" class="materialilze-textarea" placeholder="content"></textarea>
                                     {{-- <label for="textarea1">Blog Descriptions:</label> --}}
                                 </div>
                             </div><br><br>
@@ -135,10 +135,8 @@
 
 
 
-                                <script src="https://amanivehiclesounds.co.ke/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-                                <script>
-                                    CKEDITOR.replace( 'article_ckeditor' );
-                                </script>
+                                {{-- <script src="https://amanivehiclesounds.co.ke/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script> --}}
+
 
 
 

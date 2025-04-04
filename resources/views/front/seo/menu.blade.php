@@ -2,7 +2,7 @@
                     <ul class="clearlist local-scroll">
                         <li><a href="{{url('/')}}" class="@if($Page_title=="home") active @endif">Home</a></li>
                         <li>
-                            <a href="{{route('gown-for-hire')}}" class="mn-has-subs @if($Page_title=="gown-for-hire") active @endif" role="button" aria-expanded="false" aria-haspopup="true">Graduation Attire <i class="mi-chevron-down"></i></a>
+                            <a href="{{route('gown-for-hire')}}" class="mn-has-subs @if($Page_title=="gown-for-hire") active @endif" role="button" aria-expanded="false" aria-haspopup="true">Graduation Attire </a>
 
                             <!-- Sub -->
                             <ul class="mn-sub" style="display: none;">

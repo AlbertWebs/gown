@@ -118,8 +118,15 @@
     <script src="{{asset('admin-theme/js/custom.js')}}"></script>
 
 
-    <script src="{{ asset('ckeditor/ckeditor.js')}}"></script>
-    <script>CKEDITOR.replace('article-ckeditor');</script>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
+
+    <script>
+        CKEDITOR.replace('ckeditor', {
+            filebrowserUploadUrl: "{{url('/')}}/uploads/product/",
+            filebrowserUploadMethod: 'form'
+        });
+    </script>
 
     {{-- Process Image --}}
     <script>
