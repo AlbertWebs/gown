@@ -72,11 +72,11 @@
                         </div>
 
                         <hr class="mb-20">
-                        <dl class="toggle bg-gray no-borders">
+                        <dl class="toggles bg-gray no-borders">
 
-                            <dt>
+                            {{-- <dt>
                                 <a  class="no-borders weight-500" href="#" >Product Details</a>
-                            </dt>
+                            </dt> --}}
                             <dd class="black dd-product" >
                                 <p>{!!html_entity_decode($Gown->content)!!}.</p>
                             </dd>
@@ -87,7 +87,7 @@
                             <dt>
                                 <a class="no-borders weight-500" href="#" >Shipping & Return</a>
                             </dt>
-                            <dd class="blacks no-borders dd-product" >
+                            <dd class="black no-borders dd-product" >
                                 <div>
                                     <h3>Kenyan Delivery Terms & Pricing</h3>
 
