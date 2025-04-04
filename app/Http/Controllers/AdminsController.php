@@ -580,7 +580,7 @@ class AdminsController extends Controller
             'category_id' => $request->category_id,
             'title'=>$request->title,
             'slung' => Str::slug($request->title),
-            // 'content'=>$request->content,
+            'content'=>$request->ckeditor,
             'image'=>$image
 
         );
@@ -657,7 +657,7 @@ class AdminsController extends Controller
         $updateDetails = array(
             'title'=>$request->title,
             'slung' => Str::slug($request->title),
-            // 'content'=>$request->content,
+            'content'=>$request->ckeditor,
             'image'=>$image
 
         );
