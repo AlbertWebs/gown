@@ -111,7 +111,7 @@
 
 
      <!-- Call to Action Section -->
-     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/theleaflet_2024-12-02_0hkoihx5_Senior-Advocate.avif')}}'); background-position: top; min-height:700px">
+     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/barrister-wig.jpg')}}'); background-position: top; min-height:700px">
 
         <!-- Desktop Overlay -->
         <div class="bg-overlay bg-gradient-primary-alpha-111 d-none d-md-block"></div>
