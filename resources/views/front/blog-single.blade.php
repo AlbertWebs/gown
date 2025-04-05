@@ -1,4 +1,4 @@
-@extends('front.seo.master-blog')
+@extends('front.seo.master-blog-single')
 
 @section('content')
     <main id="main">
