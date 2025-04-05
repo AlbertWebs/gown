@@ -43,12 +43,12 @@
                 <!-- Blog Posts Grid -->
                 <div class="row mt-n50 mb-60 mb-sm-40">
 
-                    @foreach ($Blog as $blog)
+
                         <!-- Blog Post Item -->
                         <div class="post-prev-2 col-md-12 mt-50">
 
                             <div class="post-prev-2-img">
-                                <a href="{{route('blog-single',$Blog->slung)}}"><img style="max-width:600px;" src="{{$Blog->image_one}}" alt="{{$Blog->title}}" /></a>
+                                <a href="{{route('blog-single',$Blog->slung)}}"><img style="max-width:600px; margin:0 auto;" src="{{$Blog->image_one}}" alt="{{$Blog->title}}" /></a>
                             </div>
 
 
@@ -62,7 +62,7 @@
 
                         </div>
                         <!-- End Blog Post Item -->
-                    @endforeach
+
 
                 </div>
                 <!-- End Blog Posts Grid -->
