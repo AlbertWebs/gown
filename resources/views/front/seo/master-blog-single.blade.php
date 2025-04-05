@@ -9,7 +9,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         {{--  --}}
         <title>{{$Blog->title}} -Graduation Gowns for Hire - Gownsea LTD </title>
         <meta name="description" content="{{$Blog->meta}}">
-        <meta name="keywords" content="graduation gowns blog, academic regalia insights, graduation fashion trends, how to choose a graduation gown, cap and gown tips, university graduation attire, Gownsea blog">
+        <meta name="keywords" content="{{$Blog->tag}}">
         <meta name="author" content="Gownsea LTD">
         <meta name="robots" content="index, follow">
         <link rel="canonical" href="{{url('/')}}/blog/{{$Blog->slung}}" />
