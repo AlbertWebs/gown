@@ -58,8 +58,8 @@
                             </p>
 
                             <div class="post-prev-2-tags">
-                                <span class="post-prev-2-tag">February 13, 2025</span>
-                                <span class="post-prev-2-tag"><i class="mi-circle color-primary-1"></i> Articles</span>
+                                <span class="post-prev-2-tag">{{ \Carbon\Carbon::parse($blog->created_at)->format('F j, Y') }}</span>
+                                <span class="post-prev-2-tag"><i class="mi-circle color-primary-1"></i> {{\App\Models\Category::find($blog->category)->title}}</span>
                             </div>
 
                         </div>
