@@ -16,7 +16,9 @@
 
                         <!-- Photo Item -->
                         <div class="mb-30 round wow fadeInUp" data-wow-offset="0">
+
                             <a href="{{$Gown->image}}" class="lightbox-gallery-2 mfp-image">
+                                <div class="overlay"></div>
                                 <img class="single-product" src="{{$Gown->image}}" alt="Image Description">
                             </a>
                         </div>
@@ -27,7 +29,7 @@
                         @else
                         <!-- Photo Item -->
                         <div class="mb-30 round wow fadeInUp" data-wow-offset="0">
-                        <a href="{{$Gown->image_image}}" class="lightbox-gallery-2 mfp-image">
+                        <a href="{{$Gown->image_two}}" class="lightbox-gallery-2 mfp-image">
                             <img class="single-product" src="{{$Gown->image_two}}" alt="Image Description">
                         </a>
                         </div>
@@ -78,7 +80,7 @@
                                 <a  class="no-borders weight-500" href="#" >Product Details</a>
                             </dt> --}}
                             <dd class="black dd-product" >
-                                <p>{!!html_entity_decode($Gown->content)!!}.</p>
+                                <p>{!!html_entity_decode($Gown->content)!!}</p>
                             </dd>
                         </dl>
 
