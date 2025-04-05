@@ -12688,7 +12688,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
 
 .product-img{
     max-height:500px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     height:100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
 }
@@ -12867,8 +12867,59 @@ html:not(.mobile) .owl-animate-fadeInDown{
     text-decoration-color:#c32728;
 }
 .product-title-h2{
-    text-shadow: 1px 1px #000000;
+    /* text-shadow: 1px 1px #000000; */
 }
+/*  */
+.portfolio-1-image {
+    position: relative;
+    overflow: hidden; /* Ensures image and overlay do not overflow */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% transparency */
+    z-index: 1;
+    transition: background-color 0.3s ease; /* Smooth transition for overlay */
+}
+
+.portfolio-1-image:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* Removes overlay color on hover */
+}
+
+.portfolio-1-image img {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    transition: transform 0.3s ease; /* Optional: smooth transition if you want to scale image on hover */
+}
+
+.portfolio-1-image:hover img {
+    transform: scale(1.05); /* Optional: slightly zoom in the image on hover */
+}
+
+.bottom-left {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 2;
+    color: white;
+    transition: opacity 0.3s ease; /* Smooth transition for text and button */
+}
+
+.portfolio-1-image:hover .bottom-left {
+    opacity: 1; /* Ensures the text/button are visible even on hover */
+}
+/* Styling for the new paragraph */
+.product-description {
+    font-size: 16px;
+    color: white; /* Text color for visibility */
+    margin-top: 5px; /* Add some space between the title and paragraph */
+}
+/*  */
 @media only screen and (max-width: 540px) {
     .sdg-images{
         width:100%;

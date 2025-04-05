@@ -67,6 +67,7 @@
                @foreach ($Gowns as $gown)
                    <div class="col-md-3">
                        <div class="portfolio-1-image round  prod-img">
+                        <div class="overlay"></div>
                            <img src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
                            <div class="bottom-left">
                                 <h2 class="product-title-h2">{{$gown->title}}</h2>
