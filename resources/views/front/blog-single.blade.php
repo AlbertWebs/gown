@@ -48,19 +48,17 @@
                         <div class="post-prev-2 col-md-12 mt-50">
 
                             <div class="post-prev-2-img">
-                                <a href="{{route('blog-single',$blog->slung)}}"><img src="{{$blog->image_one}}" alt="{{$blog->title}}" /></a>
+                                <a href="{{route('blog-single',$Blog->slung)}}"><img src="{{$Blog->image_one}}" alt="{{$Blog->title}}" /></a>
                             </div>
 
-                            <h3 class="post-prev-2-title"><a href="{{route('blog-single',$blog->slung)}}">{{$blog->title}}</a></h3>
 
                             <p class="post-prev-2-text">
-                                {{$blog->meta}}
+                                {{$Blog->meta}}
+                            </p>
+                            <p>
+                                {!!html_entity_decode($Blog->content)!!}
                             </p>
 
-                            <div class="post-prev-2-tags">
-                                <span class="post-prev-2-tag">February 13, 2025</span>
-                                <span class="post-prev-2-tag"><i class="mi-circle color-primary-1"></i> Articles</span>
-                            </div>
 
                         </div>
                         <!-- End Blog Post Item -->
