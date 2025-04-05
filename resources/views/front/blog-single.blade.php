@@ -8,7 +8,7 @@
 
     <!-- Background Shape -->
     <div class="bg-shape-11 wow fadeIn">
-        <img class="opacity-05s" src="{{$Blog->image_one}}" alt="" />
+        <img class="opacity-05s" src="{{asset('uploads/banner.jpg')}}" alt="" />
     </div>
     <!-- End Background Shape -->
 
@@ -48,7 +48,7 @@
                         <div class="post-prev-2 col-md-12 mt-50">
 
                             <div class="post-prev-2-img">
-                                <a href="{{route('blog-single',$Blog->slung)}}"><img src="{{$Blog->image_one}}" alt="{{$Blog->title}}" /></a>
+                                <a href="{{route('blog-single',$Blog->slung)}}"><img style="max-width:600px;" src="{{$Blog->image_one}}" alt="{{$Blog->title}}" /></a>
                             </div>
 
 
