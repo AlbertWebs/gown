@@ -48,7 +48,7 @@
                         <div class="post-prev-2 col-md-6 mt-50">
 
                             <div class="post-prev-2-img">
-                                <a href="{{route('blog-single',$blog->slung)}}"><img style="width:100%; max-height:500px; object-fit:cover;" src="{{$blog->image_one}}" alt="{{$blog->title}}" /></a>
+                                <a href="{{route('blog-single',$blog->slung)}}"><img style="width:100%; height:500px; object-fit:cover;" src="{{$blog->image_one}}" alt="{{$blog->title}}" /></a>
                             </div>
 
                             <h3 class="post-prev-2-title"><a href="{{route('blog-single',$blog->slung)}}">{{$blog->title}}</a></h3>
