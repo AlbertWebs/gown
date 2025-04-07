@@ -22,7 +22,7 @@
                         </h2>
 
                         <div class="local-scroll owl-animate-fadeInUp owl-delay-700 wch-unset">
-                            <a href="{{route('gown-for-hire')}}" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle" data-btn-animate="y">Purachase Now</a>
+                            <a href="{{route('gown-for-hire')}}" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle" data-btn-animate="y">Purchase Now</a>
                             <a href="{{route('gown-for-hire')}}" class="btn btn-mod btn-w btn-large btn-round ms-1 me-1 mt-2 align-middle" data-btn-animate="y">Hire Now</a>
                         </div>
 
@@ -47,7 +47,7 @@
                        </h2>
 
                        <div class="local-scroll owl-animate-fadeInUp owl-delay-700 wch-unset">
-                           <a href="{{route('legal-attire')}}" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-border-b" data-btn-animate="y">Purachase Now</a>
+                           <a href="{{route('legal-attire')}}" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-border-b" data-btn-animate="y">Purchase Now</a>
                        </div>
 
                    </div>
@@ -72,7 +72,7 @@
                        </h2>
 
                        <div class="local-scroll owl-animate-fadeInUp owl-delay-700 wch-unset">
-                           <a href="{{route('church-wear')}}" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-border-m" data-btn-animate="y">Purachase Now</a>
+                           <a href="{{route('church-wear')}}" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle btn-border-m" data-btn-animate="y">Purchase Now</a>
                        </div>
 
                    </div>
