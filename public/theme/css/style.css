@@ -4719,9 +4719,10 @@ a.logo:hover{
 }
 .section-title{
     font-size: 56px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.107;
-    letter-spacing: -0.03em;
+    /* letter-spacing: -0.03em; */
+    color:#0F3567;
 }
 .section-title-tiny{
     font-size: 19px;

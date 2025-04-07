@@ -365,9 +365,9 @@ a.btn-mod{
 }
 .section-title{
     font-size: 46px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.25;
-    letter-spacing: -0.017em;
+    /* letter-spacing: -0.017em; */
 }
 .section-title-small{
     font-size: 42px;
