@@ -369,6 +369,69 @@
      </section>
      <!-- End Portfolio Section -->
 
+     <?php
+     $Blog = DB::table('blogs')->orderby('id','DESC')->limit('2')->get();
+  ?>
+    <!-- Blog Section -->
+    <section class="page-section" id="blog">
+     <div class="container position-relative">
+
+         <div class="row">
+
+             <div class="col-lg-5 col-xl-4 mb-md-70 mb-sm-50">
+
+                 <h2 class="section-title mb-40 mb-xs-30">Our Blog</h2>
+
+                 <p class="section-descr mb-50 mb-sm-40">
+                     Crafting Confidence, One Gown at a Time
+                 </p>
+
+                 <div class="local-scroll">
+                     <a href="{{url('/')}}/blog" class="btn btn-mod btn-w btn-with-icon btn-circle"><span class="btn-icon color-3"><i class="mi-link-alt"></i></span> <span data-btn-animate="y">Read All Articles <i class="mi-arrow-right"></i></span></a>
+                 </div>
+
+             </div>
+
+             <div class="col-lg-7 col-xl-8">
+                 <div class="row mt-n50">
+
+                     <!-- Blog Post Item -->
+                     @foreach ($Blog as $blog)
+                         <!-- Blog Post Item -->
+                         <div class="post-prev-2 col-md-6 mt-50">
+
+                             <div class="post-prev-2-img">
+                                 <a href="{{route('blog-single',$blog->slung)}}"><img style="width:100%; height:500px; object-fit:cover;" src="{{$blog->image_one}}" alt="{{$blog->title}}" /></a>
+                             </div>
+
+                             <h3 class="post-prev-2-title"><a href="{{route('blog-single',$blog->slung)}}">{{$blog->title}}</a></h3>
+
+                             <p class="post-prev-2-text">
+                                 {{$blog->meta}}
+                             </p>
+
+                             <div class="post-prev-2-tags">
+                                 <span class="post-prev-2-tag">{{ \Carbon\Carbon::parse($blog->created_at)->format('F j, Y') }}</span>
+                                 <span class="post-prev-2-tag"><i class="mi-circle color-primary-1"></i> {{\App\Models\Category::find($blog->category)->title}}</span>
+                             </div>
+
+                         </div>
+                         <!-- End Blog Post Item -->
+                     @endforeach
+                     <!-- End Blog Post Item -->
+
+
+
+                 </div>
+             </div>
+
+         </div>
+
+     </div>
+ </section>
+ <!-- End Blog Section -->
+
+
 
 
 

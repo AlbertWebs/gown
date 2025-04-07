@@ -166,7 +166,6 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 				  //headerColor: 'crimson', //Custom header color
 				  //backgroundColor: 'crimson', //Custom background button color
 				  position: "left" //Position: left | right
-
 			  });
 		  });
 	  </script>

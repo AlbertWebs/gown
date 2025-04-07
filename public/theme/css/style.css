@@ -13022,5 +13022,6 @@ html:not(.mobile) .owl-animate-fadeInDown{
     }
     .floating-wpp-button{
         width:42px !important;
+        height:42px !important;
     }
 }

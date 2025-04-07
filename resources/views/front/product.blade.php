@@ -134,7 +134,7 @@
                             @if($Gallery->isEmpty())
 
                             @else
-                            <a href="{{route('open-gallery',$Gown->id)}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim btn-border-b">
+                            <a href="{{route('open-gallery',$Gown->slung)}}" class="btn btn-mod btn-color btn-medium btn-round btn-hover-anim btn-border-b">
                                 <span data-btn-animate="y">Expore Gallery</span>
                             </a>
                             @endif
