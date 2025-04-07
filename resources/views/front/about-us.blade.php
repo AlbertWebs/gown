@@ -251,7 +251,7 @@
 
                 <div class="col-lg-5 col-xl-4 mb-md-70 mb-sm-50">
 
-                    <h2 class="section-title mb-40 mb-xs-30">Our Blog</h2>
+                    <h2 class="section-title mb-40 mb-xs-30">The Gown Journal</h2>
 
                     <p class="section-descr mb-50 mb-sm-40">
                         Crafting Confidence, One Gown at a Time
@@ -277,9 +277,9 @@
 
                                 <h3 class="post-prev-2-title"><a href="{{route('blog-single',$blog->slung)}}">{{$blog->title}}</a></h3>
 
-                                <p class="post-prev-2-text">
+                                {{-- <p class="post-prev-2-text">
                                     {{$blog->meta}}
-                                </p>
+                                </p> --}}
 
                                 <div class="post-prev-2-tags">
                                     <span class="post-prev-2-tag">{{ \Carbon\Carbon::parse($blog->created_at)->format('F j, Y') }}</span>

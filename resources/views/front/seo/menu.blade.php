@@ -117,7 +117,7 @@
                         <!-- End Item With Sub -->
 
 
-                        <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">Blog</a></li>
+                        <li><a class="@if($Page_title=="blog") active @endif" href="{{route('blog')}}" href="#">The Gown Journal</a></li>
                         <li><a class="@if($Page_title=="blog") active @endif" href="{{route('bulk-inquiry')}}" href="#">Bulk Hire</a></li>
                         <li><a class="@if($Page_title=="contact-us") active @endif" href="{{route('contact-us')}}">Contact Us</a></li>
                     </ul>

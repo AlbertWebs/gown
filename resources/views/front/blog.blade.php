@@ -19,7 +19,7 @@
 
                 <h1 class="hs-title-9 mb-10">
                     <span class="wow charsAnimIn" data-splitting="chars" style="color:#fff;">
-                        News & Updates
+                        The Gown Journal
                     </span>
                 </h1>
 
