@@ -41,7 +41,7 @@
                <div class="col-md-12">
                    <div class="row">
                        @foreach ($Gowns as $gown)
-                           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-img-home">
+                           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-img-home" style="margin-bottom: 20px;">
                                <div class="portfolio-1-image round product-img">
                                    <img style="" src="{{$gown->image}}" loading="lazy"  alt="Image Description">
                                    <div class="bottom-left btn-mobile-foot">
