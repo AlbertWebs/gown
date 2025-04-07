@@ -22,8 +22,12 @@
                         </h2>
 
                         <div class="local-scroll owl-animate-fadeInUp owl-delay-700 wch-unset">
-                            <a href="{{route('gown-for-hire')}}" class="btn btn-mod btn-border-w btn-large btn-round ms-1 me-1 mt-2 align-middle" data-btn-animate="y">Purchase Now</a>
-                            <a href="{{route('gown-for-hire')}}" class="btn btn-mod btn-w btn-large btn-round ms-1 me-1 mt-2 align-middle" data-btn-animate="y">Hire Now</a>
+                            <a href="{{url('/')}}/shop-attire/graduation-attire" class="btn btn-mod btn-large btn-round ms-1 me-1 mt-2 align-middle btn-border-w" data-btn-animate="y" style="font-weight:700 !important;">
+                                Purchase Now
+                            </a>
+                            <a href="{{route('gown-for-hire')}}" class="btn btn-mod btn-w btn-large btn-round ms-1 me-1 mt-2 align-middle" data-btn-animate="y" style="font-weight:700 !important;">
+                                Hire Now
+                            </a>
                         </div>
 
                     </div>

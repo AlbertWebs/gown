@@ -46,7 +46,7 @@ class HomeController extends Controller
     public function gown_hire ()
     {
         $Page_title = "gown-for-hire";
-        $Gowns = \App\Models\Gown::where('category_id', 1)->limit('4')->inRandomOrder()->get();
+        $Gowns = \App\Models\Gown::where('category_id', 1)->inRandomOrder()->get();
         return view('front.gown-for-hire-page', compact('Gowns','Page_title'));
     }
 
@@ -125,6 +125,13 @@ class HomeController extends Controller
         $Gowns = \App\Models\Gown::where('category_id',$Category->id)->get();
         $Page_title = "shop";
         return view('front.products', compact('Page_title','Category','Gowns'));
+    }
+
+    public function request_hire ($id)
+    {
+        $Gowns = \App\Models\Gown::where('slung',$id)->first();
+        $Page_title = "shop";
+        return view('front.request', compact('Page_title','Gowns'));
     }
 
     public function shop_attire_collection ($category,$subcategory)
