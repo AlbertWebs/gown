@@ -28,9 +28,176 @@
 </section>
 <!-- End Home Section -->
 
+ <!-- Contact Section -->
+ <section class="page-section" id="contact">
+    <div class="container position-relative wow fadeInUp" data-wow-delay="0">
+
+          <div class="row">
+
+            <!-- Left Column -->
+            <div class="col-lg-4 mb-md-50 mb-sm-30 position-relative z-index-1">
+
+                <h2 class="section-caption-fancy mb-20 mb-xs-10">Let's Talk</h2>
+
+                <h3 class="section-title mb-50 mb-sm-30">Let’s create something beautiful together.</h3>
+
+                <!-- Contact Information -->
+                <div class="row">
+                    <div class="col-md-11">
+
+                        <!-- Address -->
+                        <div class="contact-item mb-30 mb-sm-20">
+                            <div class="ci-icon">
+                                <i class="mi-location"></i>
+                            </div>
+                            <h4 class="ci-title visually-hidden">
+                                Our Address
+                            </h4>
+                            <div class="ci-text">
+                                Valji Building, Moktar Daddah St, Nairobi
+                            </div>
+                            <div>
+                                <a href="https://maps.app.goo.gl/vz1majS387Q5zvcdA" class="link-hover-anim" data-link-animate="y" rel="nofollow noopener" target="_blank">See Map <i class="mi-arrow-right size-18"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Address -->
+
+                        <!-- Email -->
+                        <div class="contact-item mb-30 mb-sm-20">
+                            <div class="ci-icon">
+                                <i class="mi-email"></i>
+                            </div>
+                            <h4 class="ci-title visually-hidden">
+                                Our Email
+                            </h4>
+                            <div class="ci-text">
+                                info@gownsea.com
+                            </div>
+                            <div>
+                                <a href="mailto:info@gownsea.com" class="link-hover-anim" data-link-animate="y">Say Hello <i class="mi-arrow-right size-18"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Email -->
+
+                        <!-- Phone -->
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="mi-mobile"></i>
+                            </div>
+                            <h4 class="ci-title visually-hidden">
+                                Call Us
+                            </h4>
+                            <div class="ci-text">
+                                +254 728 311537
+                                <div class="small">
+                                    (Monday-Friday: 11am to 12pm)
+                                </div>
+                            </div>
+                            <div>
+                                <a href="tel:+254 728 311537" class="link-hover-anim" data-link-animate="y">Call now <i class="mi-arrow-right size-18"></i></a>
+                            </div>
+                        </div>
+                        <!-- End Phone -->
+
+                    </div>
+                </div>
+                <!-- End Contact Information -->
+
+            </div>
+            <!-- End Left Column -->
+
+            <!-- Right Column -->
+            <div class="col-lg-8 col-xl-7 offset-xl-1">
+                <div class="position-relative">
+
+                    <!-- Decorative Image -->
+                    {{-- <div class="decoration-11 d-none d-xl-block">
+                        <img src="images/demo-fancy/contact-section-image.png" width="225" height="250" alt="">
+                    </div> --}}
+                    <!-- End Decorative Image -->
+
+                    <div class="box-shadow round p-4 p-sm-5">
+
+                        <h4 class="h3 mb-30">Get in Touch</h4>
+
+                        <!-- Contact Form -->
+                        <form class="form contact-form" id="contact_form">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <!-- Name -->
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" class="input-lg round form-control" placeholder="Enter your name" pattern=".{3,100}" required="" aria-required="true">
+                                    </div>
+                                    <!-- End Name -->
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" class="input-lg round form-control" placeholder="Enter your email" pattern=".{5,100}" required="" aria-required="true">
+                                    </div>
+                                    <!-- End Email -->
+
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" class="input-lg round form-control" style="height: 130px;" placeholder="Enter your message"></textarea>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-xl-5">
+
+                                    <!-- Send Button -->
+                                    <div class="pt-3">
+                                        <button class="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim" id="submit_btn" aria-controls="result">
+                                            <span>Send Message</span>
+                                        </button>
+                                    </div>
+                                    <!-- End Send Button -->
+
+                                </div>
+
+                                <div class="col-md-6 col-xl-7 d-flex align-items-center">
+
+                                    <!-- Inform Tip -->
+                                    <div class="form-tip w-100 pt-3 mt-sm-20">
+                                        <i class="icon-info size-16"></i>
+                                        All the fields are required. By sending the form you agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                                    </div>
+                                    <!-- End Inform Tip -->
+
+                                </div>
+                            </div>
+
+                           <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
+
+                        </form>
+                        <!-- End Contact Form -->
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Right Column -->
+
+        </div>
+
+    </div>
+</section>
+<!-- End Contact Section -->
+
 
 <!-- Contact Section -->
-<section class="page-section" id="contact">
+{{-- <section class="page-section" id="contact">
     <div class="container position-relative">
 
         <div class="row mb-80 mb-sm-60 wow fadeInUp" data-wow-offset="0">
@@ -186,7 +353,7 @@
         </div>
 
     </div>
-</section>
+</section> --}}
 <!-- End Contact Section -->
 
 

@@ -63,7 +63,7 @@
 
         <div class="containers" style="padding-left:10px; padding-right:10px;">
 
-            <div class="row">
+            <div class="row wow fadeInUp" data-wow-duration="3s">
                @foreach ($Gowns as $gown)
                    <div class="col-md-3">
                        <div class="portfolio-1-image round  prod-img">
@@ -91,7 +91,7 @@
 
 
      <!-- Call to Action Section -->
-     <section class="page-section bg-scrolls light-content" style="background-image: url('{{asset('uploads/graduation-attire.jpg')}}'); background-size:contain cover; min-height:800px">
+     <section class="page-section bg-scrolls light-content wow fadeInUp" data-wow-duration="3s" style="background-image: url('{{asset('uploads/graduation-attire.jpg')}}'); background-size:contain cover; min-height:800px">
 
         <!-- Desktop Overlay -->
         <div class="bg-overlay bg-gradient-primary-alpha-111 d-none d-md-block"></div>

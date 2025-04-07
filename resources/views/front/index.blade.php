@@ -96,12 +96,12 @@
 
              <div class="row mb-70 mb-sm-50">
                  <div class="col-md-6 col-lg-6 col-sm-12 mb-sm-30">
-                     <div class="portfolio-1-image round">
+                     <div class="portfolio-1-image round wow fadeInUp" data-wow-duration="3s">
                          <a class="abt-img" href="#"><img src="{{asset('uploads/2143ac7d-e37d-48f5-b488-e6c735d75c29_a54b3def-4fa2-4842-a0bf-3a23080731e3.jpg')}}" loading="lazy" alt="Gownsea LTD Legal Wear"></a>
                      </div>
                  </div>
                  <div class="col-md-6 col-lg-6 col-sm-12">
-                    <div class="middle-center">
+                    <div class="middle-center wow fadeInUp" data-wow-duration="3s">
 
                         <h2 class="section-title mb-40 mb-xs-30">Making a <span class="mark-decoration-legal">difference</span> in the world while looking great doing it!</h2>
 
@@ -130,7 +130,7 @@
 
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4 col-sm-12 h mb-sm-30 bg-gray">
+                <div class="col-md-4 col-lg-4 col-sm-12 h mb-sm-30 bg-gray wow fadeInUp" data-wow-duration="1s">
                     <div class="alt-features-item  mt-0">
                         <div class="alt-features-icon why-icon">
                             <svg class="why-icon" width="34" height="34" viewBox="0 0 24 24" fill="white" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -146,7 +146,7 @@
                 <!-- End Feature Item -->
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4  h mb-sm-30 bg-gray">
+                <div class="col-md-4 col-lg-4  h mb-sm-30 bg-gray wow fadeInUp" data-wow-duration="2s">
                     <div class="alt-features-item  mt-0">
                         <div class="alt-features-icon ">
                             <svg class="why-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -162,7 +162,7 @@
                 <!-- End Feature Item -->
 
                 <!-- Feature Item -->
-                <div class="col-md-4 col-lg-4  h bg-gray">
+                <div class="col-md-4 col-lg-4  h bg-gray wow fadeInUp" data-wow-duration="3s">
                     <div class="alt-features-item mt-0">
                         <div class="alt-features-icon">
                             <svg class="why-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
@@ -199,7 +199,7 @@
                         <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/ce3e6d015e368db7efd118676dd2ff22.jpg')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                     </div>
                 </div>
-                 <div class="col-md-6 col-lg-6 middle-center-section" >
+                 <div class="col-md-6 col-lg-6 middle-center-section wow fadeInUp" data-wow-duration="3s" >
 
                      <h2 class="section-title mb-40 mb-xs-30">Be the <span class="mark-decoration-church">heart</span> of your community.</h2>
 
@@ -217,7 +217,7 @@
                      </div>
 
                  </div>
-                 <div class="col-md-6 mb-sm-30 d-none-mobile">
+                 <div class="col-md-6 mb-sm-30 d-none-mobile wow fadeInUp" data-wow-duration="3s">
                      <div class="portfolio-1-image round">
                          <a href="#"><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/clergywear.webp')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
@@ -233,12 +233,12 @@
 
              <div class="row mb-70 mb-sm-50">
 
-                 <div class="col-md-6 mb-sm-30">
+                 <div class="col-md-6 mb-sm-30 wow fadeInUp" data-wow-duration="3s">
                      <div class="portfolio-1-image round">
                          <a href="#" ><img style="max-height:700px; object-fit:cover" src="{{asset('uploads/celebrate-in-stye.webp')}}" loading="lazy" width="700" height="848" alt="Image Description"></a>
                      </div>
                  </div>
-                 <div class="col-md-6 col-lg-6 middle-center-section">
+                 <div class="col-md-6 col-lg-6 middle-center-section wow fadeInUp" data-wow-duration="3s">
 
                      <h2 class="section-title mb-40 mb-xs-30">Celebrate in  <span class="mark-decoration-graduation">style</span> </h2>
 
@@ -341,7 +341,7 @@
               <!-- Portfolio Grid -->
             <div class="row mt-n50 mt-sm-n40">
                 <div class="col-md-12">
-                    <div class="row">
+                    <div class="row wow fadeInUp" data-wow-duration="3s">
                         @foreach ($Random as $gown)
                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 product-img-home">
 
@@ -378,7 +378,7 @@
 
          <div class="row">
 
-             <div class="col-lg-5 col-xl-4 mb-md-70 mb-sm-50">
+             <div class="col-lg-5 col-xl-4 mb-md-70 mb-sm-50 wow fadeInUp" data-wow-duration="3s">
 
                  <h2 class="section-title mb-40 mb-xs-30">The Gown Journal</h2>
 
@@ -392,7 +392,7 @@
 
              </div>
 
-             <div class="col-lg-7 col-xl-8">
+             <div class="col-lg-7 col-xl-8 wow fadeInUp" data-wow-duration="3s">
                  <div class="row mt-n50">
 
                      <!-- Blog Post Item -->
