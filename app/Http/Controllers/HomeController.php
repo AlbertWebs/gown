@@ -331,6 +331,13 @@ class HomeController extends Controller
             $product->save();
         }
 
+        $Gallery = \App\Models\Gallery::all();
+
+        foreach ($Gallery as $gallery) {
+            $gallery->image = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $gallery->image);
+            $gallery->save();
+        }
+
     }
 
 
