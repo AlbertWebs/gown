@@ -14,7 +14,7 @@
                     <div class="herotext text-center">
 
                         <h2 class="hs-title-11  mb-xs-10 owl-animate-fadeInUp text-center">
-                            University-standard Graduation Attire for Hire
+                            University-standard Graduation Attire for Hire/Sale
                         </h2>
 
                         <h2 class="hs-title-12 mb-sm-30">
