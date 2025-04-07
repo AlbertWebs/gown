@@ -341,7 +341,7 @@ class HomeController extends Controller
         $Blog = \App\Models\Blog::all();
 
         foreach ($Blog as $blog) {
-            $blog->image_one = str_replace("https://www.mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $blog->image_one);
+            $blog->image_one = str_replace("https://mvp.corpusinvestmentsltd.com/", "https://gownsea.com/", $blog->image_one);
             $blog->save();
         }
 
