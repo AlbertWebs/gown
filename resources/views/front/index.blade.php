@@ -129,7 +129,7 @@
 
              {{--  --}}
               <!-- Grid -->
-              <div class="row flexrow">
+            <div class="row flexrow">
 
 
                 <!-- Feature Item -->
