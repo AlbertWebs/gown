@@ -64,6 +64,108 @@
     </section>
     <!-- End Portfolio Section -->
 
+       <!-- Call to Action Section -->
+        <section class="page-section bg-scrolls light-content wow fadeInUp" data-wow-duration="3s" style="background-image: url('{{asset('uploads/graduation-attire.jpg')}}'); background-size:contain cover; min-height:800px">
+
+            <!-- Desktop Overlay -->
+            <div class="bg-overlay bg-gradient-primary-alpha-111 d-none d-md-block"></div>
+            <!-- End Desktop Overlay -->
+
+            <!-- Mobile Overlay -->
+            <div class="bg-overlay bg-gradient-primary-alpha-111 opacity-09 d-md-none"></div>
+            <!-- End Mobile Overlay -->
+
+            <div class="container position-relative perfection">
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 col-xl-6" style="margin: 0 auto">
+                        <br><br><br>
+                        <h3 class="section-title-perfection">Are you an institution?</h3>
+
+                        <p class="descr">
+                            Gownsea LTD invites institutions to bulk hire or purchase high-quality graduation gowns at discounted rates. Ensure your graduates look their best with our premium, comfortable, and customizable gowns. Order in bulk today for cost savings and timely delivery!
+                        </p>
+
+                        <a href="{{route('bulk-inquiry')}}" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
+                            <span>Bulk Request</span>
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+          <!-- End Call to Action Section -->
+
+        <!-- Logotypes Section -->
+        <section class="small-section  pb-20 bg-gradient-darks">
+            <h3 class="section-title-small mb-40 text-center" style="font-weight:500">Our Clients</h3>
+            <div class="container relative">
+                <div class="row wow fadeInUpShort">
+                    <div class="col-md-12" >
+
+                        <div class="small-item-carousel black owl-carousel mb-0">
+
+                            <!-- Logo Item -->
+                            <div class="logo-item bg-grays">
+                                <img src="{{asset('theme/images/clients-logos/client-7.png')}}" width="150" height="90" alt="Company Name">
+                            </div>
+                            <!-- End Logo Item -->
+
+                            <!-- Logo Item -->
+                            <div class="logo-item bg-grays">
+                                <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="150" height="90" alt="Company Name">
+                            </div>
+                            <!-- End Logo Item -->
+
+                            <!-- Logo Item -->
+                            <div class="logo-item bg-grays">
+                                <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="150" height="90" alt="Company Name">
+                            </div>
+                            <!-- End Logo Item -->
+
+                            <!-- Logo Item -->
+                            <div class="logo-item bg-grays">
+                                <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="150" height="90" alt="Company Name">
+                            </div>
+                            <!-- End Logo Item -->
+
+                            <!-- Logo Item -->
+                            <div class="logo-item bg-grays">
+                                <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="150" height="90" alt="Company Name">
+                            </div>
+                            <!-- End Logo Item -->
+
+                            <!-- Logo Item -->
+                            <div class="logo-item bg-grays">
+                                <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="150" height="90" alt="Company Name">
+                            </div>
+                            <!-- End Logo Item -->
+
+                            <!-- Logo Item -->
+                            <div class="logo-item bg-grays">
+                                <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="150" height="90" alt="Company Name">
+                            </div>
+                            <!-- End Logo Item -->
+
+                            <!-- Logo Item -->
+                            <div class="logo-item bg-grays">
+                                <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="150" height="90" alt="Company Name">
+                            </div>
+                            <!-- End Logo Item -->
+
+                        </div>
+
+                    </div>
+                 </div>
+             </div>
+        </section>
+        <!-- End Logotypes -->
+
+
+
 
  </main>
 @endsection

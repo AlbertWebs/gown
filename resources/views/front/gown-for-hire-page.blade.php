@@ -115,7 +115,7 @@
                         Gownsea LTD invites institutions to bulk hire or purchase high-quality graduation gowns at discounted rates. Ensure your graduates look their best with our premium, comfortable, and customizable gowns. Order in bulk today for cost savings and timely delivery!
                     </p>
 
-                    <a href="corporate-contact.html" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
+                    <a href="{{route('bulk-inquiry')}}" class="btn btn-mod btn-color btn-large btn-round btn-hover-anim">
                         <span>Bulk Request</span>
                     </a>
 

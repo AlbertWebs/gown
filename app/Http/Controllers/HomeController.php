@@ -238,6 +238,7 @@ class HomeController extends Controller
             $message = "Hello Admin, <br>
                 I would like to inquire. <br>
                 Name: $request->name, <br>
+                Phone: $request->phone, <br>
 
                 Email: $request->email, <br>
 

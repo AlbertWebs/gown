@@ -97,7 +97,7 @@
                             <div class="ci-text">
                                 +254 728 311537
                                 <div class="small">
-                                    (Monday-Friday: 11am to 12pm)
+                                    (Monday-Friday: 9am to 6pm)
                                 </div>
                             </div>
                             <div>
@@ -128,7 +128,7 @@
                         <h4 class="h3 mb-30">Get in Touch</h4>
 
                         <!-- Contact Form -->
-                        <form class="form contact-form" id="contact_form" method="post" action="{{route('contact-us')}}" role="form" novalidate="novalidate">
+                        <form class="form contact-form" id="contact_form" method="post" action="{{route('contact-us.store')}}" role="form" novalidate="novalidate">
                             @csrf
 
                             <div class="row">
@@ -149,6 +149,20 @@
                                     <div class="form-group">
                                         <label for="email">Email</label>
                                         <input type="email" name="email" id="email" class="input-lg round form-control" placeholder="Enter your email" pattern=".{5,100}" required="" aria-required="true">
+                                    </div>
+                                    <!-- End Email -->
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                        <label for="email">Mobile</label>
+                                        <input type="email" name="phone" id="mobile" class="input-lg round form-control" placeholder="" required="" aria-required="true">
                                     </div>
                                     <!-- End Email -->
 
