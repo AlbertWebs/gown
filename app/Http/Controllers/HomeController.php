@@ -9,6 +9,7 @@ use App\Models\SendEmail;
 use Kopokopo;
 use Illuminate\Support\Facades\Response;
 use DB;
+use Session;
 
 class HomeController extends Controller
 {
@@ -177,8 +178,9 @@ class HomeController extends Controller
         // send email
         $SendEmail = SendEmail::sendEmail($userID,$userName,$Sender,$SenderId,$message,$Subject);
 
-
-        return redirect()->back()->with('success', 'Your request has been sent successfully.');
+        Session::flash('message', "Your Request has been sent successfully");
+        // return redirect()->back()->with('success', 'Your request has been sent successfully.');
+        return Redirect::back();
     }
 
 

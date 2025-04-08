@@ -43,6 +43,13 @@
             <!-- Right Column -->
             <div class="col-lg-8 d-flex align-items-strech" style="margin: 0 auto;">
                 <div class="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
+                    @if(Session::has('message'))
+                    <div class="alert alert-success">{{ Session::get('message') }}</div>
+                    @endif
+
+                    @if(Session::has('messageError'))
+                                    <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
+                    @endif
 
 
                     <!-- Contact Form -->
