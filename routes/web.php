@@ -55,6 +55,8 @@ Route::get('/return-policy', [App\Http\Controllers\HomeController::class, 'retur
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
 Route::get('/change-image-url', [App\Http\Controllers\HomeController::class, 'changeImageurl'])->name('change-image-url');
 Route::get('/open-gallery/{id}', [App\Http\Controllers\HomeController::class, 'open_gallery'])->name('open-gallery');
+//request-gown.store
+Route::post('/request-gown/store', [App\Http\Controllers\HomeController::class, 'request_gown_store'])->name('request-gown.store');
 
 
 

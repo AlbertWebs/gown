@@ -19,7 +19,7 @@
 
                 <h1 class="hs-title-9 mb-10">
                     <span class="wow charsAnimIn" data-splitting="chars" style="color:#fff;">
-                        Request {{$Gowns->title}}
+                        Request: <br>{{$Gowns->title}}
                     </span>
                 </h1>
             </div>
@@ -46,7 +46,8 @@
 
 
                     <!-- Contact Form -->
-                    <form class="form contact-form" id="contact_form">
+                    <form class="form contact-form" id="contact_form" method="post" action="{{route('request-gown.store')}}" role="form" novalidate="novalidate">
+                        @csrf
 
                         <div class="row">
                             <div class="col-md-12">
@@ -71,6 +72,17 @@
 
                             </div>
 
+                            <div class="col-md-12">
+
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label for="name">Email</label>
+                                    <input type="text" name="email" id="email" class="input-lg round form-control" placeholder="youremail@gmail.com" required aria-required="true">
+                                </div>
+                                <!-- End Name -->
+
+                            </div>
+
 
                             <div class="col-md-12">
 
@@ -84,11 +96,12 @@
                             </div>
 
                         </div>
+                        <input type="hidden" name="gown_id" value="{{$Gowns->title}}">
 
                         <!-- Message -->
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message" class="input-lg round form-control" style="height: 132px;" placeholder="Enter your message"></textarea>
+                            <textarea required name="message" id="message" class="input-lg round form-control" style="height: 132px;" placeholder="Your Request Here"></textarea>
                         </div>
 
                         <div class="row">
@@ -98,7 +111,7 @@
                                 <!-- Inform Tip -->
                                 <div class="form-tip w-100 pt-3">
                                     <i class="icon-info size-16"></i>
-                                    All the fields are required. By sending the form you agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                                    All the fields are required. By sending the form you agree to the <a href="{{route('terms-and-conditions')}}">Terms & Conditions</a> and <a href="{{route('privacy-policy')}}">Privacy Policy</a>.
                                 </div>
                                 <!-- End Inform Tip -->
 

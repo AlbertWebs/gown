@@ -71,10 +71,13 @@
                            <img src="{{$gown->image}}" loading="lazy"  alt="{{$gown->title}}">
                            <div class="bottom-left">
                                 <h2 class="product-title-h2">{{$gown->title}}</h2>
-
+                                <p>
+                                    Ksh {{$gown->price_hire}}
+                                </p>
                                 <a href="{{route('request-hire',$gown->slung)}}" class="btn btn-mod btn-color btn-large circle btn-hover-anim" tabindex="0">
                                     <span data-btn-animate="y"><span class="btn-animate-y"><span class="btn-animate-y-1">Request Gown Now</span><span class="btn-animate-y-2" aria-hidden="true">Hire Graduation Attire</span></span></span>
                                 </a>
+
 
                             </div>
                        </div>

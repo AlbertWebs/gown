@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Models\Kopokopostk;
+use App\Models\SendEmail;
 use Kopokopo;
 use Illuminate\Support\Facades\Response;
 use DB;
@@ -142,6 +143,44 @@ class HomeController extends Controller
         $Page_title = "shop";
         return view('front.product_subcategory', compact('Page_title','Category','Gowns','SubCategory'));
     }
+    //request_gown_store
+    public function request_gown_store (Request $request)
+    {
+
+        // dd($request->all());
+        $message = "Hello Admin, <br>
+            I would like to request for a gown hire. <br>
+            Name: $request->name, <br>
+            Gown: $request->gown_id, <br>
+            Date: $request->date, <br>
+            Email: $request->email, <br>
+            Phone: $request->phone, <br>
+            Message: $request->message, <br>";
+
+        $Gown = new \App\Models\SendEmail;
+        // email,subject,body,name ,phone
+        $Gown->name = $request->name;
+        $Gown->email = $request->email;
+        $Gown->phone = $request->phone;
+        $Gown->body = $message;
+
+        //
+        $Sender = "no-reply@gownsea.com";
+        $SenderId = "Graduation Gowns East Africa";
+        $Subject = "Request Gown Hire";
+        $userID  = $request->email;
+        $userName = $request->name;
+
+        $Gown->subject = $Subject;
+        $Gown->save();
+
+        // send email
+        $SendEmail = SendEmail::sendEmail($userID,$userName,$Sender,$SenderId,$message,$Subject);
+
+
+        return redirect()->back()->with('success', 'Your request has been sent successfully.');
+    }
+
 
 
 
