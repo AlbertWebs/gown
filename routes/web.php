@@ -40,8 +40,8 @@ Route::get('/shop-graduation-attire/{gown}', [App\Http\Controllers\HomeControlle
 Route::get('/buy-gown-wear', [App\Http\Controllers\HomeController::class, 'shop'])->name('church-wear-shop');
 Route::get('/buy-gown-wear/checkout', [App\Http\Controllers\HomeController::class, 'shop_checkout'])->name('church-wear-shop-checkout');
 
-Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
-Route::get('/blog/{slung}', [App\Http\Controllers\HomeController::class, 'blog_single'])->name('blog-single');
+Route::get('/the-gown-journal', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
+Route::get('/the-gown-journal/{slung}', [App\Http\Controllers\HomeController::class, 'blog_single'])->name('blog-single');
 
 Route::post('/mobile-stk-received', [App\Http\Controllers\HomeController::class, 'mobile_stk_received'])->name('mobile-stk-received');
 Route::get('/mobile-stk-initiate', [App\Http\Controllers\HomeController::class, 'mobile_stk_initiate'])->name('mobile-stk-initiate');
