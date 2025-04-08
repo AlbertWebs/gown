@@ -57,6 +57,10 @@ Route::get('/change-image-url', [App\Http\Controllers\HomeController::class, 'ch
 Route::get('/open-gallery/{id}', [App\Http\Controllers\HomeController::class, 'open_gallery'])->name('open-gallery');
 //request-gown.store
 Route::post('/request-gown/store', [App\Http\Controllers\HomeController::class, 'request_gown_store'])->name('request-gown.store');
+// request-gown.bulk
+Route::post('/request-gown/bulk', [App\Http\Controllers\HomeController::class, 'request_gown_bulk'])->name('request-gown.bulk');
+//contact-us
+Route::post('/contact-us/store', [App\Http\Controllers\HomeController::class, 'contact_us_store'])->name('contact-us.store');
 
 
 

@@ -39,11 +39,19 @@
             <!-- Right Column -->
             <div class="col-lg-8 d-flex align-items-strech" style="margin: 0 auto;">
                 <div class="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
+                    @if(Session::has('message'))
+                    <div class="alert alert-success">{{ Session::get('message') }}</div>
+                    @endif
+
+                    @if(Session::has('messageError'))
+                                    <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
+                    @endif
 
                     <h3 class="section-title-small mt-n10 mb-40 mb-sm-30 text-center">Tell Us More</h3>
 
                     <!-- Contact Form -->
-                    <form class="form contact-form" id="contact_form">
+                    <form class="form contact-form" id="contact_form" method="post" action="{{route('request-gown.bulk')}}" role="form" novalidate="novalidate">
+                        @csrf
 
                         <div class="row">
                             <div class="col-md-12">
@@ -56,6 +64,7 @@
                                 <!-- End Name -->
 
                             </div>
+
 
                             <div class="col-md-12">
 
@@ -98,14 +107,39 @@
                             <textarea name="message" id="message" class="input-lg round form-control" style="height: 132px;" placeholder="Enter your message"></textarea>
                         </div>
 
+                        <?php
+                        $ops = array('-', '+');
+                        $answer = -1;
+
+                        $num1 = rand(0, 50);
+                        $num2 = rand(0, 15);
+
+                        $answer = $num1 + $num2;
+
+                    ?>
+                    <hr>
+                    <input type="hidden" name="correct_answer" id="correct_answer" value="{{$answer}}">
+                    <input required class="form-control" value="{{$answer}}" type="hidden" id="verify_contact" name="verify_contact">
+                        <div class="row">
+
+
+                            <div class="col-md-6">
+                                <label>Are you human? {{$num1}} + {{$num2}} =</label>
+                                <div class="form-grp">
+
+                                    <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
+                                </div>
+                            </div>
+                        </div>
+                    <hr>
+
                         <div class="row">
 
                             <div class="col-md-6 col-xl-7 d-flex align-items-center">
-
                                 <!-- Inform Tip -->
                                 <div class="form-tip w-100 pt-3">
                                     <i class="icon-info size-16"></i>
-                                    All the fields are required. By sending the form you agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                                    All the fields are required. By sending the form you agree to the <a href="{{route('terms-and-conditions')}}">Terms & Conditions</a> and <a href="{{route('privacy-policy')}}">Privacy Policy</a>.
                                 </div>
                                 <!-- End Inform Tip -->
 

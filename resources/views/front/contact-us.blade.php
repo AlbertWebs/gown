@@ -31,6 +31,13 @@
  <!-- Contact Section -->
  <section class="page-section" id="contact">
     <div class="container position-relative wow fadeInUp" data-wow-delay="0">
+        @if(Session::has('message'))
+        <div class="alert alert-success">{{ Session::get('message') }}</div>
+        @endif
+
+        @if(Session::has('messageError'))
+                        <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
+        @endif
 
           <div class="row">
 
@@ -121,7 +128,8 @@
                         <h4 class="h3 mb-30">Get in Touch</h4>
 
                         <!-- Contact Form -->
-                        <form class="form contact-form" id="contact_form">
+                        <form class="form contact-form" id="contact_form" method="post" action="{{route('contact-us')}}" role="form" novalidate="novalidate">
+                            @csrf
 
                             <div class="row">
                                 <div class="col-md-6">
@@ -152,6 +160,32 @@
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message" class="input-lg round form-control" style="height: 130px;" placeholder="Enter your message"></textarea>
                             </div>
+                            <?php
+                                $ops = array('-', '+');
+                                $answer = -1;
+
+                                $num1 = rand(0, 50);
+                                $num2 = rand(0, 15);
+
+                                $answer = $num1 + $num2;
+
+                            ?>
+                            <hr>
+                            <input type="hidden" name="correct_answer" id="correct_answer" value="{{$answer}}">
+                            <input required class="form-control" value="{{$answer}}" type="hidden" id="verify_contact" name="verify_contact">
+                                <div class="row">
+
+
+                                    <div class="col-md-6">
+                                        <label>Are you human? {{$num1}} + {{$num2}} =</label>
+                                        <div class="form-grp">
+
+                                            <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
+                                        </div>
+                                    </div>
+                                </div>
+                            <hr>
+
 
                             <div class="row">
                                 <div class="col-md-6 col-xl-5">

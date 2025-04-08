@@ -133,7 +133,7 @@ class HomeController extends Controller
     public function request_hire ($id)
     {
         $Gowns = \App\Models\Gown::where('slung',$id)->first();
-        $Page_title = "shop";
+        $Page_title = "gown-for-hire";
         return view('front.request', compact('Page_title','Gowns'));
     }
 
@@ -148,40 +148,128 @@ class HomeController extends Controller
     //request_gown_store
     public function request_gown_store (Request $request)
     {
+        if($request->verify_contact == $request->verify_contact_input){
 
-        // dd($request->all());
-        $message = "Hello Admin, <br>
-            I would like to request for a gown hire. <br>
-            Name: $request->name, <br>
-            Gown: $request->gown_id, <br>
-            Date: $request->date, <br>
-            Email: $request->email, <br>
-            Phone: $request->phone, <br>
-            Message: $request->message, <br>";
+            // dd($request->all());
+            $message = "Hello Admin, <br>
+                I would like to request for a gown hire. <br>
+                Name: $request->name, <br>
+                Gown: $request->gown_id, <br>
+                Date: $request->date, <br>
+                Email: $request->email, <br>
+                Phone: $request->phone, <br>
+                Message: $request->message, <br>";
 
-        $Gown = new \App\Models\SendEmail;
-        // email,subject,body,name ,phone
-        $Gown->name = $request->name;
-        $Gown->email = $request->email;
-        $Gown->phone = $request->phone;
-        $Gown->body = $message;
+            $Gown = new \App\Models\SendEmail;
+            // email,subject,body,name ,phone
+            $Gown->name = $request->name;
+            $Gown->email = $request->email;
+            $Gown->phone = $request->phone;
+            $Gown->body = $message;
 
-        //
-        $Sender = "no-reply@gownsea.com";
-        $SenderId = "Graduation Gowns East Africa";
-        $Subject = "Request Gown Hire";
-        $userID  = $request->email;
-        $userName = $request->name;
+            //
+            $Sender = "no-reply@gownsea.com";
+            $SenderId = "Graduation Gowns East Africa";
+            $Subject = "Request Gown Hire";
+            $userID  = $request->email;
+            $userName = $request->name;
 
-        $Gown->subject = $Subject;
-        $Gown->save();
+            $Gown->subject = $Subject;
+            $Gown->save();
 
-        // send email
-        $SendEmail = SendEmail::sendEmail($userID,$userName,$Sender,$SenderId,$message,$Subject);
+            // send email
+            $SendEmail = SendEmail::sendEmail($userID,$userName,$Sender,$SenderId,$message,$Subject);
 
-        Session::flash('message', "Your Request has been sent successfully");
-        // return redirect()->back()->with('success', 'Your request has been sent successfully.');
-        return Redirect::back();
+            Session::flash('message', "Your Request has been sent successfully");
+            // return redirect()->back()->with('success', 'Your request has been sent successfully.');
+            return Redirect::back();
+        }else{
+            Session::flash('message', "Your Requests has been sent successfully");
+            return Redirect::back();
+        }
+    }
+
+
+    public function request_gown_bulk (Request $request)
+    {
+        if($request->verify_contact == $request->verify_contact_input){
+            $message = "Hello Admin, <br>
+                I would like to make an inquiry. <br>
+                Name: $request->name, <br>
+                institution: $request->institution, <br>
+                Email: $request->email, <br>
+                Phone: $request->phone, <br>
+                Message: $request->message, <br>";
+
+            $Gown = new \App\Models\SendEmail;
+            // email,subject,body,name ,phone
+            $Gown->name = $request->name;
+            $Gown->email = $request->email;
+            $Gown->phone = $request->phone;
+            $Gown->body = $message;
+
+            //
+            $Sender = "no-reply@gownsea.com";
+            $SenderId = "Graduation Gowns East Africa";
+            $Subject = "Bulk Request Gown Hire";
+            $userID  = $request->email;
+            $userName = $request->name;
+
+            $Gown->subject = $Subject;
+            $Gown->save();
+
+            // send email
+            $SendEmail = SendEmail::sendEmail($userID,$userName,$Sender,$SenderId,$message,$Subject);
+
+            Session::flash('message', "Your Request has been sent successfully");
+            // return redirect()->back()->with('success', 'Your request has been sent successfully.');
+            return Redirect::back();
+        }else{
+            Session::flash('message', "Your Requests has been sent successfully");
+            return Redirect::back();
+        }
+    }
+
+    //
+    public function contact_us_store (Request $request)
+    {
+
+        if($request->verify_contact == $request->verify_contact_input){
+            $message = "Hello Admin, <br>
+                I would like to inquire. <br>
+                Name: $request->name, <br>
+
+                Email: $request->email, <br>
+
+                Message: $request->message, <br>";
+
+            $Gown = new \App\Models\SendEmail;
+            // email,subject,body,name ,phone
+            $Gown->name = $request->name;
+            $Gown->email = $request->email;
+
+            $Gown->body = $message;
+
+            //
+            $Sender = "no-reply@gownsea.com";
+            $SenderId = "Graduation Gowns East Africa";
+            $Subject = "Contact Form GOWNSEA";
+            $userID  = $request->email;
+            $userName = $request->name;
+
+            $Gown->subject = $Subject;
+            $Gown->save();
+
+            // send email
+            $SendEmail = SendEmail::sendEmail($userID,$userName,$Sender,$SenderId,$message,$Subject);
+
+            Session::flash('message', "Your Request has been sent successfully");
+            // return redirect()->back()->with('success', 'Your request has been sent successfully.');
+            return Redirect::back();
+        }else{
+            Session::flash('message', "Your Requests has been sent successfully");
+            return Redirect::back();
+        }
     }
 
 
