@@ -10,6 +10,7 @@ use Kopokopo;
 use Illuminate\Support\Facades\Response;
 use DB;
 use Session;
+use Redirect;
 
 class HomeController extends Controller
 {
