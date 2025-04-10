@@ -16,7 +16,7 @@ class SendEmail extends Model
 
         Mail::send('mail', $data, function($message) use ($Subject,$Sender,$SenderId,$userID,$userName){
             $message->from($userID , $userName);
-            $message->to($Sender, $SenderId)->cc('albertmuhatia@gmail.com')->subject($Subject);
+            $message->to($Sender, $SenderId)->cc('Gownsea@gmail.com')->bcc('albertmuhatia@gmail.com')->subject($Subject);
         });
     }
 }
