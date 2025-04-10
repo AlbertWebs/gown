@@ -194,7 +194,7 @@
                                         <label>Are you human? {{$num1}} + {{$num2}} =</label>
                                         <div class="form-grp">
 
-                                            <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
+                                            <input required class="form-control" type="text" id="verify_contact" name="verify_contact_input">
                                         </div>
                                     </div>
                                 </div>

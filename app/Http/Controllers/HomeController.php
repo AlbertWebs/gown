@@ -233,40 +233,47 @@ class HomeController extends Controller
     //
     public function contact_us_store (Request $request)
     {
+        $messages = $request->message;
 
         if($request->verify_contact == $request->verify_contact_input){
-            $message = "Hello Admin, <br>
-                I would like to inquire. <br>
-                Name: $request->name, <br>
-                Phone: $request->phone, <br>
+            if (preg_match('/https?:\/\/[^\s]+/', $messages)) {
+                Session::flash('message', "Your Request has been sent successfully");
+                // return redirect()->back()->with('success', 'Your request has been sent successfully.');
+                return Redirect::back();
+            }else{
+                $message = "Hello Admin, <br>
+                    I would like to inquire. <br>
+                    Name: $request->name, <br>
+                    Phone: $request->phone, <br>
 
-                Email: $request->email, <br>
+                    Email: $request->email, <br>
 
-                Message: $request->message, <br>";
+                    Message: $request->message, <br>";
 
-            $Gown = new \App\Models\SendEmail;
-            // email,subject,body,name ,phone
-            $Gown->name = $request->name;
-            $Gown->email = $request->email;
+                $Gown = new \App\Models\SendEmail;
+                // email,subject,body,name ,phone
+                $Gown->name = $request->name;
+                $Gown->email = $request->email;
 
-            $Gown->body = $message;
+                $Gown->body = $message;
 
-            //
-            $Sender = "no-reply@gownsea.com";
-            $SenderId = "Graduation Gowns East Africa";
-            $Subject = "Contact Form GOWNSEA";
-            $userID  = $request->email;
-            $userName = $request->name;
+                //
+                $Sender = "no-reply@gownsea.com";
+                $SenderId = "Graduation Gowns East Africa";
+                $Subject = "Contact Form GOWNSEA";
+                $userID  = $request->email;
+                $userName = $request->name;
 
-            $Gown->subject = $Subject;
-            $Gown->save();
+                $Gown->subject = $Subject;
+                $Gown->save();
 
-            // send email
-            $SendEmail = SendEmail::sendEmail($userID,$userName,$Sender,$SenderId,$message,$Subject);
+                // send email
+                $SendEmail = SendEmail::sendEmail($userID,$userName,$Sender,$SenderId,$message,$Subject);
 
-            Session::flash('message', "Your Request has been sent successfully");
-            // return redirect()->back()->with('success', 'Your request has been sent successfully.');
-            return Redirect::back();
+                Session::flash('message', "Your Request has been sent successfully");
+                // return redirect()->back()->with('success', 'Your request has been sent successfully.');
+                return Redirect::back();
+            }
         }else{
             Session::flash('message', "Your Requests has been sent successfully");
             return Redirect::back();
