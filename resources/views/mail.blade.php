@@ -48,7 +48,7 @@
 
         <div class="content">
             <div class="value">
-                <p>{!! nl2br(e($content)) !!}</p>
+                <p> {!!html_entity_decode($content)!!}</p>
             </div>
         </div>
 
