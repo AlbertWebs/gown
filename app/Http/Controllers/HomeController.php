@@ -390,6 +390,14 @@ class HomeController extends Controller
 
     public function mobile_stk_initiate_post(Request $request){
 
+        //name,location, product, phone number
+        $SaveOrder = new \App\Models\SaveOrder;
+        $SaveOrder->name = $request->name;
+        $SaveOrder->location = $request->location;
+        $SaveOrder->product = $request->product;
+        $SaveOrder->phone = $request->phone;
+        $SaveOrder->save();
+
         $res= Kopokopo::authenticate($this->getAccessToken())->stkPush(
             amount:  $request->amount,
             phone: $request->phone,

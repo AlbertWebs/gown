@@ -21,7 +21,6 @@ Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact_
 Route::get('/m-pesa/buy-with-m-pesa/{slung}', [App\Http\Controllers\HomeController::class, 'buy_with_m_pesa'])->name('buy-with-m-pesa');
 
 
-
 Route::get('/our-products/shop-graduation-attires', [App\Http\Controllers\HomeController::class, 'shop_graduation_attires'])->name('shop-graduation-attires');
 Route::get('/our-products/shop-church-attires', [App\Http\Controllers\HomeController::class, 'shop_church_attires'])->name('shop-church-attires');
 Route::get('/our-products/{slung}', [App\Http\Controllers\HomeController::class, 'our_products'])->name('our-products');
@@ -61,6 +60,8 @@ Route::post('/request-gown/store', [App\Http\Controllers\HomeController::class, 
 Route::post('/request-gown/bulk', [App\Http\Controllers\HomeController::class, 'request_gown_bulk'])->name('request-gown.bulk');
 //contact-us
 Route::post('/contact-us/store', [App\Http\Controllers\HomeController::class, 'contact_us_store'])->name('contact-us.store');
+
+
 
 
 

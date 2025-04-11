@@ -42,8 +42,11 @@
 
                     <div class="mt-4 pt-4">
                         <div class="d-grid gap-2">
-                            <input name="phone" class="my-4 rounded form-control form-control-lg" id="formControlLg" placeholder="+254" value="" type="text" required="This field is required">
+                            <input name="name" class="rounded form-control form-control-lg" id="formControlLg" placeholder="Full Name" value="" type="text" required="This field is required">
+                            <input name="phone" class="rounded form-control form-control-lg" id="formControlLg" placeholder="+254" value="" type="text" required="This field is required">
+                            <input name="location" class="rounded form-control form-control-lg" id="formControlLg" placeholder="Nairobi" value="" type="text" required="This field is required">
                         </div>
+
                     </div>
                     <input type="hidden" name="amount" value="{{$Gown->price}}" required>
                     <div class="mt-4 pt-4">
