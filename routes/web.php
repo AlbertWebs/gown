@@ -13,6 +13,13 @@ Route::get('/legal-attire', [App\Http\Controllers\HomeController::class, 'legal_
 Route::get('/shop-attire/{slung}', [App\Http\Controllers\HomeController::class, 'shop_attire'])->name('shop-attire');
 Route::get('/request-hire/{slung}', [App\Http\Controllers\HomeController::class, 'request_hire'])->name('request-hire');
 
+// Bachelor’s Gown for Hire
+Route::get('/bachelors-gown-for-hire', [App\Http\Controllers\HomeController::class, 'bachelors_gown_hire'])->name('bachelors-gown-for-hire');
+//Masters Gown for Hire
+Route::get('/masters-gown-for-hire', [App\Http\Controllers\HomeController::class, 'masters_gown_hire'])->name('masters-gown-for-hire');
+//diploma gown for hire
+Route::get('/diploma-gown-for-hire', [App\Http\Controllers\HomeController::class, 'diploma_gown_hire'])->name('diploma-gown-for-hire');
+
 Route::get('/shop-attire-collection/{category_id}/{subcategory_id}', [App\Http\Controllers\HomeController::class, 'shop_attire_collection'])->name('shop-attire-collection');
 
 Route::get('/church-wear', [App\Http\Controllers\HomeController::class, 'church_wear'])->name('church-wear');

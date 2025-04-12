@@ -96,7 +96,29 @@ class HomeController extends Controller
     }
 
 
-
+    public function bachelors_gown_hire ()
+    {
+        $Category = \App\Models\Category::find(2);
+        $Gowns = \App\Models\Gown::where('category_id', '2')->limit('3')->get();
+        $Page_title = "gown-for-hire";
+        return view('front.bachelors_gown_hire', compact('Page_title','Gowns','Category'));
+    }
+    //masters_gown_hire
+    public function masters_gown_hire ()
+    {
+        $Category = \App\Models\Category::find(2);
+        $Gowns = \App\Models\Gown::where('category_id', '2')->limit('3')->get();
+        $Page_title = "gown-for-hire";
+        return view('front.masters_gown_hire', compact('Page_title','Gowns','Category'));
+    }
+    //diploma_gown_hire
+    public function diploma_gown_hire ()
+    {
+        $Category = \App\Models\Category::find(2);
+        $Gowns = \App\Models\Gown::where('category_id', '2')->limit('3')->get();
+        $Page_title = "gown-for-hire";
+        return view('front.diploma_gown_hire', compact('Page_title','Gowns','Category'));
+    }
 
 
     public function legal_attire ()

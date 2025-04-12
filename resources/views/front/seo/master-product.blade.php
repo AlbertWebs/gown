@@ -9,21 +9,21 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta name="author" content="Gownsea LTD">
         <meta name="robots" content="index,follow">
         <meta name="googlebot" content="index,follow"><!-- Google Specific -->
-        <meta name="subject" content="Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD">
+        <meta name="subject" content="{{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD">
         <meta name="rating" content="General">
         <meta name="referrer" content="strict-origin-when-cross-origin">
         <meta name="theme-color" content="#c32728">
         <meta name="expires" content="never">
 
         {{--  --}}
-        <title>Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD</title>
+        <title>{{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD</title>
         <meta name="description" content="Gownsea LTD offers high-quality {{$Gown->title}} for sale and hire, covering preschool, certificate, diploma, degree, master's, and PhD levels. We also provide custom-stitched gowns tailored to your needs.">
         <meta name="keywords" content="{{$Category->title}} Kenya, buy graduation gown, rent graduation gown, custom {{$Gown->title}}, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns, Graduation Attire Kenya, buy graduation gown, rent graduation gown, custom Academic Graduation Hoods, PhD gowns, master's gowns, degree gowns, diploma gowns, preschool gowns, graduation hoods price in Kenya, affordable graduation gowns, academic regalia prices">
         <link rel="canonical" href="{{url('/')}}/our-products/{{$Gown->slung}}" />
         <link rel="alternate" hreflang="en-KE" href="{{url('/')}}/our-products/{{$Gown->slung}}" />
 
         <!-- Open Graph Meta Tags (Facebook & Social Media) -->
-        <meta property="og:title" content="Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD" />
+        <meta property="og:title" content="{{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD" />
         <meta property="og:description" content="We sell and rent high-quality {{$Gown->title}}, including preschool, certificate, diploma, degree, master's, and PhD gowns. Custom designs available, Order Now" />
         <meta property="og:type" content="product" />
         <meta property="og:url" content="{{url('/')}}/our-products/{{$Gown->slung}}" />
@@ -42,7 +42,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <meta property="product:retailer_item_id" content="{{$Gown->id}}" />
 
          <!-- Twitter Meta Tags -->
-        <meta name="twitter:title" content="Buy {{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD" />
+        <meta name="twitter:title" content="{{$Gown->title}} in Nairobi | Graduation Gowns for Hire | Gownsea LTD" />
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@gownsea">
         <meta name="twitter:url" content="{{url('/')}}/our-products/{{$Gown->slung}}">
@@ -100,7 +100,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
     </head>
     <body class="appear-animate">
-        <h1 style="display: none">Hire or Buy {{$Gown->title}} in Nairobi at very affordable prices  Graduation Gowns for Hire</h1>
+        <h1 style="display: none">Hire or {{$Gown->title}} in Nairobi at very affordable prices  Graduation Gowns for Hire</h1>
         <div style="z-index:100000;" id="WAButton"></div>
 
         <!-- Page Loader -->
