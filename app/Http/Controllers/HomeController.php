@@ -137,6 +137,15 @@ class HomeController extends Controller
         return view('front.products', compact('Page_title','Gown'));
     }
 
+    public function checkout ()
+    {
+        $Gown = \App\Models\Gown::where('category_id', '2')->get();
+        $Page_title = "legal-attire";
+        return view('checkout', compact('Page_title','Gown'));
+    }
+
+
+
     public function shop_legal_attire ($slung)
     {
         $Gown = \App\Models\Gown::where('slung', $slung)->get();
@@ -306,12 +315,23 @@ class HomeController extends Controller
 
 
 
+
     public function buy_with_m_pesa ($slung)
     {
         $Gown = \App\Models\Gown::where('slung', $slung)->first();
         $Page_title = "shop";
-        return view('front.stk', compact('Page_title','Gown'));
+        return view('checkout', compact('Page_title','Gown'));
     }
+
+    // public function buy_with_m_pesa ($slung)
+    // {
+    //     $Gown = \App\Models\Gown::where('slung', $slung)->first();
+    //     $Page_title = "shop";
+    //     return view('front.stk', compact('Page_title','Gown'));
+    // }
+
+
+
 
     public function our_products ($slung)
     {
@@ -423,7 +443,7 @@ class HomeController extends Controller
         $res= Kopokopo::authenticate($this->getAccessToken())->stkPush(
             amount:  $request->amount,
             phone: $request->phone,
-            first_name: 'null',//optional
+            first_name: $request->name,//optional
             last_name: 'null',//optional
             email: 'info@gownsea.com',//optional
             metadata: [

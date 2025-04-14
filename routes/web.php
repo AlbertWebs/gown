@@ -13,6 +13,7 @@ Route::get('/legal-attire', [App\Http\Controllers\HomeController::class, 'legal_
 Route::get('/shop-attire/{slung}', [App\Http\Controllers\HomeController::class, 'shop_attire'])->name('shop-attire');
 Route::get('/request-hire/{slung}', [App\Http\Controllers\HomeController::class, 'request_hire'])->name('request-hire');
 
+
 // Bachelor’s Gown for Hire
 Route::get('/bachelors-gown-for-hire', [App\Http\Controllers\HomeController::class, 'bachelors_gown_hire'])->name('bachelors-gown-for-hire');
 //Masters Gown for Hire
@@ -68,7 +69,8 @@ Route::post('/request-gown/bulk', [App\Http\Controllers\HomeController::class, '
 //contact-us
 Route::post('/contact-us/store', [App\Http\Controllers\HomeController::class, 'contact_us_store'])->name('contact-us.store');
 
-
+// checkout
+Route::get('/checkout', [App\Http\Controllers\HomeController::class, 'checkout'])->name('checkout');
 
 
 
