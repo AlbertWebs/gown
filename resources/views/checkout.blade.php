@@ -167,7 +167,9 @@
           <img src="{{$Gown->image}}" width="70" alt="Product" class="me-3">
           <div>
             <p class="mb-1 fw-bold">{{$Gown->title}}</p>
-            <span class="text-muted">41</span>
+            <span class="text-muted">
+                {{\App\Models\Category::find($Gown->category_id)->title}}
+            </span>
           </div>
           <div class="ms-auto fw-bold">Ksh {{$Gown->price}}</div>
         </div>
