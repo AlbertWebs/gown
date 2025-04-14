@@ -46,17 +46,17 @@
             </div>
             <div class="col-md-6">
             <label class="form-label">Phone</label>
-            <input name="phone" type="text" class="form-control">
+            <input placeholder="+254720000000" name="phone" type="text" class="form-control" required>
             </div>
             <div class="col-md-12">
-            <input name="name" type="text" class="form-control" placeholder="First name">
+            <input name="name" type="text" class="form-control" placeholder="First name" required>
             </div>
 
             <div class="col-12">
-            <input name="location" type="text" class="form-control" placeholder="Address">
+            <input name="location" type="text" class="form-control" placeholder="Address" required>
             </div>
             <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="City">
+            <input type="text" class="form-control" placeholder="City" required>
             </div>
             <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Postal code (optional)">

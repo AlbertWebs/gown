@@ -490,6 +490,11 @@ class HomeController extends Controller
         return view('front.gallery', compact('Page_title','Gallery','Gown'));
     }
 
+    // function to register webhooks Kopokopo::subscribeRegisteredWebhooks()
+    public function registerWebhooks(){
+        $reg = Kopokopo::subscribeRegisteredWebhooks();
+        dd($reg);
+    }
 
 
     public function mobile_stk_initiate(){

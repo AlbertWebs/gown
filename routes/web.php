@@ -72,6 +72,7 @@ Route::post('/contact-us/store', [App\Http\Controllers\HomeController::class, 'c
 // checkout
 Route::get('/checkout', [App\Http\Controllers\HomeController::class, 'checkout'])->name('checkout');
 
+Route::get('/register-webhooks', [App\Http\Controllers\HomeController::class, 'registerWebhooks'])->name('register-webhooks');
 
 
 

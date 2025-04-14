@@ -205,7 +205,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             <!-- End Divider -->
 
             <!-- Footer -->
-          @include('front.footer')
+          {{-- @include('front.footer') --}}
             <!-- End Footer -->
 
         </div>

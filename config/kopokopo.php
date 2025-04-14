@@ -39,10 +39,11 @@ return [
         'b2b_transaction_received' => '/k2b2btransrec',
         'm2m_transaction_received' => '/k2m2mtransrec',
         'settlement_transfer_completed' => '/k2settcomp',
-        'customer_created' => '/k2custcr'
+        'customer_created' => '/k2custcr',
+        'stk_payment_received_webhook' => '/mobile-stk-received',
     ],
 
     // This webhook is used to get notified of a successful Mpesa stk payment
-    'stk_payment_received_webhook' => '/mobile-stk-received',
+    // 'stk_payment_received_webhook' => '/mobile-stk-received',
 
 ];
