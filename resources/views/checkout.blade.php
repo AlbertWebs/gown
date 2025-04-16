@@ -30,13 +30,13 @@
     <div class="col-md-7 form-section">
         <form method="POST" action="{{route('mobile-stk-initiate-post')}}" id="stkForm">
         <h5>Contact</h5>
-        <input type="email" class="form-control mb-3" placeholder="Email or mobile phone number">
+        <input type="email" class="form-control mb-3" placeholder="Email" name="email" required>
         <div class="form-check mb-4">
             <input class="form-check-input" type="checkbox" id="emailOffers">
             <label class="form-check-label" for="emailOffers">Email me with news and offers</label>
         </div>
 
-        <h5>Delivery</h5>
+        <h5>Delivery & Payment</h5>
         <div class="row g-3">
             <div class="col-md-6">
             <label class="form-label">Country/Region</label>
@@ -48,8 +48,11 @@
             <label class="form-label">Phone</label>
             <input placeholder="+254720000000" name="phone" type="text" class="form-control" required>
             </div>
-            <div class="col-md-12">
-            <input name="name" type="text" class="form-control" placeholder="First name" required>
+            <div class="col-md-6">
+            <input name="fname" type="text" class="form-control" placeholder="First name" required>
+            </div>
+            <div class="col-md-6">
+                <input name="lname" type="text" class="form-control" placeholder="last name" required>
             </div>
 
             <div class="col-12">

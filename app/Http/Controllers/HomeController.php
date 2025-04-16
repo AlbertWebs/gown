@@ -444,9 +444,9 @@ class HomeController extends Controller
         $res= Kopokopo::authenticate($this->getAccessToken())->stkPush(
             amount:  $request->amount,
             phone: $request->phone,
-            first_name: $request->name,//optional
-            last_name: 'null',//optional
-            email: 'info@gownsea.com',//optional
+            first_name: $request->fname,//optional
+            last_name: $request->lname,//optional
+            email: $request->email,//optional
             metadata: [
                 'user_id'=>1,
                 'action'=>'deposit'
