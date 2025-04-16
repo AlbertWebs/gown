@@ -385,17 +385,17 @@ class HomeController extends Controller
         Log::info($request->getContent());
         $content=json_decode($request->getContent(), true);
 
-        $TransID = $content['event']['resource']['id'];
-        $TransAmount = $content['event']['resource']['amount'];
-        $TransStatus = $content['event']['resource']['status'];
-        $TransSystem = $content['event']['resource']['system'];
-        $TransCurrency = $content['event']['resource']['currency'];
-        $TransReference = $content['event']['resource']['reference'];
-        $TransTill = $content['event']['resource']['till_number'];
-        $TransPhoneNumber = $content['event']['resource']['sender_phone_number'];
-        $TransLastName = $content['event']['resource']['sender_last_name'];
-        $TransFirstName = $content['event']['resource']['sender_first_name'];
-        $TransMiddleName = $content['event']['resource']['sender_middle_name'];
+        $TransID = $content['data']['attributes']['event']['resource']['id'];
+        $TransAmount = $content['data']['attributes']['event']['resource']['amount'];
+        $TransStatus = $content['data']['attributes']['event']['resource']['status'];
+        $TransSystem = $content['data']['attributes']['event']['resource']['system'];
+        $TransCurrency = $content['data']['attributes']['event']['resource']['currency'];
+        $TransReference = $content['data']['attributes']['event']['resource']['reference'];
+        $TransTill = $content['data']['attributes']['event']['resource']['till_number'];
+        $TransPhoneNumber = $content['data']['attributes']['event']['resource']['sender_phone_number'];
+        $TransLastName = $content['data']['attributes']['event']['resource']['sender_last_name'];
+        $TransFirstName = $content['data']['attributes']['event']['resource']['sender_first_name'];
+        $TransMiddleName = $content['data']['attributes']['event']['resource']['sender_middle_name'];
 
         $Kopokopostk = new Kopokopostk;
         $Kopokopostk->TransID = $TransID;
