@@ -381,6 +381,7 @@ class HomeController extends Controller
 
 
     public function mobile_stk_received(Request $request){
+
         Log::info($request->getContent());
         $content=json_decode($request->getContent(), true);
 
@@ -409,7 +410,6 @@ class HomeController extends Controller
         $Kopokopostk->TransFirstName = $TransFirstName;
         $Kopokopostk->TransMiddleName = $TransMiddleName;
         $Kopokopostk->save();
-
     }
 
     public function getAccessToken(){

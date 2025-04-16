@@ -395,7 +395,7 @@
                  </p>
 
                  <div class="local-scroll">
-                     <a href="{{url('/')}}/blog" class="btn btn-mod btn-w btn-with-icon btn-circle"><span class="btn-icon color-3"><i class="mi-link-alt"></i></span> <span data-btn-animate="y">Read All Articles <i class="mi-arrow-right"></i></span></a>
+                     <a href="{{url('/')}}/the-gown-journal" class="btn btn-mod btn-w btn-with-icon btn-circle"><span class="btn-icon color-3"><i class="mi-link-alt"></i></span> <span data-btn-animate="y">Read All Articles <i class="mi-arrow-right"></i></span></a>
                  </div>
 
              </div>
