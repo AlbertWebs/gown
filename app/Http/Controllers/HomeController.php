@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Models\Kopokopostk;
@@ -455,10 +456,12 @@ class HomeController extends Controller
         Log::info($res);
         // dd($res['status']);
         $phone = $request->phone;
+        $messageSms = "Dear {$request->name}, Your order for {$request->product} has been received, we will contact you shortly. Thank you for choosing Graduation Gowns East Africa";
         $CheckLast = $this->checklast($phone);
         if($CheckLast == "Success"){
             if($res['status'] == 'success')
             {
+                $this->sendBulkSMS($phone,$messageSms);
                 return Response::json(array(
                     'response' => $res['status'],
                 ));
@@ -510,7 +513,7 @@ class HomeController extends Controller
                 'action'=>'deposit'
             ]//optional
         );
-        dd($res);
+        // dd($res);
 
         if($res['status'] == 'success')
         {
@@ -549,6 +552,39 @@ class HomeController extends Controller
 
 
 
+    public function sendBulkSMS($phone,$messageSms)
+    {
+        $url = 'https://api.onfonmedia.co.ke/v1/sms/SendBulkSMS';
+
+        $apiKey = config('onfon.api_key');
+        $clientId = config('onfon.client_id');
+        $accessKey = config('onfon.access_key');
+        $senderId = config('onfon.sender_id');
+
+        $payload = [
+            "SenderId" => $senderId,
+            "MessageParameters" => [
+                [
+                    "Number" => $phone,
+                    "Text" => $messageSms
+                ]
+            ],
+            "ApiKey" => $apiKey,
+            "ClientId" => $clientId
+        ];
+
+        $headers = [
+            'Content-Type' => 'application/json',
+            'AccessKey' => $accessKey
+        ];
+
+        $response = Http::withHeaders($headers)->post($url, $payload);
+
+        return response()->json([
+            'status' => $response->status(),
+            'body' => $response->json()
+        ]);
+    }
 
 
 }

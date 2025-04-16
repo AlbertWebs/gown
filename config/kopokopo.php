@@ -13,6 +13,9 @@ return [
     # This is the application id acquired after you create an Authorization application on the kopokopo dashboard
     'client_id' => env('KOPOKOPO_CLIENT_ID'),
 
+    #this is borrowed
+    'smsApi' => env('SMSAPI'),
+
     # The kopokopo application client secret
     'client_secret' => env('KOPOKOPO_CLIENT_SECRET'),
 
@@ -44,6 +47,6 @@ return [
     ],
 
     // This webhook is used to get notified of a successful Mpesa stk payment
-    // 'stk_payment_received_webhook' => '/mobile-stk-received',
+    'stk_payment_received_webhook' => '/mobile-stk-received',
 
 ];
