@@ -435,7 +435,7 @@ class HomeController extends Controller
 
         //name,location, product, phone number
         $SaveOrder = new \App\Models\SaveOrder;
-        $SaveOrder->name = $request->name;
+        $SaveOrder->name = $request->fname;
         $SaveOrder->location = $request->location;
         $SaveOrder->product = $request->product;
         $SaveOrder->phone = $request->phone;
