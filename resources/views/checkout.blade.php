@@ -146,6 +146,7 @@
                 </div>
 
             </div> --}}
+            <input type="hidden" name="product" value="{{$Gown->title}}" required>
             <input type="hidden" name="amount" value="{{$Gown->price}}" required>
             <div class="mt-4 pt-4">
                 <div class="d-grid gap-2">

@@ -456,7 +456,7 @@ class HomeController extends Controller
         Log::info($res);
         // dd($res['status']);
         $phone = $request->phone;
-        $messageSms = "Dear {$request->name}, Your order for {$request->product} has been received, we will contact you shortly. Thank you for choosing Graduation Gowns East Africa";
+        $messageSms = "Dear {$request->fname}, Your order for {$request->product} has been received, we will contact you shortly. Thank you for choosing Graduation Gowns East Africa";
         $CheckLast = $this->checklast($phone);
         if($CheckLast == "Success"){
             if($res['status'] == 'success')
