@@ -47,6 +47,6 @@ return [
     ],
 
     // This webhook is used to get notified of a successful Mpesa stk payment
-    'stk_payment_received_webhook' => '/mobile-stk-received',
+    'stk_payment_received_webhook' => 'https://gownsea.com/mobile-stk-received',
 
 ];
