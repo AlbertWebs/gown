@@ -457,11 +457,12 @@ class HomeController extends Controller
         // dd($res['status']);
         $phone = $request->phone;
         $messageSms = "Dear {$request->fname}, Your order for {$request->product} has been received, we will contact you shortly. Thank you for choosing Graduation Gowns East Africa";
+        $messageSmsAdmin = "Dear Admin, {$request->fname} has made an order for {$request->product} and paid Ksh {$request->amount}. The phone number is {$request->phone}";
         $CheckLast = $this->checklast($phone);
         if($CheckLast == "Success"){
             if($res['status'] == 'success')
             {
-                $this->sendBulkSMS(ltrim($phone, '+'),$messageSms);
+                $this->sendBulkSMS(ltrim($phone, '+'),$messageSms,$messageSmsAdmin);
                 return Response::json(array(
                     'response' => $res['status'],
                 ));
@@ -552,7 +553,7 @@ class HomeController extends Controller
 
 
 
-    public function sendBulkSMS($phone,$messageSms)
+    public function sendBulkSMS($phone,$messageSms,$messageSmsAdmin)
     {
         $url = 'https://api.onfonmedia.co.ke/v1/sms/SendBulkSMS';
 
@@ -567,6 +568,10 @@ class HomeController extends Controller
                 [
                     "Number" => $phone,
                     "Text" => $messageSms
+                ],
+                [
+                    "Number" => "254728311537",
+                    "Text" => $messageSmsAdmin
                 ]
             ],
             "ApiKey" => $apiKey,
