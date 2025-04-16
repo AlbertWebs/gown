@@ -461,7 +461,7 @@ class HomeController extends Controller
         if($CheckLast == "Success"){
             if($res['status'] == 'success')
             {
-                $this->sendBulkSMS($phone,$messageSms);
+                $this->sendBulkSMS(ltrim($phone, '+'),$messageSms);
                 return Response::json(array(
                     'response' => $res['status'],
                 ));
