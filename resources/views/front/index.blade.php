@@ -110,7 +110,12 @@
                     <h2 class="section-title mb-40 mb-xs-30">Celebrate in  <span class="mark-decoration-graduation">style</span> </h2>
 
                     <p class="section-descr mb-0">
-                        Your Graduation Gown, Barrister's Wig, Clergy Shirt, and more are crafted to traditional standards for the perfect fit. At Gownsea, we stand out by combining sustainability with style, using recycled plastic fibers and British-made certification frames to reduce environmental impact while perfecting your look for special occasions.
+                        {{-- Your Graduation Gown, Barrister's Wig, Clergy Shirt, and more are crafted to traditional standards for the perfect fit. At Gownsea, we stand out by combining sustainability with style, using recycled plastic fibers and British-made certification frames to reduce environmental impact while perfecting your look for special occasions. --}}
+                        Gownsea Ltd is your trusted graduation gown specialist. 
+                        We provide high-quality academic regalia for hire and sale — tailored to your brand, delivered on time, and ready for the ceremony. 
+                        From bulk orders to custom designs, we ensure a seamless and dignified graduation experience.
+                        <br>
+                        Partner with us to give your graduates the ceremony they deserve
                     </p>
 
                     <br>

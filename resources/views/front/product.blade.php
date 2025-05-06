@@ -84,7 +84,7 @@
                             </dd>
                         </dl>
 
-                        <dl class="toggle bg-gray no-borders">
+                        {{-- <dl class="toggle bg-gray no-borders">
 
                             <dt>
                                 <a class="no-borders weight-500" href="#" >Shipping & Return</a>
@@ -116,7 +116,7 @@
                                 </div>
 
                             </dd>
-                        </dl>
+                        </dl> --}}
 
 
                         <br><br><br>
