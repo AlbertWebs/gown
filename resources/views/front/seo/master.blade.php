@@ -43,29 +43,58 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
         <!-- Schema Markup (Google Rich Results) -->
         <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "LocalBusiness",
-                "name": "Gownsea LTD",
-                "url": "{{url('/')}}/",
-                "logo": "{{url('/')}}/theme/images/logs_g.webp",
-                "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
-                "telephone": "+254 728 311537",
-                "image": "{{url('/')}}/uploads/categories/Gownsea-graduation-gowns.webp",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Valji Building, Moktar Daddah St",
-                    "addressLocality": "Nairobi",
-                    "addressCountry": "KE"
-                },
-                "openingHours": "Mo-Fr 08:00-17:00",
-                "sameAs": [
-                    "https://www.facebook.com/GownseaLtd/",
-                    "https://www.instagram.com/gownsea_ke/",
-                    "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-                ]
+        {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Gownsea LTD",
+        "url": "https://gownsea.com/",
+        "logo": "{{url('/')}}/theme/images/logs_g.webp",
+        "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
+        "telephone": "+254 728 311537",
+        "image": "{{url('/')}}/theme/images/logs_g.webp",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Valji Building, Moktar Daddah St",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -1.2816551,
+            "longitude": 36.8200614
+        },
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "priceRange": "KES 2,000 - KES 20,000",
+        "sameAs": [
+            "https://www.facebook.com/GownseaLtd/",
+            "https://www.instagram.com/gownsea_ke/",
+            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@gownsea.com",
+            "contactType": "customer service",
+            "availableLanguage": "English"
+        },
+        "paymentAccepted": [ "M-PESA", "Visa", "MasterCard" ],
+        "department": {
+            "@type": "Store",
+            "name": "Graduation Gown Supplier"
+        },
+        "review": {
+            "@type": "Review",
+            "author": "Customer",
+            "datePublished": "2024-01-01",
+            "reviewBody": "Excellent service and high-quality gowns. Highly recommended!",
+            "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
             }
+        }
+        }
         </script>
+
         {{--  --}}
 
         <!-- Favicon -->
@@ -165,7 +194,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 				  headerTitle: 'Chat with us on WhatsApp!', //Popup Title
 				  popupMessage: 'Hello, how can we help you?', //Popup Message
 				  showPopup: true, //Enables popup display
-				  buttonImage: '<img  src="{{url('/')}}/uploads/icon/whatsapp.svg" />', //Button Image
+				  buttonImage: '<img alt="WhatsApp Icon"   src="{{url('/')}}/uploads/icon/whatsapp.svg" />', //Button Image
 				  //headerColor: 'crimson', //Custom header color
 				  //backgroundColor: 'crimson', //Custom background button color
 				  position: "left" //Position: left | right
