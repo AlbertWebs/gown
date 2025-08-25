@@ -200,8 +200,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
             // Accessibility fix: add aria-label to the input
             setTimeout(function () {
-            $(".floating_whatsapp_input").attr("aria-label", "Your Message Here");
-            }, 1000);
+            $("#WAButton .floating-wpp-popup .floating-wpp-input-message textarea")
+                .attr("aria-label", "Your Message Here");
+            }, 500);
         });
     </script>
       <script>
