@@ -292,49 +292,49 @@
 
                          <!-- Logo Item -->
                          <div class="logo-item bg-grays">
-                             <img src="{{asset('theme/images/clients-logos/client-7.png')}}" width="150" height="90" alt="Company Name">
+                             <img  src="{{asset('theme/images/clients-logos/client-7.png')}}" width="150" height="90" alt="Company Name" loading="lazy">
                          </div>
                          <!-- End Logo Item -->
 
                          <!-- Logo Item -->
                          <div class="logo-item bg-grays">
-                             <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="150" height="90" alt="Company Name">
+                             <img src="{{asset('theme/images/clients-logos/client-8.png')}}" width="150" height="90" alt="Company Name" loading="lazy">
                          </div>
                          <!-- End Logo Item -->
 
                          <!-- Logo Item -->
                          <div class="logo-item bg-grays">
-                             <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="150" height="90" alt="Company Name">
+                             <img src="{{asset('theme/images/clients-logos/client-9.png')}}" width="150" height="90" alt="Company Name" loading="lazy">
                          </div>
                          <!-- End Logo Item -->
 
                          <!-- Logo Item -->
                          <div class="logo-item bg-grays">
-                             <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="150" height="90" alt="Company Name">
+                             <img src="{{asset('theme/images/clients-logos/client-10.png')}}" width="150" height="90" alt="Company Name" loading="lazy">
                          </div>
                          <!-- End Logo Item -->
 
                          <!-- Logo Item -->
                          <div class="logo-item bg-grays">
-                             <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="150" height="90" alt="Company Name">
+                             <img src="{{asset('theme/images/clients-logos/client-11.png')}}" width="150" height="90" alt="Company Name" loading="lazy">
                          </div>
                          <!-- End Logo Item -->
 
                          <!-- Logo Item -->
                          <div class="logo-item bg-grays">
-                             <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="150" height="90" alt="Company Name">
+                             <img src="{{asset('theme/images/clients-logos/client-13.png')}}" width="150" height="90" alt="Company Name" loading="lazy">
                          </div>
                          <!-- End Logo Item -->
 
                          <!-- Logo Item -->
                          <div class="logo-item bg-grays">
-                             <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="150" height="90" alt="Company Name">
+                             <img src="{{asset('theme/images/clients-logos/client-14.jpg')}}" width="150" height="90" alt="Company Name" loading="lazy">
                          </div>
                          <!-- End Logo Item -->
 
                          <!-- Logo Item -->
                          <div class="logo-item bg-grays">
-                             <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="150" height="90" alt="Company Name">
+                             <img src="{{asset('theme/images/clients-logos/client-15.png')}}" width="150" height="90" alt="Company Name" loading="lazy">
                          </div>
                          <!-- End Logo Item -->
 
