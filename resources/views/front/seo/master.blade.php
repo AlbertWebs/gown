@@ -43,56 +43,56 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
         <!-- Schema Markup (Google Rich Results) -->
         <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Gownsea LTD",
-        "url": "https://gownsea.com/",
-        "logo": "{{url('/')}}/theme/images/logs_g.webp",
-        "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
-        "telephone": "+254 728 311537",
-        "image": "{{url('/')}}/theme/images/logs_g.webp",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Valji Building, Moktar Daddah St",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -1.2816551,
-            "longitude": 36.8200614
-        },
-        "openingHours": "Mo-Fr 08:00-17:00",
-        "priceRange": "KES 2,000 - KES 20,000",
-        "sameAs": [
-            "https://www.facebook.com/GownseaLtd/",
-            "https://www.instagram.com/gownsea_ke/",
-            "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "info@gownsea.com",
-            "contactType": "customer service",
-            "availableLanguage": "English"
-        },
-        "paymentAccepted": [ "M-PESA", "Visa", "MasterCard" ],
-        "department": {
-            "@type": "Store",
-            "name": "Graduation Gown Supplier"
-        },
-        "review": {
-            "@type": "Review",
-            "author": "Customer",
-            "datePublished": "2024-01-01",
-            "reviewBody": "Excellent service and high-quality gowns. Highly recommended!",
-            "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
+            {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Gownsea LTD",
+            "url": "https://gownsea.com/",
+            "logo": "{{url('/')}}/theme/images/logs_g.webp",
+            "description": "We offer high-quality graduation gowns for sale and hire, covering preschool to PhD levels, plus custom stitching services for unique designs.",
+            "telephone": "+254 728 311537",
+            "image": "{{url('/')}}/theme/images/logs_g.webp",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Valji Building, Moktar Daddah St",
+                "addressLocality": "Nairobi",
+                "addressCountry": "KE"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -1.2816551,
+                "longitude": 36.8200614
+            },
+            "openingHours": "Mo-Fr 08:00-17:00",
+            "priceRange": "KES 2,000 - KES 20,000",
+            "sameAs": [
+                "https://www.facebook.com/GownseaLtd/",
+                "https://www.instagram.com/gownsea_ke/",
+                "https://www.google.com/maps/place/Gownsea+Ltd/data=!4m2!3m1!1s0x0:0xd5afcb025a37d2dd?sa=X&ved=1t:2428&ictx=111"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "info@gownsea.com",
+                "contactType": "customer service",
+                "availableLanguage": "English"
+            },
+            "paymentAccepted": [ "M-PESA", "Visa", "MasterCard" ],
+            "department": {
+                "@type": "Store",
+                "name": "Graduation Gown Supplier"
+            },
+            "review": {
+                "@type": "Review",
+                "author": "Customer",
+                "datePublished": "2024-01-01",
+                "reviewBody": "Excellent service and high-quality gowns. Highly recommended!",
+                "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+                }
             }
-        }
-        }
+            }
         </script>
 
         {{--  --}}
@@ -101,20 +101,32 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         @include('favicon')
 
         <!-- CSS -->
-        <link rel="stylesheet" href="{{asset('theme/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/style.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/style-responsive.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/vertical-rhythm.min.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/magnific-popup.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/owl.carousel.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/splitting.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/YTPlayer.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/demo-corporate/demo-corporate.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/demo-brutalist/demo-brutalist.css')}}">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!--Floating WhatsApp css-->
-        <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
-        <link rel="stylesheet" href="{{asset('theme/css/style-two.css')}}">
+       <!-- Core Bootstrap -->
+<link rel="stylesheet" href="{{ asset('theme/css/bootstrap.min.css') }}">
+
+<!-- Main Styles (combined & minified: style.css, style-responsive.css, style-two.css, etc.) -->
+<link rel="stylesheet" href="{{ asset('theme/css/theme.min.css') }}">
+
+<!-- Plugins -->
+<link rel="stylesheet" href="{{ asset('theme/css/vertical-rhythm.min.css') }}">
+<link rel="stylesheet" href="{{ asset('theme/css/magnific-popup.css') }}">
+<link rel="stylesheet" href="{{ asset('theme/css/owl.carousel.css') }}">
+<link rel="stylesheet" href="{{ asset('theme/css/splitting.css') }}">
+<link rel="stylesheet" href="{{ asset('theme/css/YTPlayer.css') }}">
+
+<!-- Optional Demos (remove if not used) -->
+<link rel="preload" href="{{ asset('theme/css/demo-corporate/demo-corporate.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ asset('theme/css/demo-corporate/demo-corporate.css') }}"></noscript>
+
+<link rel="preload" href="{{ asset('theme/css/demo-brutalist/demo-brutalist.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ asset('theme/css/demo-brutalist/demo-brutalist.css') }}"></noscript>
+
+<!-- External Plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+<!-- Floating WhatsApp -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp/floating-wpp.min.css">
+
 
 
     </head>
