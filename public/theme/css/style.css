@@ -6,6 +6,7 @@ Project: Resonance
 Version: 1.0.3
 Last change: 26 November 2023
 Primary use: Multipurpose Template
+RePurposed for Graduation Gowns East Africa
 -------------------------------------------------------------------*/
 
 
@@ -12919,6 +12920,9 @@ html:not(.mobile) .owl-animate-fadeInDown{
     font-size: 16px;
     color: white; /* Text color for visibility */
     margin-top: 5px; /* Add some space between the title and paragraph */
+}
+.alt-features-descr{
+    color:#0F3567;
 }
 /*  */
 @media only screen and (max-width: 540px) {
