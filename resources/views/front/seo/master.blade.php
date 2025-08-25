@@ -181,7 +181,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <!-- JS -->
         <script src="{{asset('theme/js/jquery.min.js')}}"></script>
         <script src="{{asset('theme/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('theme/js/plugins.js')}}"></script>
+        <script defer src="{{asset('theme/js/plugins.js')}}"></script>
         <script src="{{asset('theme/js/all.js')}}"></script>
         <!-- End JS -->
         <!--Floating WhatsApp javascript-->
