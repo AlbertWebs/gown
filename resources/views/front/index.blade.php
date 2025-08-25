@@ -36,7 +36,7 @@
              </div>
          </section>
          <!-- End Slide Item -->
-         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/Amazon-seller-lawyer-renaldo-matamoro-86JiKaHF4I8-unsplash.jpg')}}')">
+         <section class="home-section bg-scroll bg-dark-alpha-60 light-content home-banner" style="background-image: url('{{asset('uploads/Amazon-seller-lawyer-renaldo-matamoro-86JiKaHF4I8-unsplash-min.jpg')}}')">
             <div class="container min-height-100vh d-flexs align-items-center correct">
 
                    <!-- Home Section Text -->
