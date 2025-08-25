@@ -227,7 +227,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 				  headerTitle: 'Chat with us on WhatsApp!', //Popup Title
 				  popupMessage: 'Hello, how can we help you?', //Popup Message
 				  showPopup: true, //Enables popup display
-				  buttonImage: '<img  src="{{url('/')}}/uploads/icon/whatsapp.svg" />', //Button Image
+				  buttonImage: '<img alt="WhatsApp Icon"  src="{{url('/')}}/uploads/icon/whatsapp.svg" />', //Button Image
 				  //headerColor: 'crimson', //Custom header color
 				  //backgroundColor: 'crimson', //Custom background button color
 				  position: "left" //Position: left | right
