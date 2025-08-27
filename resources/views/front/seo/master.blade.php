@@ -129,6 +129,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        {{-- priority loading --}}
+        <link rel="preload" as="image" fetchpriority="high" href="{{url('/')}}/uploads/hero.webp" type="image/webp">
+
 
 
     </head>
@@ -198,6 +201,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <script defer src="{{asset('theme/js/plugins.js')}}" defer></script>
         <script src="{{asset('theme/js/all.js')}}"></script>
         <!-- End JS -->
+
         <!--Floating WhatsApp javascript-->
 	  <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js" defer></script>
 
