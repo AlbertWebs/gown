@@ -104,16 +104,16 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <link rel="stylesheet" href="{{asset('theme/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('theme/css/style.css')}}">
         <link rel="stylesheet" href="{{asset('theme/css/style-responsive.css')}}">
-        <link rel="stylesheet" href="{{asset('theme/css/vertical-rhythm.min.css')}}" defer>
-        <link rel="stylesheet" href="{{asset('theme/css/magnific-popup.css')}}" defer>
-        <link rel="stylesheet" href="{{asset('theme/css/owl.carousel.css')}}" defer>
-        <link rel="stylesheet" href="{{asset('theme/css/splitting.css')}}" defer>
+        <link rel="stylesheet" href="{{asset('theme/css/vertical-rhythm.min.css')}}" >
+        <link rel="stylesheet" href="{{asset('theme/css/magnific-popup.css')}}" >
+        <link rel="stylesheet" href="{{asset('theme/css/owl.carousel.css')}}" >
+        <link rel="stylesheet" href="{{asset('theme/css/splitting.css')}}" >
         {{-- <link rel="stylesheet" href="{{asset('theme/css/YTPlayer.css')}}"> --}}
         <link rel="stylesheet" href="{{asset('theme/css/demo-corporate/demo-corporate.css')}}">
         <link rel="stylesheet" href="{{asset('theme/css/demo-brutalist/demo-brutalist.css')}}">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!--Floating WhatsApp css-->
-        <link  rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css" defer>
+        <link  rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css" >
         <link rel="stylesheet" href="{{asset('theme/css/style-two.css')}}">
 
 
@@ -181,11 +181,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <!-- JS -->
         <script src="{{asset('theme/js/jquery.min.js')}}"></script>
         <script src="{{asset('theme/js/bootstrap.bundle.min.js')}}"></script>
-        <script defer src="{{asset('theme/js/plugins.js')}}"></script>
+        <script defer src="{{asset('theme/js/plugins.js')}}" defer></script>
         <script src="{{asset('theme/js/all.js')}}"></script>
         <!-- End JS -->
         <!--Floating WhatsApp javascript-->
-	  <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+	  <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js" defer></script>
 
 	 <script type="text/javascript">
         $(function () {
