@@ -60,7 +60,7 @@
                     <p>For all returns and inquiries, please contact:</p>
                     <p><strong>📍 Return Address:</strong> Valji Building, Moktar Daddah St, Nairobi</p>
                     <p><strong>📞 Phone:</strong> 0728 311537</p>
-                    <p><strong>📧 Email:</strong> hello@gownsea.com</p>
+                    <p><strong>📧 Email:</strong> info@gownsea.com</p>
                 </div>
             </div>
 
