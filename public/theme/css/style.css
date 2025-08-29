@@ -12974,7 +12974,6 @@ html:not(.mobile) .owl-animate-fadeInDown{
 @media only screen and (max-width: 768px) {
     .main-nav.dark .inner-nav ul > li > a{
         color: #ffffff;
-
     }
     .home-banner{
         max-height: 500px !important;
@@ -12997,7 +12996,7 @@ html:not(.mobile) .owl-animate-fadeInDown{
     }
     .product-img-home{
         margin-bottom: 30px;
-        min-height: 300px;;
+        min-height: 300px;
     }
     .btn-mobile{
         padding: 10px 10px 10px 10px !important;

@@ -56,7 +56,7 @@
                     <h4>1.3 Late Returns & Fees</h4>
                     <p>
                         Gowns returned <strong>after the agreed deadline</strong> will attract a <strong>late return fee</strong> as per the hiring contract.
-                        If the gown is not returned within <strong>14 Days (For New Gowns)</strong>, it will be considered lost, and the full gown value will be charged.
+                        If the gown is not returned within <strong>360 Days (For New Gowns)</strong>, it will be considered lost, and the full gown value will be charged.
                     </p>
 
                     <h4>1.4 Damaged or Lost Gowns</h4>
@@ -79,7 +79,7 @@
                     <p>We accept returns or exchanges for purchased gowns only under the following conditions:</p>
                     <ul>
                         <li>The gown must be <strong>unused</strong>, <strong>unworn</strong>, and <strong>in its original packaging</strong>.</li>
-                        <li>Returns must be made within <strong>14 Days (For New Gowns)</strong> from the date of purchase.</li>
+                        <li>Returns must be made within <strong>360 Days (For New Gowns)</strong> from the date of purchase.</li>
                     </ul>
 
                     <h4>2.2 Non-Returnable Items</h4>
@@ -90,10 +90,10 @@
                     </ul>
 
                     <h4>2.3 Refunds & Exchanges</h4>
-                    <p>Approved returns will be eligible for a <strong>refund or exchange</strong>. Refunds will be processed via the original payment method within <strong>14 Days (For New Gowns)</strong>.</p>
+                    <p>Approved returns will be eligible for a <strong>refund or exchange</strong>. Refunds will be processed via the original payment method within <strong>360 Days (For New Gowns)</strong>.</p>
 
                     <h4>2.4 Defective or Incorrect Items</h4>
-                    <p>If you receive a <strong>damaged</strong> or <strong>incorrect</strong> gown, please notify us within <strong>14 Days (For New Gowns)</strong>, and we will arrange for a replacement or refund at no extra cost.</p>
+                    <p>If you receive a <strong>damaged</strong> or <strong>incorrect</strong> gown, please notify us within <strong>360 Days (For New Gowns)</strong>, and we will arrange for a replacement or refund at no extra cost.</p>
                 </div>
 
                 <div class="contact-info">
